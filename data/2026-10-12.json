@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-12",
+  "title": "每日开源AI精选 · 2026-10-12",
+  "projects": [
+    {"rank":1,"name":"OpenMontage","category":"视频/换脸","summary":"开源的智能体视频制作系统，把 Claude Code、Cursor、Codex 等 AI 编程助手变成视频工作室。内置 12 条制作流水线、100+ 工具和 700+ 技能文件，不配任何 API Key 也能用 Piper TTS 等免费工具出片。","usageMode":"可本地部署","hardware":"Python 3.10+、FFmpeg、Node.js 18+，并需要一个 AI 编程助手；云端模型 API 可选","license":"AGPL-3.0","licenseNote":"AGPL-3.0：修改后用于网络服务需开源，商用请注意合规","url":"https://github.com/calesthio/OpenMontage"},
+    {"rank":2,"name":"Agent-Reach","category":"Agent/工具","summary":"给 AI Agent 装上「上网的眼睛」的能力层，统一安装、检测并路由现有工具，让 Agent 无需付费 API 就能读取和搜索 Twitter/X、Reddit、YouTube、GitHub、B站、小红书等平台。本周在 GitHub Python 周榜上涨星明显。","usageMode":"可本地部署","hardware":"Python 3.10+，需 Node.js、gh CLI 等；部分平台需登录 Cookie（建议用小号）","license":"MIT","licenseNote":"","url":"https://github.com/Panniantong/Agent-Reach"},
+    {"rank":3,"name":"Heretic","category":"大模型","summary":"全自动去除语言模型「安全对齐」审查的工具，用定向消融（abliteration）加 Optuna 的 TPE 优化，在尽量保持原模型能力（低 KL 散度）的同时降低拒答率，无需昂贵的后训练。","usageMode":"可本地部署","hardware":"Python 3.10+、PyTorch 2.2+；可用 bitsandbytes 4bit 量化降低显存，具体显存取决于目标模型","license":"AGPL-3.0","licenseNote":"AGPL-3.0 限制；另外去除对齐后的模型存在滥用风险，请合规使用","url":"https://github.com/p-e-w/heretic"},
+    {"rank":4,"name":"LingBot-Map","category":"其他","summary":"前馈式流式 3D 重建基础模型（Geometric Context Transformer），在 518×378 输入下约 20 FPS，可处理上万帧长序列，号称入围 ECCV 2026 最佳论文候选。权重可从 Hugging Face 或魔搭下载。","usageMode":"可本地部署","hardware":"NVIDIA GPU，推荐 PyTorch 2.8.0 + CUDA 12.8，推荐 FlashInfer","license":"Apache-2.0","licenseNote":"","url":"https://github.com/Robbyant/lingbot-map"},
+    {"rank":5,"name":"HyperFrames","category":"视频/换脸","summary":"HeyGen 出品，面向 AI Agent 设计的「写 HTML 渲染成视频」框架，让 Agent 用熟悉的网页技术直接生成视频，本周 GitHub 周榜热门。","usageMode":"可本地部署","hardware":"","license":"","licenseNote":"","url":"https://github.com/heygen-com/hyperframes"}
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/calesthio/OpenMontage",
+    "https://github.com/Panniantong/Agent-Reach",
+    "https://github.com/p-e-w/heretic",
+    "https://github.com/Robbyant/lingbot-map"
+  ]
+}
