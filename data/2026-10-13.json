@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-13",
+  "title": "每日开源AI精选 · 2026-10-13",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "ArtCraft",
+      "category": "视频/换脸",
+      "summary": "面向AI图像与视频创作的桌面“IDE”，支持2D合成、3D场景搭建、角色姿态与身份迁移、局部重绘和图生视频。内置62个模型目录（图像、视频、音乐音效、3D网格、世界模型），可自由切换后端，GitHub 今日热度飙升。",
+      "usageMode": "可本地部署（桌面应用，多数模型走云端API）",
+      "hardware": "",
+      "license": "MIT 或 Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/storytold/artcraft"
+    },
+    {
+      "rank": 2,
+      "name": "AirLLM",
+      "category": "大模型",
+      "summary": "通过逐层加载把超大模型塞进小显存的推理库，官方称 70B 模型仅需约 4GB 显存即可运行，无需量化。2026年9月新增在小显存上训练 LoRA 的支持，并覆盖 Qwen、DeepSeek、Llama、Kimi 等多个模型系列。",
+      "usageMode": "可本地部署",
+      "hardware": "官方称约4GB显存跑70B；需大量磁盘空间存放分层权重（如大模型需数百GB）；速度较慢",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/lyogavin/airllm"
+    },
+    {
+      "rank": 3,
+      "name": "text-to-cad",
+      "category": "Agent/工具",
+      "summary": "给 Claude Code、Codex、Cursor、Gemini 等编程智能体增加CAD能力的插件：生成STEP/STL/3MF/GLB模型，检查可制造性，输出工程图纸，并可切片后发送到拓竹打印机。自带本地CAD查看器，本周在Python榜上热度明显上升。",
+      "usageMode": "可本地部署（需搭配AI编程智能体）",
+      "hardware": "需 uv、Python 3.11+、Node.js 20+；无特殊显卡要求",
+      "license": "MIT",
+      "licenseNote": "默认开启使用统计与崩溃上报，可用 uvx cadgen telemetry off 关闭",
+      "url": "https://github.com/earthtojake/text-to-cad"
+    },
+    {
+      "rank": 4,
+      "name": "MiroFish",
+      "category": "Agent/工具",
+      "summary": "多智能体“群体智能”预测引擎：根据新闻、政策草案等素材构建模拟世界，让成千上万个有个性和记忆的AI智能体交互推演，并生成预测报告，可注入变量、与智能体对话。适用于舆情分析、政策/公关测试和小说结局推演。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "无需显卡，但需大模型API（推荐通义 qwen-plus）和 Zep Cloud 密钥；模拟消耗token较多",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：修改后以网络服务提供需开源，商用请注意合规",
+      "url": "https://github.com/666ghj/MiroFish"
+    },
+    {
+      "rank": 5,
+      "name": "REA (Reverse Engineer Anything)",
+      "category": "Agent/工具",
+      "summary": "让AI智能体做逆向工程的MCP服务器：可通过 Hopper/Ghidra/IDA 分析原生二进制，也能分析JS/Electron、.NET、Android APK、Flutter、固件、WASM和抓包。分析在本地运行并附带证据，一条 npx 命令即可注册到常见智能体。",
+      "usageMode": "可本地部署",
+      "hardware": "需 Node.js 22+；原生分析需另行安装 Hopper/Ghidra/IDA 等工具",
+      "license": "MIT",
+      "licenseNote": "仅限合法研究、教学、互操作等授权场景；IDA、Hopper 等商业工具需自行取得许可",
+      "url": "https://github.com/morluto/rea"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/storytold/artcraft",
+    "https://github.com/lyogavin/airllm",
+    "https://github.com/earthtojake/text-to-cad",
+    "https://github.com/666ghj/MiroFish",
+    "https://github.com/morluto/rea"
+  ]
+}
