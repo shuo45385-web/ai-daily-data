@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-14",
+  "title": "每日开源AI精选 · 2026-10-14",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "VoiceStudio",
+      "category": "语音",
+      "summary": "本地开源的 ElevenLabs 替代品，支持声音克隆、声音设计、视频配音、听写转写和有声书制作，覆盖 646 种语言。默认引擎基于 k2-fsa/OmniVoice，也可切换其他引擎，并提供本地 API 和 MCP 供 Agent 调用。",
+      "usageMode": "可本地部署",
+      "hardware": "NVIDIA GPU(CUDA)或 Apple Silicon(MPS)加速；无显卡可用 CPU 但较慢，约需 5GB 磁盘",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL 强传染；模型权重和声音条款另计，克隆声音需获授权",
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 2,
+      "name": "Unlimited-OCR",
+      "category": "其他",
+      "summary": "百度开源的 OCR 模型，主打一次性长文档、多页文档解析，目标是在 DeepSeek-OCR 基础上更进一步。支持单图、多页和 PDF 转图，权重在 Hugging Face、魔搭提供，可用 vLLM/SGLang 部署。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "需 NVIDIA GPU（测试环境 CUDA 12.9，具体显存未说明）",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/baidu/Unlimited-OCR"
+    },
+    {
+      "rank": 3,
+      "name": "PersonaPlex",
+      "category": "语音",
+      "summary": "NVIDIA 的全双工语音对话模型，可实时双向口语对话，并用文本角色提示和语音样本控制人设。基于 Moshi 架构与权重。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "NVIDIA GPU；显存不足可用 --cpu-offload",
+      "license": "MIT（代码）",
+      "licenseNote": "权重采用 NVIDIA Open Model License，需在 Hugging Face 同意条款",
+      "url": "https://github.com/NVIDIA/personaplex"
+    },
+    {
+      "rank": 4,
+      "name": "SGLang-Omni",
+      "category": "大模型",
+      "summary": "基于 SGLang 的语音与多模态模型服务框架，提供 OpenAI 兼容接口，支持 Qwen3-Omni、Ming-Omni，以及多款 TTS（Fish Speech、Qwen3-TTS 等）、ASR 和音乐生成模型。",
+      "usageMode": "需服务器",
+      "hardware": "默认 NVIDIA CUDA；Apple Silicon 与 Intel GPU 为实验性支持",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/sgl-project/sglang-omni"
+    },
+    {
+      "rank": 5,
+      "name": "video-use",
+      "category": "视频/换脸",
+      "summary": "browser-use 团队出品，让 Claude Code、Codex 等编程 Agent 剪辑视频：把素材放进文件夹，对话即可输出 final.mp4。可去口癖、调色、加音频淡入淡出、烧录字幕、生成动画叠层，LLM 基于文本转录工作。",
+      "usageMode": "可本地部署",
+      "hardware": "需 ffmpeg、ElevenLabs API Key（转写）及带 shell 的编程 Agent",
+      "license": "MIT",
+      "licenseNote": "依赖 ElevenLabs 付费 API 转写",
+      "url": "https://github.com/browser-use/video-use"
+    },
+    {
+      "rank": 6,
+      "name": "MoneyPrinterTurbo",
+      "category": "视频/换脸",
+      "summary": "输入主题或关键词，自动生成文案、素材、字幕和配音，合成高清短视频的自动化工作流，累计星标超 13 万。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "rank": 7,
+      "name": "Open WebUI",
+      "category": "Agent/工具",
+      "summary": "对接 Ollama、OpenAI 兼容 API 等的大模型前端，界面友好、功能丰富，是自建 ChatGPT 式界面的主流选择之一。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/open-webui/open-webui"
+    },
+    {
+      "rank": 8,
+      "name": "claude-mem",
+      "category": "Agent/工具",
+      "summary": "为 AI 编程 Agent 提供跨会话持久记忆：自动压缩会话内容并在后续会话中注入，本周增长约 3500 星。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "rank": 9,
+      "name": "MaxKB",
+      "category": "Agent/工具",
+      "summary": "1Panel 出品的开源企业级 Agent 与知识库问答平台，可快速搭建基于私有知识的智能体和工作流。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/1Panel-dev/MaxKB"
+    },
+    {
+      "rank": 10,
+      "name": "context-mode",
+      "category": "Agent/工具",
+      "summary": "面向 AI 编程 Agent 的上下文窗口优化工具，提供会话记忆与 MCP/hook 路由，减少上下文占用。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/mksglu/context-mode"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/python?since=weekly"
+  ]
+}
