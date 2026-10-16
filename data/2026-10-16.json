@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-16",
+  "title": "每日开源AI精选 · 2026-10-16",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "KittenTTS",
+      "category": "语音",
+      "summary": "开源文本转语音库，旗舰 KittenTTS 2 为 1.7B 参数，支持 20 种语言（含中文）、声音克隆与表情控制；还提供 15M–80M 的超轻量 ONNX 模型，纯 CPU 即可运行。",
+      "usageMode": "可本地部署",
+      "hardware": "CPU 约 6GB 内存，或 8GB 显存 CUDA GPU；默认模型约 1GB 磁盘",
+      "license": "代码 Apache-2.0；模型另有 Stellon Labs Community License",
+      "licenseNote": "模型许可与代码不同，商用前请核对各模型许可",
+      "url": "https://github.com/KittenML/KittenTTS"
+    },
+    {
+      "rank": 2,
+      "name": "Hy-MT2",
+      "category": "大模型",
+      "summary": "腾讯混元开源的多语言翻译模型家族，含 1.8B、7B、30B-A3B(MoE) 三种规格，支持 30+ 语言及粤语、藏语等，并附带翻译指令遵循基准 IFMTBench。1.8B 模型经 1.25-bit 量化后仅约 440MB。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "1.8B 小模型可端侧运行；30B-A3B 需服务器，具体显存未公布",
+      "license": "见仓库 LICENSE.txt",
+      "licenseNote": "许可类型页面未明确，使用前请阅读 LICENSE.txt",
+      "url": "https://github.com/Tencent-Hunyuan/Hy-MT2"
+    },
+    {
+      "rank": 3,
+      "name": "TokenSpeed",
+      "category": "大模型",
+      "summary": "面向 Agent 负载的高速 LLM 推理引擎，目标是 TensorRT-LLM 级性能加 vLLM 级易用性。C++ 调度层 + Python 执行层，带可插拔内核（含 Blackwell 上的 MLA 实现）。",
+      "usageMode": "需服务器",
+      "hardware": "面向 NVIDIA Blackwell 及更新 GPU（B200/GB200 等）和 AMD Instinct MI355X 等",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/lightseekorg/tokenspeed"
+    },
+    {
+      "rank": 4,
+      "name": "caveman",
+      "category": "Agent/工具",
+      "summary": "给 Claude Code、Codex、Gemini CLI 等 30+ 编码 Agent 用的省 token 工具：让 Agent 回复更简短，并压缩日志/JSON/测试输出后再喂给模型，README 称整体输入 token 降低约 33%。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "部分功能（自动选模型、Caveman Cloud）需账号或付费，数据为项目自测",
+      "url": "https://github.com/JuliusBrussee/caveman"
+    },
+    {
+      "rank": 5,
+      "name": "diagram-design",
+      "category": "其他",
+      "summary": "一个 Agent Skill，让 AI 编码工具把图表画成单文件 HTML+SVG，内置 40+ 种图表类型、明暗两套样式，可从网站提取品牌配色，也能把 draw.io/Mermaid/Excalidraw 重绘并导出 SVG/PNG。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/cathrynlavery/diagram-design"
+    },
+    {
+      "rank": 6,
+      "name": "xerj",
+      "category": "Agent/工具",
+      "summary": "本地运行的 Elasticsearch 兼容搜索引擎，专为 AI Agent 和 RAG 设计：指向文件夹即可自动索引代码、文档、日志和 PDF，支持全文/向量/混合检索，并提供 13 个工具的 MCP 服务。单个静态二进制，无需 JVM。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "README 的 token 节省数字为项目自测，前后口径不一；可选重排服务会把结果文本发到外部",
+      "url": "https://github.com/xerj-org/xerj"
+    },
+    {
+      "rank": 7,
+      "name": "ECC (Everything Claude Code)",
+      "category": "Agent/工具",
+      "summary": "面向 Claude Code 的 Agent 工作框架，内置 71 个专用 Agent、300+ 技能、命令、钩子、会话记忆与持续学习，并带配置/密钥扫描器 AgentShield，也适配 Codex 等。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "rank": 8,
+      "name": "repowise",
+      "category": "Agent/工具",
+      "summary": "自托管的代码库情报工具：索引代码、调用图、git 历史和设计决策，通过 MCP 与本地面板回答问题；支持 27 种语言，提供代码健康评分、变更风险、死代码检测，核心功能无需 LLM 与 API Key。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL，网络服务化使用需开源；另有商业授权",
+      "url": "https://github.com/repowise-dev/repowise"
+    },
+    {
+      "rank": 9,
+      "name": "ida-pro-mcp",
+      "category": "Agent/工具",
+      "summary": "把 IDA Pro 接入大模型的 MCP 服务，可让 AI 完成反编译、反汇编、交叉引用、重命名、打补丁等逆向工作，支持 headless idalib 批量处理。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.11+，需 IDA Pro 8.3+",
+      "license": "MIT",
+      "licenseNote": "需正版 IDA Pro（不支持 IDA Free）；README 推荐官方 Hex-Rays MCP，本插件模式已标记弃用",
+      "url": "https://github.com/mrexodia/ida-pro-mcp"
+    },
+    {
+      "rank": 10,
+      "name": "knowledge-work-plugins",
+      "category": "Agent/工具",
+      "summary": "Anthropic 官方开源的一组插件，面向知识工作者在 Claude Cowork 中使用，本周 GitHub Trending Python 榜单新增约 2.4k 星。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未核实",
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://www.scmp.com/tech/article/3362540/video-ai-minimax-challenges-bytedance-low-price-open-weights-new-h3-model"
+  ]
+}
