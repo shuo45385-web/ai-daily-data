@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17",
+  "title": "每日开源AI精选 · 2026-10-17",
+  "projects": [
+    {"rank":1,"name":"LFM2.5-24B-A2B","category":"大模型","summary":"Liquid AI 于 10 月 13 日发布的开放权重 MoE 模型，总参数 24B、激活约 2B，主打端侧/本地 Agent 与工具调用，Hugging Face 提供基座与后训练两个检查点。据第三方评测，工具调用强于 Qwen3.6，但 SWE-Bench 稍弱。","usageMode":"可本地部署","hardware":"","license":"LFM Open License v1.0","licenseNote":"商用有条件限制，使用前请核对 Hugging Face 仓库中的许可证原文","url":"https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"},
+    {"rank":2,"name":"ARTEMIS (google/artemis)","category":"Agent/工具","summary":"Google 开源的 Android 自动化框架：用自然语言指令驱动真机或模拟器跨应用操作，提供 Flash（快速反应）与 Pro（规划+校验）两种执行模式，并带 MCP Server、CLI、Web 控制台和 Python SDK。项目自称在 AndroidWorld 基准上完成率 99%+。","usageMode":"可本地部署","hardware":"需 Android 设备或模拟器、Python 3.12+，并需配置模型 API","license":"Apache-2.0","licenseNote":"","url":"https://github.com/google/artemis"},
+    {"rank":3,"name":"phone-harness","category":"Agent/工具","summary":"让 Claude Code、Codex 等编码 Agent 直接操控真实手机：看屏幕、点击、输入、读取结果。iPhone 通过 Mac 的 iPhone Mirroring，Android 通过 adb，也可租用云手机，无需越狱、手机端无需安装任何东西。","usageMode":"可本地部署 / 在线体验（云手机）","hardware":"iPhone 需 Mac；Android 需 adb；Python 3.12 + uv","license":"MIT","licenseNote":"云手机按分钟计费（README 称前 100 分钟免费）","url":"https://github.com/ShawnPana/phone-harness"},
+    {"rank":4,"name":"Ruflo","category":"Agent/工具","summary":"面向 Claude Code 与 Codex 的多 Agent 元编排框架：100+ 专用 Agent、多种集群拓扑、基于 HNSW 向量索引的跨会话记忆，并支持多模型路由（Claude/GPT/Gemini/Ollama）与跨机器联邦。本周 GitHub 热度上升明显。","usageMode":"可本地部署","hardware":"","license":"MIT","licenseNote":"插件不在沙箱内运行，使用前请审查其代码","url":"https://github.com/ruvnet/ruflo"},
+    {"rank":5,"name":"Nemotron 3.5 Lightning","category":"大模型","summary":"NVIDIA 的开放权重混合 MoE 模型（Mamba-2 + 专家层 + 部分注意力），总参数 30B、每 token 激活约 3B，面向单卡本地运行的 Agent 场景，并同步发布路由库 NeMo Switchyard。发布于 8 月，此处作为本周仍被讨论的开放模型收录。","usageMode":"可本地部署 / 在线体验","hardware":"据报道可在单张 GPU 上运行","license":"OpenMDW 1.1","licenseNote":"属开放权重而非严格意义的开源，使用前请核对许可证条款","url":"https://huggingface.co/nvidia"},
+    {"rank":6,"name":"LTX-2.5","category":"视频/换脸","summary":"Lightricks 的 22B 开放权重音视频生成模型，支持原生多镜头、带音频输出和扩散解码器，代码库含 ltx-core、ltx-pipelines 与 ltx-trainer（训练/微调）。8 月发布，ComfyUI 已有 GGUF 社区版本。","usageMode":"可本地部署 / 需服务器","hardware":"官方称 FP8 约需 32GB 显存，完整质量建议 A100/H100（各来源说法不一）","license":"LTX-2.x Community License","licenseNote":"年营收达 1000 万美元以上需付费授权（来源说法不一），微调衍生可能也需授权，请核对原文","url":"https://github.com/Lightricks/LTX-2"},
+    {"rank":7,"name":"Qwen3-TTS 1.7B（llama.cpp 支持）","category":"语音","summary":"r/LocalLLaMA 社区帖称 Qwen3-TTS 1.7B Base 已可用 GGUF 格式在主线 llama.cpp 中运行，并支持用一小段参考音频做声音克隆。目前仅支持 1.7B Base，且对原有 llama-tts 有破坏性改动。信息来自社区帖，细节请以仓库为准。","usageMode":"可本地部署","hardware":"","license":"","licenseNote":"","url":"https://github.com/ggml-org/llama.cpp"},
+    {"rank":8,"name":"Superpowers","category":"Agent/工具","summary":"为编程 Agent 设计的技能与开发方法论框架：先澄清需求、出设计和计划，再由子 Agent 按 TDD 执行并逐步评审，附带调试、worktree、代码审查等技能库。兼容 Claude Code、Codex、Cursor、Gemini CLI、OpenCode 等多种工具。","usageMode":"可本地部署","hardware":"","license":"MIT","licenseNote":"头脑风暴可视化组件带可选的版本遥测，可用 SUPERPOWERS_DISABLE_TELEMETRY 关闭","url":"https://github.com/obra/superpowers"},
+    {"rank":9,"name":"billion-context","category":"Agent/工具","summary":"面向小上下文窗口（约 100K 即可）的编码 Agent 上下文压缩插件，介于 Agent 与模型 API 之间做增量、可逆的摘要压缩，号称节省约 5 倍 token、支持长达数月的单会话。支持 Claude Code、Codex、OpenCode、Aider 等。项目仍处早期。","usageMode":"可本地部署","hardware":"需 npm，以及上游模型 API","license":"MIT（附加署名条款）","licenseNote":"面向用户可见的产品需在主页/文档/致谢页署名并链接本仓库","url":"https://github.com/ranxianglei/billion-context"},
+    {"rank":10,"name":"ai-job-search","category":"其他","summary":"基于 Claude Code 的求职框架：评估职位描述、定制简历、准备面试。GitHub Trending 日榜单日新增约 900 星，总星数约 4.85 万。偏应用层的工作流示例。","usageMode":"可本地部署","hardware":"","license":"","licenseNote":"","url":"https://github.com/MadsLorentzen/ai-job-search"}
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/google/artemis",
+    "https://github.com/ShawnPana/phone-harness",
+    "https://github.com/ruvnet/ruflo",
+    "https://github.com/obra/superpowers",
+    "https://github.com/ranxianglei/billion-context",
+    "https://www.llmreference.com/model/lfm-2.5-24b-a2b",
+    "https://runtimewire.com/article/nvidia-nemotron-3-5-lightning-open-weight-local-ai-agents",
+    "https://huggingface.co/Lightricks/LTX-2.5",
+    "https://pasqualepillitteri.it/en/news/24368/best-open-weight-models-october-2026-compared"
+  ]
+}
