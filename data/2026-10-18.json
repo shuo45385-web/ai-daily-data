@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-18",
+  "title": "每日开源AI精选 · 2026-10-18",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Muse Spark Open",
+      "category": "大模型",
+      "summary": "Meta 于10月15日在 Hugging Face 发布的开放权重多模态MoE大模型，总参数816B、激活42B，支持100万token上下文，提供 BF16 与 NVFP4 两种权重。Together AI、Fireworks、Groq、OpenRouter 等已有托管API。",
+      "usageMode": "需服务器 / 在线体验",
+      "hardware": "本地运行需约700GB显存（NVFP4）或2TB（BF16）",
+      "license": "Muse Model License",
+      "licenseNote": "非标准开源许可：要求标注“Built with Muse Spark Open”，对提供模型即服务的企业有额外条件，商用前请阅读 LICENSE.md",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
+    },
+    {
+      "rank": 2,
+      "name": "Prism（腾讯混元）",
+      "category": "视频/换脸",
+      "summary": "腾讯混元联合复旦大学开源的视频-音频联合生成模型，原生生成音画同步的视频，支持720p/1080p/2K。据报道权重与训练、推理代码均已公开。",
+      "usageMode": "需服务器",
+      "hardware": "据单一来源称720p约需80GB显存，待核实",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://www.mindstudio.ai/blog/prism-tencent-open-source-video-model/"
+    },
+    {
+      "rank": 3,
+      "name": "Qwen-Image-2.1-Turbo",
+      "category": "图像",
+      "summary": "阿里通义千问10月9日开放权重的图像生成与编辑加速版，8步去噪即可出图，支持2K输出和连续自然语言编辑。权重在 Hugging Face 与魔搭提供，可用 Diffusers 本地运行。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "权重约32GB，需较大显存GPU",
+      "license": "Qwen Research License",
+      "licenseNote": "研究许可，商用受限，产品中使用前请确认条款",
+      "url": "https://toolnavs.com/article/2444-qwen-image-21-turbo-opens-its-weights-official-fast-checkpoint-generates-in-8-st"
+    },
+    {
+      "rank": 4,
+      "name": "TRELLIS.2",
+      "category": "图像",
+      "summary": "微软开源的4B参数图生3D模型，使用 O-Voxel 稀疏体素表示，可生成带PBR材质（颜色、粗糙度、金属度、透明度）的任意拓扑3D资产。H100上512³约3秒、1024³约17秒。",
+      "usageMode": "可本地部署",
+      "hardware": "NVIDIA显卡，至少24GB显存，仅在Linux测试",
+      "license": "MIT",
+      "licenseNote": "部分依赖（nvdiffrast、nvdiffrec）有各自许可条款",
+      "url": "https://github.com/microsoft/TRELLIS.2"
+    },
+    {
+      "rank": 5,
+      "name": "Orca",
+      "category": "Agent/工具",
+      "summary": "并行管理多个AI编程Agent的编排器，每个Agent在独立git worktree中工作，可对比结果后合并。支持Claude Code、Codex、OpenCode等任意CLI Agent，带手机端伴侣、SSH远程worktree和diff批注。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/stablyai/orca"
+    },
+    {
+      "rank": 6,
+      "name": "OpenCode",
+      "category": "Agent/工具",
+      "summary": "开源AI编程Agent，内置可用Tab切换的 build（完全权限）与 plan（只读分析）两种Agent，另有通用子Agent。提供终端与桌面端（beta），GitHub 星数已超21万。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/anomalyco/opencode"
+    },
+    {
+      "rank": 7,
+      "name": "ai-memory",
+      "category": "Agent/工具",
+      "summary": "面向AI编程Agent的长期记忆：Rust单文件程序，以git托管的markdown wiki为数据源、SQLite做检索。可在Claude Code与Codex等20多种Agent间无缝交接上下文，默认无需LLM密钥。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+      "rank": 8,
+      "name": "claude-plugins-official",
+      "category": "Agent/工具",
+      "summary": "Anthropic 维护的 Claude Code 官方插件目录，含官方插件与第三方审核插件，可用 /plugin install 一键安装。本周在 GitHub Trending 上热度明显。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "各插件可能有各自许可，安装前请检查",
+      "url": "https://github.com/anthropics/claude-plugins-official"
+    },
+    {
+      "rank": 9,
+      "name": "Beam（Reflection AI）",
+      "category": "大模型",
+      "summary": "Reflection AI 于10月5日公布的首个开放权重模型，纯文本MoE，激活23B参数、训练23.8T token，自称编码与Agent任务接近 Qwen 3.8-Max。公司计划本月晚些时候以 Apache 2.0 发布权重，目前是否已放出需自行核实，性能数据为厂商自述。",
+      "usageMode": "需服务器",
+      "hardware": "",
+      "license": "Apache-2.0（计划）",
+      "licenseNote": "权重发布时间待确认",
+      "url": "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+    },
+    {
+      "rank": 10,
+      "name": "VoiceStudio",
+      "category": "语音",
+      "summary": "本地运行的开源语音克隆、配音、转写和有声书制作工具。10月14日已推荐过，本周在 GitHub Trending 上仍在飙升（本周新增约1.6万星、总星数约7.3万），因热度大幅上升再次收录。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/debpalash/VoiceStudio"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/microsoft/TRELLIS.2",
+    "https://github.com/stablyai/orca",
+    "https://github.com/anomalyco/opencode",
+    "https://github.com/akitaonrails/ai-memory",
+    "https://github.com/anthropics/claude-plugins-official",
+    "https://pasqualepillitteri.it/en/news/24330/meta-muse-spark-open-816b-open-weights",
+    "https://www.noze.it/en/insights/muse-spark-open-meta-open-weights/",
+    "https://toolnavs.com/article/2444-qwen-image-21-turbo-opens-its-weights-official-fast-checkpoint-generates-in-8-st",
+    "https://www.mindstudio.ai/blog/prism-tencent-open-source-video-model/",
+    "https://letsdatascience.com/news/reflection-introduces-beam-open-weight-reasoning-model-b6a0e32f"
+  ]
+}
