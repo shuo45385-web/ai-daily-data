@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-19",
+  "title": "每日开源AI精选 · 2026-10-19",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Kolibri-1（Aleph Alpha）",
+      "category": "大模型",
+      "summary": "德国 Aleph Alpha 于10月3日开源的 78B 德英双语 MoE 模型，每个 token 仅激活约 3.5B 参数，支持约 1M 上下文。适合需要长文档处理的欧洲语言场景。",
+      "usageMode": "需服务器",
+      "hardware": "FP8 约 78GB，需 2 张 80GB GPU（第三方报道）",
+      "license": "Apache 2.0",
+      "licenseNote": "仅支持德语和英语；性能数据多为二手报道，建议自行验证",
+      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1"
+    },
+    {
+      "rank": 2,
+      "name": "Nemotron 3.5 Super VL",
+      "category": "大模型",
+      "summary": "NVIDIA 10月15日发布的 120B（12B 激活）多模态视觉语言模型，号称效率大幅提升，可通过 NeMo 微调。",
+      "usageMode": "需服务器",
+      "hardware": "120B 级模型，需大显存多卡/高端GPU",
+      "license": "OpenMDW v1.1（据二手来源，待核实）",
+      "licenseNote": "许可证未经官方页面确认，使用前请核对 Hugging Face 模型卡",
+      "url": "https://huggingface.co/nvidia"
+    },
+    {
+      "rank": 3,
+      "name": "Index-Translate",
+      "category": "大模型",
+      "summary": "B站 Index 团队开源的翻译模型系列，提供 2B/9B 稠密版和 35B-A3B（预览）MoE 版，覆盖150种语言，支持术语表、保留 JSON/Markdown 格式等指令控制。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "35B-A3B 4bit 量化约 21–23GB 显存（第三方估算）；2B 可在笔记本运行",
+      "license": "Apache 2.0",
+      "licenseNote": "35B 版为预览版，指标为官方自报",
+      "url": "https://huggingface.co/IndexTeam/index-mt-2b"
+    },
+    {
+      "rank": 4,
+      "name": "Holo4（H Company）",
+      "category": "Agent/工具",
+      "summary": "H Company 的电脑操作（computer use）智能体模型，27B 与 35B-A3B 两个规格，27B 在 OSWorld 2.0 上报告 61.7%，并开源了评测轨迹。",
+      "usageMode": "需服务器",
+      "hardware": "27B/35B 级模型，需单卡大显存GPU或量化",
+      "license": "27B：CC BY-NC 4.0；35B-A3B：Apache 2.0",
+      "licenseNote": "27B 版仅限非商用，商用请选 35B-A3B（9月28日发布，据二手来源）",
+      "url": "https://huggingface.co/HCompany"
+    },
+    {
+      "rank": 5,
+      "name": "ComfyUI",
+      "category": "图像",
+      "summary": "节点式扩散模型界面、API 与推理后端，是图像/视频生成工作流的事实标准，今日仍在 GitHub 趋势榜。据第三方报道，10月初发布 0.39.0（未经官方确认）。",
+      "usageMode": "可本地部署",
+      "hardware": "视模型而定，8GB 显存起可运行轻量工作流",
+      "license": "GPL-3.0",
+      "licenseNote": "",
+      "url": "https://github.com/Comfy-Org/ComfyUI"
+    },
+    {
+      "rank": 6,
+      "name": "cursor/plugins",
+      "category": "Agent/工具",
+      "summary": "Cursor 官方的插件规范与官方插件仓库，周榜新增约 1,700 星，便于为 AI 编辑器扩展技能与工具。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未核实",
+      "url": "https://github.com/cursor/plugins"
+    },
+    {
+      "rank": 7,
+      "name": "Command A+（Cohere）",
+      "category": "大模型",
+      "summary": "Cohere 的 218B MoE（25B 激活）模型，支持工具调用、带引用的回答和 48 种语言，官方推荐的 W4A4 量化版可在 2 张 H100 上运行。发布于5月，此处作为可商用大模型选项补充。",
+      "usageMode": "需服务器",
+      "hardware": "2×H100 或 1×B200（W4A4 量化）",
+      "license": "Apache 2.0",
+      "licenseNote": "综合智能评分低于同级中国开源模型",
+      "url": "https://huggingface.co/CohereLabs/command-a-plus-05-2026-w4a4"
+    },
+    {
+      "rank": 8,
+      "name": "Wan 2.2",
+      "category": "视频/换脸",
+      "summary": "阿里通义万相开源视频生成模型，文生视频/图生视频，社区生态（ComfyUI 工作流、LoRA）成熟，至今仍是主流开源视频模型之一。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "建议 24GB 以上显存，小参数版本可更低",
+      "license": "Apache 2.0",
+      "licenseNote": "非本期新发布，作为生态常青项目收录",
+      "url": "https://github.com/Wan-Video/Wan2.2"
+    },
+    {
+      "rank": 9,
+      "name": "mlabonne/llm-course",
+      "category": "其他",
+      "summary": "Maxime Labonne 的大模型学习路线与 Colab 笔记本课程，涵盖微调、量化、部署，今日仍在趋势榜。",
+      "usageMode": "在线体验",
+      "hardware": "",
+      "license": "Apache 2.0",
+      "licenseNote": "课程资料，非模型/工具",
+      "url": "https://github.com/mlabonne/llm-course"
+    },
+    {
+      "rank": 10,
+      "name": "Muse Spark Open（Meta）",
+      "category": "大模型",
+      "summary": "Meta 10月15日发布的 816B（42B 激活）开放权重模型，1M 上下文。昨日已收录，此处仅作为大模型动向补充提醒。",
+      "usageMode": "需服务器",
+      "hardware": "816B 级，需多卡高端GPU集群",
+      "license": "Muse Model License",
+      "licenseNote": "非 Apache/MIT，请阅读许可条款",
+      "url": "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://aiweekly.co/alerts/bilibili-open-sources-index-translate-35b-moe-for-150-languages",
+    "https://www.hpcwire.com/aiwire/2026/10/15/nvidia-expands-nemotron-family-with-highest-efficiency-super-vl-and-bolt-models/",
+    "https://www.datacamp.com/de/blog/aleph-alpha-kolibri-1",
+    "https://aiweekly.co/alerts/h-company-ships-holo4-agents-27b-hits-617-on-osworld-20",
+    "https://aiweekly.co/alerts/cohere-open-sources-218b-command-a-under-apache-20",
+    "https://www.unite.ai/reflection-releases-beams-open-weights-under-apache-2-0-license/"
+  ]
+}
