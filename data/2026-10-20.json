@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-20",
+  "title": "每日开源AI精选 · 2026-10-20",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "MiniCPM-V 4.7",
+      "category": "大模型",
+      "summary": "面壁智能 OpenBMB 于 10 月 12 日发布的端侧多模态模型，含 35B-A3B（系列首个 MoE）和 1B 两个版本，支持图像、多图、文档与视频理解。官方称 Lookahead Expert Scheduling 在真机上提速约 5 倍，并开源了 SRFT 微调方法。",
+      "usageMode": "可本地部署",
+      "hardware": "手机端 35B-A3B 约需 3GB 内存即可达 13+ tokens/s；提供 int4/AWQ/GPTQ/FP8/GGUF 量化，GGUF 可纯 CPU 运行",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/OpenBMB/MiniCPM-V"
+    },
+    {
+      "rank": 2,
+      "name": "HyperFrames（HeyGen）",
+      "category": "视频/换脸",
+      "summary": "HeyGen 开源的视频渲染框架：用 HTML/CSS/媒体和可定位动画写视频，通过无头 Chrome 逐帧渲染再用 FFmpeg 编码为 MP4。专为 AI 编程 Agent 设计，输出确定可复现，支持 GSAP、Lottie、Three.js，并可用 AWS Lambda 分布式渲染。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 22+ 与 FFmpeg",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/heygen-com/hyperframes"
+    },
+    {
+      "rank": 3,
+      "name": "Hermes Agent（Nous Research）",
+      "category": "Agent/工具",
+      "summary": "Nous Research 出品的自我改进型 AI Agent，带终端 TUI，一个网关即可接入 Telegram、Discord、Slack、WhatsApp 等。具备技能自学习、持久记忆、定时任务、子 Agent 并行，支持多模型服务商，并可从 OpenClaw 导入配置。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "rank": 4,
+      "name": "Jasna",
+      "category": "视频/换脸",
+      "summary": "面向视频和图片的马赛克修复（还原）工具，GitHub 约 2.9k 星，本周进入趋势榜。提供速度较快的默认模型和更精细但较慢的 LTX 模型。",
+      "usageMode": "可本地部署",
+      "hardware": "NVIDIA GTX 16 系/RTX 20 系及以上；LTX 模型需 RTX、至少 8GB 显存和 16GB 内存；AMD RX 7000/9000 为实验性支持；路径需为纯英文",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0 强 Copyleft；模型及依赖各自有许可条款，请自行确认；使用请遵守当地法律与肖像/内容合规要求",
+      "url": "https://github.com/Kruk2/jasna"
+    },
+    {
+      "rank": 5,
+      "name": "Agent Reach",
+      "category": "Agent/工具",
+      "summary": "让 AI Agent 通过命令行访问 Twitter/X、Reddit、YouTube、GitHub、B站、小红书等平台的工具，自动挑选和安装各平台后端，某后端失效时可切换。提供 agent-reach doctor 诊断，网页、YouTube 字幕、RSS、B站搜索等免配置可用。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "需登录的平台靠 Cookie 访问，README 提醒有封号风险，建议使用小号",
+      "url": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+      "rank": 6,
+      "name": "Headroom",
+      "category": "Agent/工具",
+      "summary": "在工具输出、日志、文件、RAG 片段送进大模型之前先压缩的开源工具，本地运行。README 的基准里，SRE 排障场景 token 从 55,957 降到 24,340（约 57%）。可作为 Python/TS 库、代理或 MCP 服务使用，并能包装 Claude Code、Codex、Cursor、Aider。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "默认开启匿名遥测，可用 HEADROOM_BEACON=off 或 HEADROOM_OFFLINE=1 关闭；短对话或已很紧凑的内容压缩收益小",
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+      "rank": 7,
+      "name": "Graphify",
+      "category": "Agent/工具",
+      "summary": "把代码库连同文档、SQL、配置、PDF 转成可查询知识图谱，以 /graphify 技能形式用于 Claude Code、Cursor、Codex、Gemini CLI 等。代码用 tree-sitter 本地解析，不依赖 LLM 和向量库，每条边标注为 EXTRACTED 或 INFERRED，输出交互式 graph.html。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0 / MIT",
+      "licenseNote": "作者另提供付费托管版 Graphify Cloud",
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "rank": 8,
+      "name": "Kronos",
+      "category": "其他",
+      "summary": "面向金融 K 线（蜡烛图）的开源基础模型，用专用分词器把 OHLCV 数据离散化，再用自回归 Transformer 预训练，数据覆盖 45+ 交易所，已被 AAAI 2026 接收。提供预测 API、微调脚本和 A 股示例。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "需 Python 3.10+，实际使用建议 GPU；开源版最大为 Kronos-base（102.3M 参数），Kronos-large 未开源",
+      "license": "MIT",
+      "licenseNote": "示例回测仅为简化演示，不构成投资建议",
+      "url": "https://github.com/shiyu-coder/Kronos"
+    },
+    {
+      "rank": 9,
+      "name": "Ollama",
+      "category": "大模型",
+      "summary": "本地运行大模型的老牌开源工具，支持 Kimi、GLM、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等，提供 REST API 与 Python/JS 库。v0.40.6 于 10 月 16 日发布，可用 ollama launch 一键启动 Claude Code、Codex、OpenCode 等编码工具。",
+      "usageMode": "可本地部署",
+      "hardware": "视所选模型而定，基于 llama.cpp 后端，支持 macOS/Windows/Linux 与 Docker",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/ollama/ollama"
+    },
+    {
+      "rank": 10,
+      "name": "TokenSpeed",
+      "category": "大模型",
+      "summary": "lightseekorg 的高速 LLM 推理引擎，v0.1.1（10 月 6 日）新增 Kimi K3 支持、DeepSeek V4 的 L2 KV 缓存卸载、两级 KV 分配以及 EAGLE3.1 投机解码，同时支持 NVIDIA 与 AMD。",
+      "usageMode": "需服务器",
+      "hardware": "需 GPU 服务器，提供 CUDA 12.9/13.0 与 ROCm 7.2 的 pip 源及 Docker 镜像",
+      "license": "",
+      "licenseNote": "许可证页面未确认，使用前请查看仓库",
+      "url": "https://github.com/lightseekorg/tokenspeed"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/kouweizhu/agents-radar/issues/506",
+    "https://github.com/OpenBMB/MiniCPM-V",
+    "https://github.com/heygen-com/hyperframes",
+    "https://github.com/NousResearch/hermes-agent",
+    "https://github.com/Kruk2/jasna",
+    "https://github.com/Panniantong/Agent-Reach",
+    "https://github.com/headroomlabs-ai/headroom",
+    "https://github.com/Graphify-Labs/graphify",
+    "https://github.com/shiyu-coder/Kronos",
+    "https://github.com/ollama/ollama",
+    "https://github.com/lightseekorg/tokenspeed"
+  ]
+}
