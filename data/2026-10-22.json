@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-22",
+  "title": "每日开源AI精选 · 2026-10-22",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "rea (Reverse Engineer Anything)",
+      "category": "Agent/工具",
+      "summary": "一个让 AI Agent 做逆向工程的 MCP 工具，也提供命令行 rea。可分析原生二进制（经 Hopper/Ghidra/IDA）、Electron/JS 应用、.NET、Android APK、网站、WASM、固件等。分析在本地进行，结论附带证据与局限说明，本周 GitHub 趋势热度极高。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 22+；原生分析需 Hopper/Ghidra/IDA，安卓分析需 JADX 与 JDK",
+      "license": "MIT",
+      "licenseNote": "仅 REA 自身代码为 MIT；IDA、Hopper、JEB 等商业工具需自行取得授权",
+      "url": "https://github.com/morluto/rea"
+    },
+    {
+      "rank": 2,
+      "name": "MoneyPrinterTurbo",
+      "category": "视频/换脸",
+      "summary": "输入主题或关键词，自动完成文案生成、素材检索、配音、字幕、背景音乐并合成高清短视频。提供 Web UI、API、命令行和 Agent 四种用法，支持多种 LLM（含 Ollama 本地模型）、免 Key 的 Edge TTS 与本地 Whisper 字幕，竖/横/方形均可输出。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "无需 GPU；建议 8GB 内存，GPU 仅加速 Whisper 与批量处理",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "rank": 3,
+      "name": "Wan2.2-Animate-14B",
+      "category": "视频/换脸",
+      "summary": "阿里通义万相的 14B 角色动画模型：给一张角色图和一段驱动视频，即可让角色复刻动作与表情（动画模式），或把视频里的人物替换成指定角色（替换模式）。权重在 Hugging Face 与魔搭公开；NVIDIA 平台上已出现更新的 Animate-2 版本，但许可证未核实。",
+      "usageMode": "需服务器 / 在线体验",
+      "hardware": "14B 视频模型，建议 24GB 以上显存的 GPU，具体以官方说明为准",
+      "license": "Apache-2.0",
+      "licenseNote": "Animate-2 版本的许可证未核实，使用前请到官方页面确认",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B"
+    },
+    {
+      "rank": 4,
+      "name": "Reel Video",
+      "category": "视频/换脸",
+      "summary": "面向 Claude Code、Codex、Cursor 等编码 Agent 的本地优先 AI 视频画布：想法→分镜→场景首/中/尾帧→6 或 10 秒 AI 视频片段，并提供浏览器审阅看板逐镜头生成。状态保存在本地项目文件，附带 Agent skill。",
+      "usageMode": "可本地部署（依赖在线服务）",
+      "hardware": "Node 20+；视频生成依赖 Grok Build CLI 登录",
+      "license": "MIT",
+      "licenseNote": "需要 Grok 账号及其用量限制，并要在 Grok 中开启数据保留选项",
+      "url": "https://github.com/AsadMoulviDev/reel-video"
+    },
+    {
+      "rank": 5,
+      "name": "VoiceOver Demo（Hmache/demo）",
+      "category": "视频/换脸",
+      "summary": "一个 Agent skill，也可在终端运行：给一个网址和一段文字场景，用无头 Chromium 自动操作页面，配上旁白、字幕、聚焦高亮和片头片尾，渲染出带解说的产品演示 MP4。默认使用本地免费的 Kokoro 配音，也可接 OpenAI 或 ElevenLabs。",
+      "usageMode": "可本地部署",
+      "hardware": "Node 18+、Python 3.10+、ffmpeg；首次运行约下载 500MB，无需 GPU",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/Hmache/demo"
+    },
+    {
+      "rank": 6,
+      "name": "comonteur",
+      "category": "视频/换脸",
+      "summary": "让 AI Agent 在 Blender 里制作视频场景、动画和时间线，你仍可在同一个文件里手动编辑。数据分 Agent 自有/共享/人工三种归属，所有改动写入日志并可一键撤销，字幕与节拍同步基于 TTS 时间标记。早期项目。",
+      "usageMode": "可本地部署",
+      "hardware": "Blender 5.2 LTS（需指定版本）、Node 20+、支持 MCP 的编码 Agent",
+      "license": "GPL-3.0-or-later",
+      "licenseNote": "",
+      "url": "https://github.com/davidB/comonteur"
+    },
+    {
+      "rank": 7,
+      "name": "ShortsStudio",
+      "category": "视频/换脸",
+      "summary": "开源的短视频自动化工具：提供文案或配音，自动生成旁白、词级时间戳、匹配画面和动画字幕，并放进可编辑的多轨时间线。每个场景可在素材库图片/视频与 AI 生成画面之间切换，字幕样式多样。基于 React + Vite。",
+      "usageMode": "可本地部署（依赖在线 API）",
+      "hardware": "Node.js；需自备 ElevenLabs、Groq、Pexels/Pixabay、Gemini 等服务的 API Key",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/iGlitchz/ShortsStudio"
+    },
+    {
+      "rank": 8,
+      "name": "Eidoverse Video",
+      "category": "视频/换脸",
+      "summary": "“AI Agent 的电影工作室”：基于 Deno + WebGPU + three.js 的渲染引擎，涵盖角色物理运动（VRM）、口型同步、水火烟布料模拟、天气地形、31 种后期特效和音频流程，由 Agent 编写场景来生成影片。目前为 pre-alpha。",
+      "usageMode": "可本地部署",
+      "hardware": "推荐 NVIDIA GPU；Deno 2.8/2.9、ffmpeg、Python 3.10+",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：改动后通过网络提供服务需公开源码；内置素材另有各自许可",
+      "url": "https://github.com/SkyeShark/Eidoverse-video"
+    },
+    {
+      "rank": 9,
+      "name": "Harvey",
+      "category": "Agent/工具",
+      "summary": "开源的自主销售 Agent：自动发现本地商家、阅读其网站、撰写有针对性的开发信并发送、处理回复、推进约会议。借助已有的 Claude Pro/Max 或 ChatGPT 订阅运行，无需额外 API 费用；默认每封邮件需人工批准，并带发送前检查和紧急停止。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.11+；需 Claude CLI 或 Codex CLI 登录及一个发信邮箱",
+      "license": "MIT",
+      "licenseNote": "涉及群发邮件，使用时请遵守反垃圾邮件与隐私法规",
+      "url": "https://github.com/ethanplusai/harvey"
+    },
+    {
+      "rank": 10,
+      "name": "Context Mode",
+      "category": "Agent/工具",
+      "summary": "给编码 Agent 用的 MCP 服务，把工具原始输出隔离在沙箱外，只让必要内容进入上下文（README 称可减少约 98%），并用 SQLite + FTS5 保存会话状态，上下文压缩后可检索恢复。支持 Claude Code、Gemini CLI、Cursor、Codex CLI 等 17 个平台。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 22.5+ 或 Bun",
+      "license": "Elastic License 2.0",
+      "licenseNote": "ELv2 并非 OSI 开源许可：不得将其作为托管服务提供给第三方，商用前请阅读条款",
+      "url": "https://github.com/mksglu/context-mode"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/morluto/rea",
+    "https://github.com/harry0703/MoneyPrinterTurbo",
+    "https://github.com/ethanplusai/harvey",
+    "https://github.com/mksglu/context-mode",
+    "https://github.com/SkyeShark/Eidoverse-video",
+    "https://github.com/davidB/comonteur",
+    "https://github.com/AsadMoulviDev/reel-video",
+    "https://github.com/iGlitchz/ShortsStudio",
+    "https://github.com/Hmache/demo",
+    "https://build.nvidia.com/wan-ai/wan2.2-animate-2-14b",
+    "https://www.unite.ai/reflection-releases-beams-open-weights-under-apache-2-0-license/"
+  ]
+}
