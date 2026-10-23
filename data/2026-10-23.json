@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-23",
+  "title": "每日开源AI精选 · 2026-10-23",
+  "projects": [
+    {"rank":1,"name":"MOSS-Image（OpenMOSS）","category":"图像","summary":"OpenMOSS 于 10 月 16 日开放的 5B 文生图模型，单流 DiT，使用 FLUX.2 VAE 与 Qwen3.5-9B 文本编码器。亮点是可用 JSON 提示按边界框精确控制文字与物体布局，宣称中英文文字渲染清晰，ComfyUI 已合并核心支持。以上细节主要来自第三方报道，请以模型卡为准。","usageMode":"可本地部署（ComfyUI）","hardware":"","license":"Apache-2.0","licenseNote":"","url":"https://comfyui-wiki.com/en/models/moss-image"},
+    {"rank":2,"name":"CLI-Anything（HKUDS）","category":"Agent/工具","summary":"让任意软件变成 AI Agent 可调用的命令行工具：用 7 阶段流水线从源码生成带测试与文档的 CLI 和 SKILL.md，并提供 CLI-Hub 包管理。已有 GIMP、Blender、LibreOffice、Inkscape 等软件的现成 CLI。本周 GitHub 新增约 3,275 星，总星数约 56k。","usageMode":"可本地部署","hardware":"","license":"Apache-2.0","licenseNote":"","url":"https://github.com/HKUDS/CLI-Anything"},
+    {"rank":3,"name":"Phonon（Gradium）","category":"语音","summary":"法国语音公司 Gradium 于 10 月 20 日在 Hugging Face 发布的超小 TTS 模型家族，31M 英文版仅约 64MB。各来源对参数规格说法不一，使用前请核对模型卡。","usageMode":"可本地部署","hardware":"体积极小，普通 CPU/低端设备可尝试（未核实）","license":"31M 英文版 Apache-2.0；40M 多语种版为开放权重","licenseNote":"仅 31M 英文版可免费商用；40M 各语种版未经协议不可商用","url":"https://orcarouter.ai/blog/phonon-31m-open-weight-release"},
+    {"rank":4,"name":"Qwen3.8-27B（阿里）","category":"大模型","summary":"阿里 8 月发布的 27B 稠密原生多模态模型，支持文本、图像、视频，原生 262K 上下文。官方称家用显卡即可运行，社区量化版最低约 9GB。基准成绩为厂商自报。近期仍是本地部署热门选择。","usageMode":"可本地部署 / 需服务器","hardware":"16GB 显存可跑量化版（第三方指南）","license":"Apache-2.0","licenseNote":"同系列 Qwen3.8-Max 为定制许可，有使用限制","url":"https://datanorth.ai/news/alibaba-releases-qwen3-8-27b"},
+    {"rank":5,"name":"scientific-agent-skills（K-Dense-AI）","category":"Agent/工具","summary":"面向科研的 Agent 技能库，包含 177 个技能并接入 100 多个科学数据库，可配合 Claude Code 等编程 Agent 使用。本周新增约 3,967 星，总星数约 53.9k。","usageMode":"可本地部署","hardware":"","license":"","licenseNote":"","url":"https://github.com/K-Dense-AI/scientific-agent-skills"},
+    {"rank":6,"name":"Hy4 Preview（腾讯混元）","category":"大模型","summary":"腾讯 8 月底开放权重的 770B 参数 MoE 大模型，每 token 激活约 49B，标称 1M 上下文，同时提供 FP8 版本。权重发布在 Hugging Face、ModelScope 等平台，对比评测中与 GLM-5.3、Kimi K3 同档。","usageMode":"需服务器","hardware":"BF16 权重约 1.5TB，单个 8×H100 节点无法加载","license":"Apache-2.0","licenseNote":"","url":"https://letsdatascience.com/news/tencent-releases-hy4-preview-open-model-weights-0f4d878a"},
+    {"rank":7,"name":"daVinci-MagiHuman","category":"视频/换脸","summary":"据博客介绍是 15B 参数、Apache-2.0 的口型同步说话人视频生成模型，宣称单张 H100 约 2 秒出片。发布时间与速度数据未经一手来源核实，请先查看官方仓库。","usageMode":"需服务器","hardware":"宣称单张 H100（未核实）","license":"Apache-2.0（据博客）","licenseNote":"","url":"https://www.spheron.network/blog/self-host-ai-avatar-generator-heygen-alternative-2026/"},
+    {"rank":8,"name":"SGLang","category":"其他","summary":"高性能 LLM 与多模态模型推理服务框架，是 vLLM 之外的主流选择。本周 GitHub Trending 上榜，总星数约 37.6k。","usageMode":"需服务器","hardware":"GPU 服务器","license":"","licenseNote":"","url":"https://github.com/sgl-project/sglang"},
+    {"rank":9,"name":"VoxCPM2（OpenBMB）","category":"语音","summary":"2B 参数、无分词器的多语种 TTS，支持约 30 种语言、文字描述生成音色（Voice Design）和可控声音克隆，输出 48kHz。基于 MiniCPM-4，pip 即可安装，近期出现在 Hugging Face 热门 TTS 列表。","usageMode":"可本地部署","hardware":"基础推理约 8GB 显存，生产建议 24GB（第三方指南）","license":"Apache-2.0","licenseNote":"","url":"https://github.com/openbmb/VoxCPM"},
+    {"rank":10,"name":"android/skills","category":"Agent/工具","summary":"Android 开发的 Agent 技能集合，本周 GitHub Trending 新增约 1,384 星。仓库页面未显示详细说明，适合 Android 开发者让编程 Agent 遵循官方实践时参考。","usageMode":"可本地部署","hardware":"","license":"","licenseNote":"","url":"https://github.com/android/skills"}
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://comfyui-wiki.com/en/models/moss-image",
+    "https://github.com/HKUDS/CLI-Anything",
+    "https://orcarouter.ai/blog/phonon-31m-open-weight-release",
+    "https://datanorth.ai/news/alibaba-releases-qwen3-8-27b",
+    "https://letsdatascience.com/news/tencent-releases-hy4-preview-open-model-weights-0f4d878a",
+    "https://betterstack.com/community/guides/ai/voxcpm2-local-tts/",
+    "https://www.spheron.network/blog/self-host-ai-avatar-generator-heygen-alternative-2026/",
+    "https://juejin.cn/post/7696060856838750243"
+  ]
+}
