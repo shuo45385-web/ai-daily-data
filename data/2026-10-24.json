@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-24",
+  "title": "每日开源AI精选 · 2026-10-24",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Kandinsky 6.0",
+      "category": "视频/换脸",
+      "summary": "Sber 旗下 Kandinsky Lab 于 10 月 6 日开源的视频+音频生成模型，可由文本或图片生成约 5 秒、带同步 44kHz 音频的视频，内置超分到 Full HD。有 29B Pro 和 3B Lite 两个尺寸，均含蒸馏版，提供 Diffusers 管线和 ComfyUI 扩展。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "Pro(29B)需大显存服务器，Lite(3B)可用消费级显卡（具体要求未核实）",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/kandinskylab/kandinsky-6"
+    },
+    {
+      "rank": 2,
+      "name": "MiniMax H3",
+      "category": "视频/换脸",
+      "summary": "MiniMax 的 2K 全模态视频生成模型，原生支持音频，权重已发布到 Hugging Face，同时提供 API。社区称量化后可在 12GB 显存显卡上跑低分辨率，但官方硬件要求未公布。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "据称 RTX 3060 12GB 可跑低档分辨率（未经官方确认）",
+      "license": "MiniMax H3 Community License",
+      "licenseNote": "源码可见但有地域限制：权重暂不授权在美国、欧盟、英国、韩国使用，需向 MiniMax 申请",
+      "url": "https://huggingface.co/MiniMaxAI"
+    },
+    {
+      "rank": 3,
+      "name": "Fibo 2.0 Dev（Bria）",
+      "category": "图像",
+      "summary": "Bria 发布的开源权重图像模型，称在 Artificial Analysis 开源权重榜单中图像编辑第 1、文生图第 2（厂商自述）。训练数据全部为授权数据，版权风险较低。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "dev 版权重可能为非商用/需另行授权，使用前请查看模型卡许可",
+      "url": "https://huggingface.co/briaai/Fibo-2.0-dev"
+    },
+    {
+      "rank": 4,
+      "name": "Unlimited-OCR（百度）",
+      "category": "其他",
+      "summary": "百度开源的文档解析模型，一次推理可处理多页复杂 PDF，输出最长约 32K token，采用 R-SWA 注意力机制，总参数 3B、激活约 0.5B，是 DeepSeek-OCR 的演进。GitHub Trending 上近期热度仍高。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "NVIDIA GPU，CUDA 12.9，Python 3.12",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/baidu/Unlimited-OCR"
+    },
+    {
+      "rank": 5,
+      "name": "NVIDIA OpenShell",
+      "category": "Agent/工具",
+      "summary": "NVIDIA 开源的自主 AI Agent 安全运行时，用 Landlock 与 seccomp 做内核级沙箱隔离，通过 YAML 声明 Agent 可访问的资源。今日 GitHub Trending 日增上千星。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "rank": 6,
+      "name": "Onyx",
+      "category": "Agent/工具",
+      "summary": "开源 AI 平台，可连接 50+ 应用建立索引，提供带检索的 AI 聊天、自定义 Agent、深度研究、MCP 与代码沙箱，支持自托管与云端大模型。适合做企业/团队知识库问答前端。",
+      "usageMode": "可本地部署 / 需服务器 / 在线体验",
+      "hardware": "Lite 版内存低于 1GB；完整版建议服务器",
+      "license": "MIT（社区版）",
+      "licenseNote": "企业版功能（SSO、RBAC 等）为付费",
+      "url": "https://github.com/onyx-dot-app/onyx"
+    },
+    {
+      "rank": 7,
+      "name": "TradingAgents",
+      "category": "Agent/工具",
+      "summary": "基于 LangGraph 的多智能体交易研究框架，模拟交易公司角色：分析师、多空辩论研究员、交易员与风控。10 月发布 v0.7.0，支持 Ollama 本地模型或各家 API。仅供研究，不构成投资建议。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "Python 3.11+；需 LLM API key 或本地模型",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/TauricResearch/TradingAgents"
+    },
+    {
+      "rank": 8,
+      "name": "huggingface/speech-to-speech",
+      "category": "语音",
+      "summary": "Hugging Face 的开源语音到语音管线，用开源模型（如 Parakeet TDT 识别、新 TTS 模型等）搭建语音 Agent，可模块化替换各环节。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "具体许可证与硬件要求未核实",
+      "url": "https://github.com/huggingface/speech-to-speech"
+    },
+    {
+      "rank": 9,
+      "name": "open-duet",
+      "category": "Agent/工具",
+      "summary": "自托管的 Claude Duet 替代品，提供具名 AI Agent，Agent 执行动作前需用户批准。近期在 GitHub Trending 出现，细节信息有限。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/Anil-matcha/open-duet"
+    },
+    {
+      "rank": 10,
+      "name": "claude-howto",
+      "category": "其他",
+      "summary": "可视化、示例驱动的 Claude Code 使用指南，含模板，本周增长约 2000 星，适合快速上手 AI 编程助手工作流。属教程类仓库而非模型/工具。",
+      "usageMode": "在线体验",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/luongnv89/claude-howto"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://comfyui-wiki.com/en/models/kandinsky",
+    "https://www.runpod.io/blog/minimax-h3-the-open-weight-omni-modal-video-model-and-what-it-takes-to-run-it",
+    "https://huggingface.co/briaai/Fibo-2.0-dev",
+    "https://gigazine.net/gsc_news/en/20260624-baidu-unlimited-ocr/",
+    "https://perspectives.nvidia.com/nvidia-openshell/open-source-runtime-customer-ai-agents-own-infra/"
+  ]
+}
