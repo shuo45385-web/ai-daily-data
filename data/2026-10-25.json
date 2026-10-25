@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-25",
+  "title": "每日开源AI精选 · 2026-10-25",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "LFM2.5-24B-A2B（Liquid AI）",
+      "category": "大模型",
+      "summary": "Liquid AI 发布的 24B 总参数、约 2B 激活参数的 MoE 模型，主打在笔记本、端侧设备上跑本地推理与 Agent。激活参数小，推理成本低，权重已在 Hugging Face 公开。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "LFM Open License v1.0",
+      "licenseNote": "非标准许可：据报道年收入低于 1000 万美元的公司可免费商用，部署前请核对许可原文",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B"
+    },
+    {
+      "rank": 2,
+      "name": "FLUX 3 Image Klein（Black Forest Labs）",
+      "category": "图像",
+      "summary": "Black Forest Labs 于 10 月 15 日发布的 5.6B 参数图像生成模型，提供可下载权重，可本地推理和微调；旗舰 FLUX 3 Image 仍为付费 API。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "具体许可证未能核实，使用前请查看模型卡",
+      "url": "https://bfl.ai"
+    },
+    {
+      "rank": 3,
+      "name": "Mistral Large 4（Le Chonk）",
+      "category": "大模型",
+      "summary": "Mistral 的 1.05T 参数多模态 MoE 开放权重模型，10 月 6 日已上线 API 预览，权重预计 10 月底（27–31 日）放出。",
+      "usageMode": "需服务器 / 在线体验",
+      "hardware": "万亿参数级，需多卡服务器",
+      "license": "",
+      "licenseNote": "权重尚未发布、许可证未公布，请留意正式发布",
+      "url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe/"
+    },
+    {
+      "rank": 4,
+      "name": "SupoClip",
+      "category": "视频/换脸",
+      "summary": "开源的 OpusClip 替代品：输入播客、直播回放等长视频，由 LLM 挑选 3–7 个最有传播力的片段，自动做人脸居中竖屏裁剪、逐字字幕和钩子标题，并可直接发布到 YouTube/TikTok/Instagram。",
+      "usageMode": "可本地部署（Docker）",
+      "hardware": "需 Docker 及 AssemblyAI 与一个 LLM 的 API Key（也可接本地 Ollama）",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：自建对外提供服务需开源修改",
+      "url": "https://github.com/FujiwaraChoki/supoclip"
+    },
+    {
+      "rank": 5,
+      "name": "Cindy",
+      "category": "Agent/工具",
+      "summary": "开源 AI Agent 桌面/移动客户端，本地运行，可操作本机文件、浏览器与已登录应用，首批支持 Claude Code 和 Codex 作为底层，带跨 Agent 共享记忆、技能、定时任务和 MCP。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 22、pnpm 10、Git LFS",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/makecindy/cindy"
+    },
+    {
+      "rank": 6,
+      "name": "Ruflo",
+      "category": "Agent/工具",
+      "summary": "面向 Claude Code 和 Codex 的 Agent 元框架（前身 Claude Flow），内置 100+ 专用 Agent、多 Agent 集群协作、向量记忆和 MCP 服务，可路由 Claude、GPT、Gemini、Ollama 等。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "性能数据为项目自述，未独立验证",
+      "url": "https://github.com/ruvnet/ruflo"
+    },
+    {
+      "rank": 7,
+      "name": "Impeccable",
+      "category": "Agent/工具",
+      "summary": "给 AI 编程 Agent 用的设计规范技能：24 个设计命令加 62 条确定性检测规则，可识别紫色渐变、滥用字体等“AI 味”设计，兼容 Claude Code、Cursor、Codex、Gemini CLI 等。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/pbakaus/impeccable"
+    },
+    {
+      "rank": 8,
+      "name": "Hallmark",
+      "category": "Agent/工具",
+      "summary": "让 AI 生成的网页不再千篇一律的设计技能：48 套主题、755 张开放授权图片，支持重设计与审计，并带 sloplint 多宽度浏览器检查。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/Nutlope/hallmark"
+    },
+    {
+      "rank": 9,
+      "name": "Agent Toolkit for AWS",
+      "category": "Agent/工具",
+      "summary": "AWS 官方支持的 MCP 服务器、技能和插件集合，让 Claude Code、Codex、Cursor、Kiro 等 Agent 通过统一认证端点操作 AWS，并带 IAM 条件键与 CloudTrail 审计。",
+      "usageMode": "可本地部署 / 需 AWS 账号",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/aws/agent-toolkit-for-aws"
+    },
+    {
+      "rank": 10,
+      "name": "Gemini CLI",
+      "category": "Agent/工具",
+      "summary": "Google 开源的终端 AI Agent，可查询和修改大型代码库、脚本化运行、通过 MCP 扩展。注意：README 称 6 月 18 日起免费档和 Google One 用户已改用 Antigravity CLI，且本项目未针对最新 Gemini 模型优化。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/google-gemini/gemini-cli"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=weekly",
+    "https://www.theregister.com/ai-and-ml/2026/10/06/european-ai-flag-bearer-mistrals-new-open-weights-model-is-le-chonk/5301443",
+    "https://thenextweb.com/news/mistral-releases-large-4-a-1-trillion-parameter-open-weight-ai-model",
+    "https://hackernoon.com/what-is-lfm25-24b-a2b-liquid-ais-local-reasoning-model-explained",
+    "https://www.layer3labs.io/guides/flux-3-image-explained"
+  ]
+}
