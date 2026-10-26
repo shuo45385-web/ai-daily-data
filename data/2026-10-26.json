@@ -1,0 +1,124 @@
+{
+  "date": "2026-10-26",
+  "title": "每日开源AI精选 · 2026-10-26",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "VoiceStudio（debpalash）",
+      "category": "语音",
+      "summary": "本地开源语音工具箱，支持声音克隆、声音设计、配音、转写和有声书制作，宣称覆盖646种语言。今日 GitHub Trending 单日新增约1600星，总星数约8.7万。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/debpalash/VoiceStudio"
+    },
+    {
+      "rank": 2,
+      "name": "Nanbeige4.3-33B",
+      "category": "大模型",
+      "summary": "Nanbeige 本周在 Hugging Face 发布的 33B 开源模型，主打代码能力，模型卡称在 7 项主流评测中的 5 项上超过 Qwen3.8-27B（厂商自报数据，需自行验证）。",
+      "usageMode": "需服务器（33B 模型，建议大显存GPU）",
+      "hardware": "",
+      "license": "Apache 2.0",
+      "licenseNote": "",
+      "url": "https://huggingface.co/Nanbeige"
+    },
+    {
+      "rank": 3,
+      "name": "Qwen-Image-2.1（含 Turbo）",
+      "category": "图像",
+      "summary": "通义千问开源的文生图与图像编辑统一模型，9月20日发布；10月9日推出 Turbo 版本，仅需 8 步去噪即可完成生成与编辑。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "具体许可证请以仓库 LICENSE 为准",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1"
+    },
+    {
+      "rank": 4,
+      "name": "LTX-2.5（Lightricks）",
+      "category": "视频/换脸",
+      "summary": "Lightricks 的开源视频生成模型，代码与权重已在 GitHub 和 Hugging Face 公开，可本地或服务器部署，也可接入 ComfyUI 工作流。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "LTX Model License",
+      "licenseNote": "年收入超过1000万美元的商用需另购商业许可",
+      "url": "https://ltx.io/model/open-source"
+    },
+    {
+      "rank": 5,
+      "name": "video-use（browser-use）",
+      "category": "视频/换脸",
+      "summary": "由编码 Agent 驱动的视频剪辑工具，让 Agent 直接操作剪辑流程，GitHub 总星数约3万，今日仍在 Trending 榜。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/browser-use/video-use"
+    },
+    {
+      "rank": 6,
+      "name": "Orca（stablyai）",
+      "category": "Agent/工具",
+      "summary": "用于统一管理一批编码 Agent（如 Claude Code）的工具，支持桌面、移动端和远程运行环境，本周新增约9600星，总星数约10.6万。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/stablyai/orca"
+    },
+    {
+      "rank": 7,
+      "name": "opencode（anomalyco）",
+      "category": "Agent/工具",
+      "summary": "开源编码 Agent，总星数约22万，本周新增约5900星，是 Claude Code 类工具的热门开源替代。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/anomalyco/opencode"
+    },
+    {
+      "rank": 8,
+      "name": "experiential（experientiallabs）",
+      "category": "Agent/工具",
+      "summary": "开源低加价的模型网关，聚合1000+模型，并根据流量学习路由以降低调用成本；今日单日新增约1100星。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/experientiallabs/experiential"
+    },
+    {
+      "rank": 9,
+      "name": "DeepTutor（HKUDS）",
+      "category": "Agent/工具",
+      "summary": "港大数据智能实验室的长期个性化 AI 辅导系统，总星数约4.3万，今日仍在 Trending 榜上。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/HKUDS/DeepTutor"
+    },
+    {
+      "rank": 10,
+      "name": "Unsloth",
+      "category": "大模型",
+      "summary": "本地 UI，可运行和微调大语言模型与扩散模型，对显存占用优化友好，总星数约7.9万。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/unslothai/unsloth"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://ltx.io/blog/open-source-video-generation-models-guide",
+    "https://github.com/QwenLM/Qwen-Image-2.1",
+    "https://startupfortune.com/nanbeiges-new-33b-open-model-takes-aim-at-qwen-and-gemma-on-coding/"
+  ]
+}
