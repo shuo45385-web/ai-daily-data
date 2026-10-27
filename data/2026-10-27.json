@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-27",
+  "title": "每日开源AI精选 · 2026-10-27",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "ComfyUI",
+      "category": "图像",
+      "summary": "模块化的节点式扩散模型界面、API 与后端，支持图像、视频、音频、3D 工作流，并提供本地 API 用于生产流水线。近期支持 Flux.2 Klein、Qwen Image Edit、LTX-Video 2.3、Wan 2.2 等模型，并有子图和 App Mode。本周 GitHub 热度约 4,100 星。",
+      "usageMode": "可本地部署",
+      "hardware": "最低约 4GB 显存 + 8GB 内存可跑，显存越大越好；支持 NVIDIA/AMD/Intel/Apple Silicon/昇腾",
+      "license": "GPL-3.0",
+      "licenseNote": "GPL-3.0 强 copyleft，分发修改版需开源",
+      "url": "https://github.com/Comfy-Org/ComfyUI"
+    },
+    {
+      "rank": 2,
+      "name": "Beam（Reflection AI）",
+      "category": "大模型",
+      "summary": "Reflection 发布的首个开放权重模型，501B 总参数的稀疏 MoE（每 token 激活约 23B），面向编程、推理和 Agent 场景。据报道权重已于 10 月 16 日在 Hugging Face 提供，含 BF16/FP8/NVFP4。",
+      "usageMode": "需服务器",
+      "hardware": "BF16 权重约 1TB，需多卡大显存服务器；FP8/NVFP4 可降低要求",
+      "license": "Apache-2.0（据媒体报道）",
+      "licenseNote": "许可证与发布日期来自二手报道，使用前请核对官方模型卡",
+      "url": "https://www.eigent.ai/ar/blog/reflection-beam-open-weight-model"
+    },
+    {
+      "rank": 3,
+      "name": "AstrBot",
+      "category": "Agent/工具",
+      "summary": "开源 AI 智能体与聊天机器人平台，把大模型接入 QQ、企业微信、飞书、钉钉、Telegram、Slack 等即时通讯。支持 MCP、Skills、知识库、沙箱执行，有 1000+ 插件和 WebUI，可对接 OpenAI、Claude、Gemini 及 Ollama 等本地模型。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.12+，推荐 Docker；未列硬件要求",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：对外提供网络服务时需公开修改后的源码",
+      "url": "https://github.com/AstrBotDevs/AstrBot"
+    },
+    {
+      "rank": 4,
+      "name": "ThinkRail（JetBrains）",
+      "category": "Agent/工具",
+      "summary": "JetBrains 开源的轻量 Agent 化 IDE，把 pi 编码智能体封装成桌面应用或浏览器工作台。每个工作区是独立 git worktree，可并行多会话，内置 Monaco 编辑器、终端、PR/CI 集成、SPEC.md 规格图和 MCP 支持，内置中文界面。",
+      "usageMode": "可本地部署",
+      "hardware": "macOS 14+/Windows x64/Linux（需 glibc 2.38+），需自备模型提供商或 JetBrains AI",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/JetBrains/thinkrail"
+    },
+    {
+      "rank": 5,
+      "name": "ai-memory",
+      "category": "Agent/工具",
+      "summary": "给编码智能体用的长期记忆系统，单个 Rust 二进制。以 git 管理的 Markdown wiki 为真源，可在 Claude Code、Codex、Cursor 等 20 多种 harness 间交接工作，默认无需 LLM，支持记忆衰减和多人共享。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/akitaonrails/ai-memory"
+    },
+    {
+      "rank": 6,
+      "name": "HarnessRouter（Community Edition）",
+      "category": "Agent/工具",
+      "summary": "自托管的统一接口，通过一个兼容 OpenAI Responses 的 API 调用 Codex、Claude Code、Hermes、Pi 等 30 种 agent harness，实现开放的 UHP 协议。支持持久会话、流式输出、幂等重试、密钥保险库和浏览器控制台。",
+      "usageMode": "可本地部署",
+      "hardware": "Docker，约 4GB 磁盘，需自备模型 API Key",
+      "license": "Apache-2.0",
+      "licenseNote": "安装的各 harness CLI 与 Starter Kits 另有各自许可",
+      "url": "https://github.com/HarnessRouter/harnessrouter"
+    },
+    {
+      "rank": 7,
+      "name": "ECC（Everything Claude Code）",
+      "category": "Agent/工具",
+      "summary": "面向 Claude Code、Codex、Cursor、OpenCode 等的 agent harness 优化系统，含 71 个子智能体、311 个技能、97 个命令，以及钩子、记忆、持续学习和 AgentShield 安全扫描。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 18+，npx 一键安装",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/affaan-m/ECC"
+    },
+    {
+      "rank": 8,
+      "name": "SkillSpector（NVIDIA）",
+      "category": "Agent/工具",
+      "summary": "NVIDIA 开源的 AI Agent 技能安全扫描器，安装前检测 Claude Code/Codex/MCP 技能中的提示注入、数据外泄和供应链风险。含 71 种漏洞模式，静态分析加可选 LLM 语义评估，支持 OSV 查询和 SARIF 输出，可作 MCP 服务运行。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/NVIDIA/SkillSpector"
+    },
+    {
+      "rank": 9,
+      "name": "last30days-skill",
+      "category": "Agent/工具",
+      "summary": "一个 AI Agent 技能：围绕某个主题检索 Reddit、X、YouTube、HN、Polymarket 和网页近 30 天内容并汇总，适合做选题和趋势调研。今日 GitHub Python 趋势榜上榜。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+      "rank": 10,
+      "name": "OpenBot（nightly-labs）",
+      "category": "Agent/工具",
+      "summary": "本地优先的桌面应用，让多个常驻 AI 队友各自拥有独立工作区和消息队列，可跑在 Codex、Claude Code、Grok CLI、OpenCode 等之上，支持智能体互发消息、内嵌浏览器和 Computer Use。目前为开发预览版。",
+      "usageMode": "可本地部署",
+      "hardware": "macOS 13+/Windows 10+/Linux x64、arm64；需至少一个 agent CLI 账号",
+      "license": "PolyForm Noncommercial 1.0.0",
+      "licenseNote": "仅限非商用，属源码可见而非严格开源；0.1.11 及以前版本为 Apache-2.0。智能体默认完全权限，需谨慎",
+      "url": "https://github.com/nightly-labs/openbot"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://www.eigent.ai/ar/blog/reflection-beam-open-weight-model",
+    "https://github.com/Comfy-Org/ComfyUI"
+  ]
+}
