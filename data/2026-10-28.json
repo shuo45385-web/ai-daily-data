@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-28",
+  "title": "每日开源AI精选 · 2026-10-28",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Graphify",
+      "category": "Agent/工具",
+      "summary": "把代码库及其文档、SQL schema、配置、PDF 转成可查询的知识图谱，以 /graphify 技能形式接入 Claude Code、Cursor、Codex、Gemini CLI 等。代码用 tree-sitter 本地解析、不经 LLM，输出交互式 graph.html 与 GRAPH_REPORT.md，本周 GitHub 热度飙升。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.10+，无需 GPU",
+      "license": "Apache-2.0 / MIT",
+      "licenseNote": "README 另推付费托管版 Graphify Cloud，与开源版分开",
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "rank": 2,
+      "name": "Agent-Reach",
+      "category": "Agent/工具",
+      "summary": "给 AI Agent 用的命令行工具，让 Agent 只读地搜索和读取 B站、V2EX、GitHub、YouTube、小红书、雪球、Reddit 等平台内容，并为每个平台配置备用工具链。对中文互联网覆盖友好，今日 Python 趋势榜前列。",
+      "usageMode": "可本地部署",
+      "hardware": "无特殊要求",
+      "license": "MIT",
+      "licenseNote": "注意 PyPI 上同名 agent-reach 包并非本项目",
+      "url": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+      "rank": 3,
+      "name": "Meta Muse Spark Open",
+      "category": "大模型",
+      "summary": "Meta 于 10 月 15 日发布的开放权重模型，面向编程与 Agent 场景，MoE 架构，总参数约 816B，上下文 1M token，Meta 称其为目前最强的美国开放权重模型。",
+      "usageMode": "需服务器",
+      "hardware": "本地运行约需 1TB 内存，需多卡服务器",
+      "license": "",
+      "licenseNote": "许可证条款未能核实，使用前请查看官方页面",
+      "url": "https://www.evertune.ai/resources/ai-model-tracker"
+    },
+    {
+      "rank": 4,
+      "name": "Gemma 4 26B A4B（Google）",
+      "category": "大模型",
+      "summary": "Google Gemma 4 系列的 MoE 版本（26B 总参数、约 4B 激活），在本周免费模型榜单中升至第一，推理成本低，适合本地与低成本 API 使用。",
+      "usageMode": "可本地部署 / 在线体验",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证条款未能核实",
+      "url": "https://github.com/bhardwajRahul/free-ai-models/releases/tag/week-2026-10-26"
+    },
+    {
+      "rank": 5,
+      "name": "IBM Granite Switch 4.1 8B",
+      "category": "大模型",
+      "summary": "IBM 10 月 14 日发布，基于 Granite 4.1 8B 基座的开放权重模型，Apache 2.0 许可，8B 规模对消费级显卡友好，适合企业私有化部署。",
+      "usageMode": "可本地部署",
+      "hardware": "8B 模型，量化后消费级显卡可运行",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://dev.to/nirali_toolbit/open-weight-ai-models-you-can-run-yourself-october-2026-edition-3ndo"
+    },
+    {
+      "rank": 6,
+      "name": "Postiz",
+      "category": "Agent/工具",
+      "summary": "开源的社媒排期与自动化工具，支持 Instagram、YouTube、TikTok、X、LinkedIn 等多平台，内置 AI Copilot、AI 图片/视频生成与 Smart Agent，提供 API、MCP、CLI，并可对接 n8n/Make/Zapier。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "Docker 部署，需 PostgreSQL、Redis",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL：网络服务化需开源修改；自建需自行申请各平台开发者应用，AI 功能需自备模型 Key",
+      "url": "https://github.com/gitroomhq/postiz-app"
+    },
+    {
+      "rank": 7,
+      "name": "superpowers",
+      "category": "Agent/工具",
+      "summary": "面向编码 Agent 的技能框架与软件开发方法论，把规划、测试驱动、评审等流程固化成可复用的 skills，本周持续上榜 GitHub Trending。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未能核实",
+      "url": "https://github.com/obra/superpowers"
+    },
+    {
+      "rank": 8,
+      "name": "knowledge-work-plugins（Anthropic）",
+      "category": "Agent/工具",
+      "summary": "Anthropic 开源的知识工作者插件集合，主要用于 Claude Cowork，把销售、法务、财务等岗位流程封装成插件，可作为编写自己插件的参考。",
+      "usageMode": "在线体验 / 可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未能核实",
+      "url": "https://github.com/anthropics/knowledge-work-plugins"
+    },
+    {
+      "rank": 9,
+      "name": "claude-seo",
+      "category": "Agent/工具",
+      "summary": "面向 Claude Code 的 SEO 技能集，含大量子技能与子 Agent，可选接入实时 SEO 数据扩展，做站点审计、关键词与内容优化。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未能核实",
+      "url": "https://github.com/AgriciDaniel/claude-seo"
+    },
+    {
+      "rank": 10,
+      "name": "andrej-karpathy-skills",
+      "category": "Agent/工具",
+      "summary": "一个 CLAUDE.md 文件，基于对 LLM 编码常见陷阱的观察来约束 Claude Code 行为，零依赖、复制即用，本周获得数千星。",
+      "usageMode": "可本地部署",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "许可证未能核实",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/Graphify-Labs/graphify",
+    "https://github.com/Panniantong/Agent-Reach",
+    "https://github.com/gitroomhq/postiz-app",
+    "https://github.com/bhardwajRahul/free-ai-models/releases/tag/week-2026-10-26",
+    "https://www.evertune.ai/resources/ai-model-tracker",
+    "https://dev.to/nirali_toolbit/open-weight-ai-models-you-can-run-yourself-october-2026-edition-3ndo"
+  ]
+}
