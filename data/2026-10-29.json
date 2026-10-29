@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-29",
+  "title": "每日开源AI精选 · 2026-10-29",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "DeepSeek V4.1 Flash（DeepSeek）",
+      "category": "大模型",
+      "summary": "DeepSeek 新一代开放权重 MoE 模型，支持文本+图像输入和 100 万 token 上下文，采用编码器-解码器结构。各来源对总参数量说法不一（552B 至约 763B），预填充约 8B、解码约 16B 激活参数。MIT 许可，可商用。",
+      "usageMode": "需服务器",
+      "hardware": "官方权重约 510GB（FP8/INT8/BF16 混合），需多卡大显存服务器；普通用户建议走 API",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+    },
+    {
+      "rank": 2,
+      "name": "MiniMax M3.1 Flash",
+      "category": "大模型",
+      "summary": "MiniMax 于 10 月 23 日放出权重的 MoE 大模型，约 428B 总参数、约 23B 激活，上下文约 100 万 token，权重下载约 252GB。API 已于 10 月 19 日上线，开放权重可自行部署。",
+      "usageMode": "需服务器 / 在线体验（API）",
+      "hardware": "权重约 252GB，需多卡大显存服务器",
+      "license": "MiniMax Community License",
+      "licenseNote": "非标准开源许可：商用需标注 Built with MiniMax 并通知 MiniMax，年收入超 2000 万美元需书面授权，禁止军事用途（细节以仓库 LICENSE 为准）",
+      "url": "https://huggingface.co/MiniMaxAI"
+    },
+    {
+      "rank": 3,
+      "name": "See-through（shitagaki-lab）",
+      "category": "图像",
+      "summary": "把单张动漫角色插画自动拆分为最多 23 个语义图层（头发、脸、眼睛、衣服等）并补全被遮挡部分，导出分层 PSD，便于做 2.5D / Live2D 类素材。SIGGRAPH 2026 论文，已提供训练脚本，社区有 ComfyUI 插件。",
+      "usageMode": "可本地部署 / 在线体验（HF Spaces、魔搭）",
+      "hardware": "bf16 约 12–16GB 显存；NF4 量化或分块交换可降到约 8GB",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/shitagaki-lab/see-through"
+    },
+    {
+      "rank": 4,
+      "name": "Cloudflare security-audit-skill",
+      "category": "Agent/工具",
+      "summary": "Cloudflare 开源的编码 Agent 安全审计技能：六阶段流程（侦察、覆盖式挖掘、候选验证、结构化输出、独立复核、报告），发现与验证由不同 Agent 完成，产出机器可读的 findings.json，多轮运行可累积发现更多漏洞。本周 GitHub 增长最快的项目之一。",
+      "usageMode": "可本地部署（配合 Claude Code 等编码 Agent）",
+      "hardware": "需支持工具调用和并行子 Agent 的模型，Node.js；执行目标代码需 OS 级沙箱",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/cloudflare/security-audit-skill"
+    },
+    {
+      "rank": 5,
+      "name": "Free Claude Code（Alishahryar1）",
+      "category": "Agent/工具",
+      "summary": "让 Claude Code、Codex、OpenCode、Aider 等编码 Agent 接入 61 种模型提供商（含免费、付费和本地模型），带管理界面、失败自动切换备用模型、可选省 token 工具，并支持 Discord/Telegram 和语音输入。",
+      "usageMode": "可本地部署",
+      "hardware": "无特殊要求（本地模型另需显卡）",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：修改后通过网络提供服务需开源；与 Anthropic 无关联的第三方项目",
+      "url": "https://github.com/Alishahryar1/free-claude-code"
+    },
+    {
+      "rank": 6,
+      "name": "Heretic（p-e-w）",
+      "category": "大模型",
+      "summary": "全自动移除语言模型安全对齐（“去审查”）的工具：基于定向消融（abliteration）加 Optuna TPE 参数搜索，同时最小化拒答率和与原模型的 KL 散度，支持多数稠密模型、多模态和部分 MoE，可 4-bit 量化省显存并一键上传 HF。",
+      "usageMode": "可本地部署",
+      "hardware": "取决于目标模型；支持 bitsandbytes 4-bit 量化降低显存，Python 3.10+、PyTorch 2.2+",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0；去除安全对齐的模型存在滥用风险，请遵守当地法规与模型自身许可",
+      "url": "https://github.com/p-e-w/heretic"
+    },
+    {
+      "rank": 7,
+      "name": "vLLM",
+      "category": "其他",
+      "summary": "高吞吐、省显存的大模型推理与服务引擎：PagedAttention、连续批处理、前缀缓存、推测解码，兼容 OpenAI 接口，支持 200+ 模型架构和 FP8/INT4/GPTQ/AWQ/GGUF 量化，覆盖 NVIDIA、AMD、Intel、TPU 等硬件。本周仍在热榜。",
+      "usageMode": "需服务器 / 可本地部署",
+      "hardware": "需 GPU（NVIDIA/AMD/Intel 等）或 CPU 后端，取决于所跑模型",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/vllm-project/vllm"
+    },
+    {
+      "rank": 8,
+      "name": "Taste Skill（Leonxlnx）",
+      "category": "Agent/工具",
+      "summary": "给编码 Agent 用的前端设计“品味”技能：从 20 种设计方向中选型，用开放图库的真实图片，并在浏览器三种宽度下自检、最多三轮修复，让 AI 生成的页面不再千篇一律；2.1 版新增后台/仪表盘模式，兼容 React/Vue/Svelte。",
+      "usageMode": "可本地部署（配合 Claude Code、Codex）",
+      "hardware": "Node 22+ 与 Chrome/Edge/Chromium；一次构建约 30–45 分钟、数十万 token",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/Leonxlnx/taste-skill"
+    },
+    {
+      "rank": 9,
+      "name": "LLaDA-Image / Turbo（含 FP8 版）",
+      "category": "图像",
+      "summary": "基于扩散式语言模型思路的文生图模型系列，提供标准、Turbo 以及 FP8 量化共四个 HF 版本，据一篇对比文章称模型卡均标注 Apache-2.0。该信息仅来自单一二手来源，使用前请到 Hugging Face 核对。",
+      "usageMode": "可本地部署 / 需服务器",
+      "hardware": "未知",
+      "license": "Apache-2.0（据二手来源，待核实）",
+      "licenseNote": "许可证与参数信息来自单一来源，请以官方模型卡为准",
+      "url": "https://huggingface.co/models?search=LLaDA-Image"
+    },
+    {
+      "rank": 10,
+      "name": "Claude-Red（SnailSploit）",
+      "category": "Agent/工具",
+      "summary": "面向 Claude Skills 体系的进攻性安全技能合集，覆盖渗透测试相关工作流，本周 GitHub 新增约 2,000 星。仅适用于获授权的安全测试与攻防演练。",
+      "usageMode": "可本地部署（配合 Claude 技能体系）",
+      "hardware": "",
+      "license": "",
+      "licenseNote": "仅限获授权的安全测试；许可证未确认，使用前请查看仓库",
+      "url": "https://github.com/SnailSploit/Claude-Red"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/p-e-w/heretic",
+    "https://github.com/shitagaki-lab/see-through",
+    "https://github.com/cloudflare/security-audit-skill",
+    "https://github.com/Alishahryar1/free-claude-code",
+    "https://github.com/vllm-project/vllm",
+    "https://github.com/Leonxlnx/taste-skill",
+    "https://aicybr.com/blog/minimax-m31-flash-open-weights-428b-license-local-deployment",
+    "https://getdeploying.com/llms/deepseek-v4.1-flash",
+    "https://www.orcarouter.ai/blog/qwen-image-2-1-vs-llada-image"
+  ]
+}
