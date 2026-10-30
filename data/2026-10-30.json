@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-30",
+  "title": "每日开源AI精选 · 2026-10-30",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Mistral Large 4（Le Chonk，权重正式开放）",
+      "category": "大模型",
+      "summary": "Mistral 于10月29日在 Hugging Face 正式放出 Large 4 的开放权重，总参数约1万亿、每次激活约520亿，主打编码与网络安全，据报道 Terminal-Bench 4.0 得分约41%。官方同时提供量化版。10月25日曾收录其预览，此次为权重正式开放的重大更新。",
+      "usageMode": "需服务器",
+      "hardware": "量化版需4张 NVIDIA B200/B300",
+      "license": "",
+      "licenseNote": "",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/"
+    },
+    {
+      "rank": 2,
+      "name": "Hindsight（vectorize-io）",
+      "category": "Agent/工具",
+      "summary": "会“随时间学习”的Agent记忆系统：保留事实、经历、观察和心智模型，提供 retain/recall/reflect 三种操作，支持语义、关键词、图和时间多策略检索。官方称在 LongMemEval 上达到领先水平，提供 MCP、Python/Node/Go 客户端和60多个集成。",
+      "usageMode": "可本地部署（Docker/pip/Helm）",
+      "hardware": "需 PostgreSQL+pgvector 和 LLM 接口（可用本地模型）",
+      "license": "MIT",
+      "licenseNote": "",
+      "url": "https://github.com/vectorize-io/hindsight"
+    },
+    {
+      "rank": 3,
+      "name": "QwenPaw（agentscope-ai）",
+      "category": "Agent/工具",
+      "summary": "阿里 AgentScope 团队的个人AI助理，可本地或云端部署，接入钉钉、飞书、微信、Discord、Telegram、QQ 等渠道。带三层记忆、多Agent、技能与插件市场、MCP，并有沙箱与技能扫描等安全机制。",
+      "usageMode": "可本地部署 / 在线体验（阿里云/魔搭一键部署）",
+      "hardware": "",
+      "license": "Apache-2.0",
+      "licenseNote": "",
+      "url": "https://github.com/agentscope-ai/QwenPaw"
+    },
+    {
+      "rank": 4,
+      "name": "Locally Uncensored",
+      "category": "图像",
+      "summary": "桌面端一体化本地AI工作室：本地聊天、通过 ComfyUI 生成图像与视频（含修图、LoRA）、带差异预览的编码Agent，以及 MCP 与本地 OpenAI 兼容API。模型管理器会提示哪些模型适配你的显卡，支持 NVIDIA/AMD/Intel。",
+      "usageMode": "可本地部署（也有可选付费云）",
+      "hardware": "聊天：3B模型8GB内存可跑；图像约6–8GB显存起；Wan/HunyuanVideo 约12GB+",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：修改后对外提供网络服务需开源",
+      "url": "https://github.com/PurpleDoubleD/locally-uncensored"
+    },
+    {
+      "rank": 5,
+      "name": "OpenViking（火山引擎）",
+      "category": "Agent/工具",
+      "summary": "面向AI Agent的上下文数据库，把知识、记忆和技能统一放进 viking:// 虚拟文件系统，Agent可用 ls/read/grep 等命令浏览，并分层（L0/L1/L2）加载以省Token。可对接 Claude Code、Codex、Cursor 等，官方自测 LoCoMo 准确率80–83%。",
+      "usageMode": "可本地部署 / 在线体验（火山引擎托管）",
+      "hardware": "需嵌入模型和VLM的模型服务",
+      "license": "AGPL-3.0（部分组件 Apache-2.0/MIT）",
+      "licenseNote": "主体为AGPLv3；未经书面授权禁止整体改写后重新开源",
+      "url": "https://github.com/volcengine/OpenViking"
+    },
+    {
+      "rank": 6,
+      "name": "Open Notebook（lfnovo）",
+      "category": "Agent/工具",
+      "summary": "开源、可自托管的 NotebookLM 替代品：支持 PDF、视频、音频、网页和 Office 文档，基于来源带引用的对话，还能生成1–4人的多说话人播客。兼容20多家模型服务商，包括 Ollama、LM Studio、vLLM。",
+      "usageMode": "可本地部署（Docker Compose）",
+      "hardware": "本地模型视所选而定",
+      "license": "MIT",
+      "licenseNote": "默认端口无密码，局域网内使用请绑定127.0.0.1或设置密码",
+      "url": "https://github.com/lfnovo/open-notebook"
+    },
+    {
+      "rank": 7,
+      "name": "PPT Master（hugohe3）",
+      "category": "Agent/工具",
+      "summary": "让AI Agent把文档或主题转成原生可编辑 PowerPoint 的工作流：形状、图表、表格、公式均为可编辑对象，支持动画、演讲备注配音、套用自有模板。可配合 Claude Code、Cursor、Codex CLI 等使用。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.10–3.14，需带Agent能力的AI工具",
+      "license": "MIT",
+      "licenseNote": "PDF转换依赖的PyMuPDF为AGPL-3.0",
+      "url": "https://github.com/hugohe3/ppt-master"
+    },
+    {
+      "rank": 8,
+      "name": "Shannon（KeygraphHQ）",
+      "category": "Agent/工具",
+      "summary": "面向Web应用和API的AI渗透测试Agent：先分析源码找攻击路径，再用浏览器自动化实际利用，只报告有可复现PoC的漏洞。覆盖注入、XSS、SSRF、认证与授权问题，输出PDF/Markdown/SARIF，可接入GitHub Actions。",
+      "usageMode": "可本地部署（Docker）",
+      "hardware": "需Docker、Node 18+及LLM密钥（也支持本地模型）；一次完整扫描约1–1.5小时",
+      "license": "AGPL-3.0",
+      "licenseNote": "仅可用于自有或已授权系统，会执行真实攻击，勿对生产环境使用",
+      "url": "https://github.com/KeygraphHQ/shannon"
+    },
+    {
+      "rank": 9,
+      "name": "claude-mem（thedotmack）",
+      "category": "Agent/工具",
+      "summary": "给AI编码Agent的持久记忆插件：自动捕获会话中的工具使用，压缩成语义摘要，并在后续会话注入。支持 Claude Code、Codex、Gemini、OpenCode 等，使用 SQLite+Chroma 混合检索，带本地网页查看器。",
+      "usageMode": "可本地部署",
+      "hardware": "Node.js 20+",
+      "license": "Apache-2.0",
+      "licenseNote": "默认登录有托管观察器的30天试用，可改用自己的 OpenRouter/Gemini 密钥",
+      "url": "https://github.com/thedotmack/claude-mem"
+    },
+    {
+      "rank": 10,
+      "name": "OpenBot（CopilotKit）",
+      "category": "Agent/工具",
+      "summary": "开源AI同事平台模板：每个Bot拥有独立浏览器、文件和工具，任何支持 AG-UI 协议的Agent（LangGraph、CrewAI、Mastra 等）都能接入。网关用CEL策略检查每个操作并留审计记录，浏览器遇到登录/2FA时可人工接管。",
+      "usageMode": "可本地部署（Docker/Helm）",
+      "hardware": "需Docker、Bun 1.4+和模型密钥",
+      "license": "MIT",
+      "licenseNote": "仍为 beta；默认单用户模式即管理员，对外部署前需配置登录和TLS",
+      "url": "https://github.com/CopilotKit/OpenBot"
+    }
+  ],
+  "sources": [
+    "https://github.com/trending?since=daily",
+    "https://github.com/trending?since=weekly",
+    "https://github.com/trending/python?since=daily",
+    "https://github.com/trending/python?since=weekly",
+    "https://github.com/trending/typescript?since=daily",
+    "https://mistral.ai/news/mistral-large-4-oss/",
+    "https://thenextweb.com/news/mistral-large-4-open-weights-release"
+  ]
+}
