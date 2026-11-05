@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-05",
+  "title": "每日开源AI精选 · 2026-11-05",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "magpie（yetone）",
+      "category": "Agent/工具",
+      "summary": "跨平台本地 AI 编码网关与桌面客户端。它把 Claude Code、Codex、Gemini CLI、OpenCode 等工具接到不同模型服务，并可在一个额度用尽后切换到下一个已配置账户；适合同时使用多家模型服务、又不想反复改各个 CLI 配置的开发者。",
+      "usageMode": "可本地部署（Windows/macOS/Linux/Docker）",
+      "hardware": "普通开发电脑即可；本身不运行大模型",
+      "license": "MIT",
+      "licenseNote": "使用第三方模型账户和服务时，仍需遵守对应服务的条款与额度限制。",
+      "url": "https://github.com/yetone/magpie"
+    },
+    {
+      "rank": 2,
+      "name": "Elephant-Goldfish Model（Google）",
+      "category": "Agent/工具",
+      "summary": "Google 工程团队开源的设计评审工作流插件：Elephant 负责利用完整项目上下文起草规格，Goldfish 则以“零上下文审稿人”视角审查方案和引用材料，从而更容易发现隐含假设与设计盲点。尤其适合复杂需求进入编码前的方案阶段。",
+      "usageMode": "可本地部署为编码 Agent 插件",
+      "hardware": "需已可用的编码 Agent 与模型服务",
+      "license": "",
+      "licenseNote": "请按仓库 LICENSE 和所接入模型服务的要求使用。",
+      "url": "https://github.com/google/elephant-goldfish-model"
+    },
+    {
+      "rank": 3,
+      "name": "TokenEconomizer（Microsoft Research / Berkeley）",
+      "category": "Agent/工具",
+      "summary": "面向编码 Agent 的黑盒成本控制研究与实现。它不要求修改底层模型，而是利用历史经验判断何时应该继续、切换策略或停止，让 Agent 在维持任务效果的前提下减少无效 Token 消耗；对长链路修复、自动化编码尤其有价值。",
+      "usageMode": "可本地部署（Python 3.10+）",
+      "hardware": "普通开发环境；需接入你正在使用的编码 Agent/模型服务",
+      "license": "Apache-2.0",
+      "licenseNote": "项目为研究型实现，接入生产流程前建议先在真实任务集上评测。",
+      "url": "https://github.com/microsoft/TokenEconomizer"
+    },
+    {
+      "rank": 4,
+      "name": "agent-memory（Tigerless Labs）",
+      "category": "Agent/工具",
+      "summary": "给 Claude Code、Codex CLI 等 Agent 共用的长期记忆运行时。它以 Markdown 作为可审阅、可迁移的事实源，SQLite 仅作可重建索引；检索结果返回文件路径而不是把整段历史硬塞回上下文，既利于控制 Token，也便于人工维护项目知识。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.12+；无需单独的云端 API 密钥",
+      "license": "",
+      "licenseNote": "适合团队或多 Agent 共用记忆库时配合版本管理保存。",
+      "url": "https://github.com/tigerless-labs/agent-memory"
+    },
+    {
+      "rank": 5,
+      "name": "Strands Decider（Strands Labs）",
+      "category": "大模型",
+      "summary": "面向 Agent 工作流的小型快速“决策模型”。它定位不是长文本生成，而是为 Agent 的路由、工具选择、步骤判断等环节提供低延迟决策能力；可把昂贵的大模型调用留给真正需要推理和生成的步骤。",
+      "usageMode": "可本地部署",
+      "hardware": "请按模型权重与推理后端文档配置",
+      "license": "",
+      "licenseNote": "适合作为 Agent 编排中的辅助决策组件，而非通用聊天模型替代品。",
+      "url": "https://github.com/strands-labs/strands-decider"
+    },
+    {
+      "rank": 6,
+      "name": "Laya（Receptron）",
+      "category": "大模型",
+      "summary": "面向结构化决策的开源 System-1 模型 Node.js/TypeScript 运行库。输入工单、邮件或 JSON 状态后，可一次前向推理给出多选、评分、真假判断及校准概率；基于 ONNX Runtime，不必在运行时安装 Python 或 PyTorch。",
+      "usageMode": "可本地部署（npm）",
+      "hardware": "Node.js 20+；模型 fp32 权重约 1.7GB",
+      "license": "",
+      "licenseNote": "适合分类、规则分流、风险判断等结构化任务，不用于生成长文本。",
+      "url": "https://github.com/receptron/laya"
+    },
+    {
+      "rank": 7,
+      "name": "Project Maya（mw00）",
+      "category": "大模型",
+      "summary": "面向个人显卡的本地大模型运行项目，提供对 GLM、DeepSeek、MiniMax 等量化权重的本地聊天、图片能力，以及 OpenAI/Anthropic 兼容 API。支持单张 NVIDIA GPU 到多 GPU，也覆盖 AMD 和 Windows，适合希望把开发工具接到本地模型的用户。",
+      "usageMode": "可本地部署",
+      "hardware": "NVIDIA GPU；不同量化模型的显存需求差异较大，需按仓库说明选择",
+      "license": "",
+      "licenseNote": "模型权重的许可与项目代码许可可能不同，商用前应分别核对。",
+      "url": "https://github.com/mw00/project-maya"
+    },
+    {
+      "rank": 8,
+      "name": "Folkbench",
+      "category": "评测/工具",
+      "summary": "聚焦模型中转服务实际可用性的开源评测与切换工具。它提供实测榜单和客户端，帮助开发者横向比较不同渠道在速度、稳定性和模型表现上的差异；对于需要选择模型服务、核验代理质量的场景很实用。",
+      "usageMode": "可本地部署 / 在线查看",
+      "hardware": "普通开发电脑即可",
+      "license": "",
+      "licenseNote": "榜单结果会随测试环境和服务状态变化，生产决策应自行复测。",
+      "url": "https://github.com/Folkbench/folkbench"
+    },
+    {
+      "rank": 9,
+      "name": "Cadence（Pragma Research）",
+      "category": "机器学习",
+      "summary": "尝试用“持续收敛”的平衡神经网络替代传统单次前向计算：网络在观察条件下达到平衡后给出动作，并通过两次收敛差异学习。它更偏研究与实验，但对持续学习、记忆与可修复智能体方向有参考价值。",
+      "usageMode": "可本地部署（Python）",
+      "hardware": "Python 3.11+；NumPy 为主，具体实验规模视任务而定",
+      "license": "GPL-3.0",
+      "licenseNote": "GPL-3.0 对衍生项目分发有开源要求。",
+      "url": "https://github.com/muellerberndt/cadence"
+    },
+    {
+      "rank": 10,
+      "name": "Dossier（AienTech）",
+      "category": "AI 应用",
+      "summary": "可自托管的 AI 求职工作台：维护一份个人资料，针对每个职位生成定制简历和求职信，并跟踪从草稿到 Offer 的申请流程。项目提供 Docker 镜像，适合关注“AI + 私有数据”应用落地的开发者参考其产品和部署架构。",
+      "usageMode": "可本地部署（Docker）",
+      "hardware": "Docker、PostgreSQL；生成能力需配置模型服务",
+      "license": "AGPL-3.0",
+      "licenseNote": "AGPL-3.0：修改后若通过网络向他人提供服务，通常需要提供对应源码。",
+      "url": "https://github.com/AienTech/dossier"
+    }
+  ],
+  "sources": [
+    "https://github.com/yetone/magpie",
+    "https://github.com/google/elephant-goldfish-model",
+    "https://github.com/microsoft/TokenEconomizer",
+    "https://github.com/tigerless-labs/agent-memory",
+    "https://github.com/strands-labs/strands-decider",
+    "https://github.com/receptron/laya",
+    "https://github.com/mw00/project-maya",
+    "https://github.com/Folkbench/folkbench",
+    "https://github.com/muellerberndt/cadence",
+    "https://github.com/AienTech/dossier"
+  ],
+  "selectionNote": "由 AI 根据项目文档、适用性、开源可部署性及近期活跃度人工筛选；不是仅按 GitHub 标签或星标自动抓取。"
+}
