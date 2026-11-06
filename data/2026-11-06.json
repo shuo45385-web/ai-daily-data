@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-06",
+  "title": "每日开源AI精选 · 2026-11-06",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "OXR（SoMarkAI）",
+      "category": "文档智能",
+      "summary": "面向 Agent 的开源文档解析模型，主打把复杂文档转成结构化、可供后续 Agent 使用的数据。项目提供在线演示、免费 API 与模型权重入口，适合需要把 PDF、扫描件或版式复杂文档接入 RAG、知识库或自动化流程的团队。",
+      "usageMode": "可本地部署 / 可调用在线 API",
+      "hardware": "本地推理的显存要求需按模型卡与部署文档确认",
+      "license": "",
+      "licenseNote": "生产使用前应核对模型权重与代码的分别许可。",
+      "url": "https://github.com/SoMarkAI/OXR"
+    },
+    {
+      "rank": 2,
+      "name": "AntOmniEvo（Ant Research）",
+      "category": "Agent/工具",
+      "summary": "蚂蚁研究团队开源的自动进化框架。开发者把可调内容和评价“好坏”的标准定义为目录中的 tunable artifacts，框架负责循环，AI Agent 负责修改与尝试，最终交付经评估优化的技能、提示、脚本或其他工程产物；很适合研究 Agent 如何持续改进工作流。",
+      "usageMode": "可本地部署",
+      "hardware": "需可用的 Agent 模型服务与可重复执行的评测环境",
+      "license": "Apache-2.0",
+      "licenseNote": "评价函数质量决定进化结果，建议先从可验证的小任务开始。",
+      "url": "https://github.com/ant-research/AntOmniEvo"
+    },
+    {
+      "rank": 3,
+      "name": "EvoOntology（RUC DataLab）",
+      "category": "Agent/工具",
+      "summary": "为数据 Agent 设计的自进化本体层，提供 MCP 兼容接口和 Codex 插件。它把领域概念、关系与可执行知识作为可演化层，让 Agent 在处理数据任务时不只依赖临时上下文，适合研究企业数据问答、数据治理与 Agent 长期知识沉淀。",
+      "usageMode": "可本地部署",
+      "hardware": "需 Python/数据服务环境及所接入的模型服务",
+      "license": "",
+      "licenseNote": "涉及企业数据时，应先做好数据权限、脱敏与审计。",
+      "url": "https://github.com/ruc-datalab/EvoOntology"
+    },
+    {
+      "rank": 4,
+      "name": "Content Studio / design-agent（LangChain）",
+      "category": "Agent/工具",
+      "summary": "LangChain 把其内部使用的设计 Agent 开源：团队成员可在 Slack 里提交需求和素材，Agent 在独立沙箱中用技能、浏览器、FFmpeg、动画工具等生成品牌一致的广告、图片或短片，并把成品回传原线程。仓库很适合参考“多工具创意 Agent”的完整工程结构。",
+      "usageMode": "可自行部署与改造",
+      "hardware": "需模型服务、沙箱运行环境及对应的媒体处理依赖",
+      "license": "",
+      "licenseNote": "接入 Slack、素材库和第三方工具前需分别配置权限。",
+      "url": "https://github.com/langchain-ai/design-agent"
+    },
+    {
+      "rank": 5,
+      "name": "FlashRSI（RUC NLPIR）",
+      "category": "评测/研究",
+      "summary": "Agent 递归自我改进（RSI）的统一实验框架。项目把 13 种 RSI 算法、30 个基准与 Claude Code、Codex、OpenCode 等 7 种运行框架接到同一实验接口，还记录改动资源与产生改动的轨迹，适合复现实验、横向对比或开发自己的 Agent 改进方法。",
+      "usageMode": "可本地部署",
+      "hardware": "取决于选用的 Agent、模型及基准；完整实验可能消耗较多 Token",
+      "license": "",
+      "licenseNote": "建议先以小基准验证成本和可重复性，再扩大实验规模。",
+      "url": "https://github.com/RUC-NLPIR/FlashRSI"
+    },
+    {
+      "rank": 6,
+      "name": "TransWork（树456）",
+      "category": "AI 应用",
+      "summary": "企业级桌面 AI Agent 工作台，把技能、知识库和数字员工放到同一平台。项目支持 Docker Compose 私有部署、桌面和浏览器入口、模型统一网关、角色权限与审计日志，适合想搭建内部 AI 员工平台的团队作为参考或二次开发基础。",
+      "usageMode": "可本地部署（Docker Compose）",
+      "hardware": "服务器资源按并发用户、知识库和所用模型决定",
+      "license": "",
+      "licenseNote": "上线前应配置鉴权、模型密钥管理和审计策略。",
+      "url": "https://github.com/shuyu-labs/transwork"
+    },
+    {
+      "rank": 7,
+      "name": "Locals（Generated Computers）",
+      "category": "本地推理",
+      "summary": "为多 Agent 并发场景优化的本地模型服务器，项目强调工具调用、长会话与同时运行多个 Agent，而不只是普通聊天。它面向 OpenCode、OpenHands、Cline 等工具，主打在 Mac 上以更高吞吐运行多个 Agent，适合本地 AI 编程与私有化实验。",
+      "usageMode": "可本地部署（Mac）",
+      "hardware": "Apple Silicon Mac；实际并发和模型规模取决于统一内存容量",
+      "license": "",
+      "licenseNote": "项目针对 macOS，本地模型与外部 Agent 的兼容性需按文档核对。",
+      "url": "https://github.com/Generated-Computers/Locals"
+    },
+    {
+      "rank": 8,
+      "name": "Nautilo（AgentSea）",
+      "category": "AI 应用",
+      "summary": "面向团队协作的开源 AI 工作空间：成员和各自的 Genies 可在同一 Room 里共同写作、研究和制作内容。它支持自托管、可自选模型与访问规则，并提供桌面、移动端、CLI 以及 Writer、Sheets、Slides、Board 等一方应用；非常适合参考“可控私有 AI 协作平台”的产品架构。",
+      "usageMode": "可本地部署 / 可部署到 VPS 或数据中心",
+      "hardware": "本地体验需 Docker Desktop 与模型 API Key；服务端规格视团队规模而定",
+      "license": "MIT",
+      "licenseNote": "当前处于 alpha 阶段，生产使用前应评估稳定性与数据隔离。",
+      "url": "https://github.com/agentsea/nautilo"
+    },
+    {
+      "rank": 9,
+      "name": "Recursia（CocaCola Lab）",
+      "category": "具身智能",
+      "summary": "机器人操作的递归自我改进框架。它根据源任务反馈改进可执行 Python 技能栈，再把冻结后的技能栈复用到新的任务组合；改进结果保存为程序而不是更新模型权重。仓库提供 Franka FR3 真机快速开始及 LIBERO-90 等仿真实验。",
+      "usageMode": "可本地部署（仿真 / 真机）",
+      "hardware": "仿真环境即可研究；真机实验需 Franka FR3 与对应机械手",
+      "license": "",
+      "licenseNote": "真实机器人操作存在安全风险，应在受控环境与授权设备上运行。",
+      "url": "https://github.com/cocacola-lab/Recursia"
+    },
+    {
+      "rank": 10,
+      "name": "Orbia（WorldBench）",
+      "category": "评测/研究",
+      "summary": "用于检验生成视频世界模型是否保持一致三维世界的基准。给定图像、场景描述和相机轨迹后，它评估视频生成模型对 3D 几何与交互世界一致性的保持能力，并公开了论文、数据集与 Apache-2.0 代码；适合关注世界模型和可交互视频生成的人跟进。",
+      "usageMode": "可本地部署用于评测",
+      "hardware": "评测或运行视频世界模型通常需要较高显存 GPU",
+      "license": "Apache-2.0",
+      "licenseNote": "基准结果应结合所测模型版本、采样参数和硬件环境解读。",
+      "url": "https://github.com/worldbench/Orbia"
+    }
+  ],
+  "sources": [
+    "https://github.com/SoMarkAI/OXR",
+    "https://github.com/ant-research/AntOmniEvo",
+    "https://github.com/ruc-datalab/EvoOntology",
+    "https://github.com/langchain-ai/design-agent",
+    "https://github.com/RUC-NLPIR/FlashRSI",
+    "https://github.com/shuyu-labs/transwork",
+    "https://github.com/Generated-Computers/Locals",
+    "https://github.com/agentsea/nautilo",
+    "https://github.com/cocacola-lab/Recursia",
+    "https://github.com/worldbench/Orbia"
+  ],
+  "selectionNote": "基于候选项目 README 的功能、部署方式、开源条件和近期活跃度人工筛选；已避开前一日重复项目。"
+}
