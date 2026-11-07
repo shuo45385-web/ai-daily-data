@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-07",
+  "title": "每日开源AI精选 · 2026-11-07",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "WeMM-Embedding（腾讯微信视觉团队）",
+      "category": "多模态/RAG",
+      "summary": "腾讯微信视觉团队发布的通用多模态 Embedding 模型家族，为文本、图片等内容提供统一向量表示。它适合用于跨模态检索、图文 RAG、相似内容召回和内容理解，是搭建中文或多模态知识库时值得重点关注的底座模型。",
+      "usageMode": "可本地部署模型 / 可从 Hugging Face 获取权重",
+      "hardware": "向量推理可按吞吐需求使用 CPU 或 GPU；批量建立索引建议使用 GPU",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0；使用模型权重前仍应核对模型卡中的具体条件。",
+      "url": "https://github.com/Tencent/WeMM-Embedding"
+    },
+    {
+      "rank": 2,
+      "name": "NorthCUA（Beipo AI）",
+      "category": "Computer Use",
+      "summary": "开源的桌面与网页 Computer Use harness：接入自己的模型后执行任务、观察运行过程并检查结果。项目把“模型负责决策、框架负责执行与可观测性”拆开，适合做浏览器/桌面自动化 Agent 的评测、原型和工程实验。",
+      "usageMode": "可本地部署",
+      "hardware": "需要可用的视觉/语言模型服务；浏览器或桌面自动化任务会消耗额外计算资源",
+      "license": "",
+      "licenseNote": "Computer Use 应仅在自有或明确授权的账户与系统中使用。",
+      "url": "https://github.com/beipo-ai/NorthCUA"
+    },
+    {
+      "rank": 3,
+      "name": "eve Software Factory Template（Vercel Labs）",
+      "category": "Agent/工具",
+      "summary": "Vercel 的 Foreman 软件工厂模板，把 AI Agent 放入开发流程的多个阶段：从 GitHub 或 Linear 接收任务，经过四个工作站后产出经过审阅的草稿 PR，人保留关键判断。对想把 Agent 纳入团队研发流程的人，这是一份很完整的工程化参考。",
+      "usageMode": "可自行部署与改造",
+      "hardware": "需 Agent 模型服务以及 GitHub/Linear 等集成环境",
+      "license": "MIT",
+      "licenseNote": "应设置分支保护、最小权限令牌和人工审查，避免 Agent 直接合并生产代码。",
+      "url": "https://github.com/vercel-labs/eve-software-factory-template"
+    },
+    {
+      "rank": 4,
+      "name": "Open Intelligent UI（Thesys）",
+      "category": "生成式 UI",
+      "summary": "对“智能交互界面”体验的开源实现：面对“规划一天行程”这类请求，应用返回可编辑的地图、图片、行程等交互式界面，而不只是纯文本。它基于 OpenUI 标准，适合希望在自己的产品中落地生成式界面、可视化结果和可编辑工作流的前端团队。",
+      "usageMode": "可本地部署 / 可二次开发",
+      "hardware": "普通前端开发环境；生成内容所需模型由接入方决定",
+      "license": "",
+      "licenseNote": "项目声明与 OpenAI 无关联；请按仓库 LICENSE 和所用模型服务条款使用。",
+      "url": "https://github.com/thesysdev/open-intelligent-ui"
+    },
+    {
+      "rank": 5,
+      "name": "Indra（Datalab）",
+      "category": "文档智能",
+      "summary": "Datalab 开源的文档智能模型项目，覆盖 OCR 与文档理解场景，目标是用高质量模型把复杂文档转为可用数据。它同时提供代码与模型入口，适合做票据、报告、表格和扫描 PDF 的结构化抽取，也是 RAG 数据预处理的重要候选。",
+      "usageMode": "可本地部署",
+      "hardware": "文档批处理和大规模推理建议使用 GPU",
+      "license": "代码 Apache-2.0；模型 OpenRAIL-M",
+      "licenseNote": "模型许可与代码许可不同，商用或对外服务前需重点核对 OpenRAIL-M 条款。",
+      "url": "https://github.com/datalab-to/indra"
+    },
+    {
+      "rank": 6,
+      "name": "EvalForge",
+      "category": "评测/工具",
+      "summary": "把 AI 评测结果转成可审查的发布证据与策略门禁。它可导入 promptfoo、Ragas、DeepEval 等结果，执行版本化质量策略，并输出 JSON、JUnit、SARIF 和 Markdown 报告接入现有 CI；很适合给 RAG 应用和 AI 助手增加“上线前质量闸门”。",
+      "usageMode": "可本地部署（Python 3.9+）",
+      "hardware": "普通 CI 环境即可；评测成本取决于接入的模型和测试集",
+      "license": "MIT",
+      "licenseNote": "应把评测集与质量阈值版本化，避免只看一次性主观结果。",
+      "url": "https://github.com/jsdhwfmax/EvalForge"
+    },
+    {
+      "rank": 7,
+      "name": "Memoket KITE",
+      "category": "Agent/工具",
+      "summary": "面向 Agent 长期记忆的开源方案，主张“追踪线索而不是最近向量匹配”，并采用非向量检索路线以降低上下文消耗。项目公开了在 LoCoMo 和 LongMemEval-S 上的评测说明，适合研究多轮任务、长期关系与事件链记忆。",
+      "usageMode": "可本地部署",
+      "hardware": "需要配置项目要求的模型服务；无需专门的向量数据库路线",
+      "license": "",
+      "licenseNote": "基准成绩来自项目说明，实际效果应在自身数据和任务上复测。",
+      "url": "https://github.com/memoket/memoket-kite"
+    },
+    {
+      "rank": 8,
+      "name": "OpenVLHarness（UCLA NLP）",
+      "category": "评测/研究",
+      "summary": "针对多模态 Agent 真实世界工具使用能力的评测框架，重点覆盖视觉理解、工具调用和多模态记忆。它把“看懂界面、记住上下文、正确调用工具”放进同一评测设定，适合做视觉 Agent、GUI Agent 与多模态模型的能力对比。",
+      "usageMode": "可本地部署用于评测",
+      "hardware": "需部署或调用视觉语言模型；完整基准建议使用 GPU",
+      "license": "",
+      "licenseNote": "研究基准的分数应结合所用模型版本、提示词和工具配置解释。",
+      "url": "https://github.com/uclanlp/OpenVLHarness"
+    },
+    {
+      "rank": 9,
+      "name": "EverRoom（NxcoreAI）",
+      "category": "AI 应用",
+      "summary": "本地优先的个人上下文工作空间，把文件、对话、记忆和 AI Agent 统一在一个可关联的环境中。它面向希望把私人资料和 Agent 工作流沉淀到自己设备/服务器的用户，适合作为“个人知识库 + Agent 记忆”产品形态的参考。",
+      "usageMode": "可本地部署",
+      "hardware": "普通开发电脑即可；本地模型或大量文件索引会提高内存与存储需求",
+      "license": "",
+      "licenseNote": "接入个人资料前应先检查数据目录、同步范围和模型 API 的隐私设置。",
+      "url": "https://github.com/NxcoreAI/EverRoom"
+    },
+    {
+      "rank": 10,
+      "name": "Respan Gateway",
+      "category": "LLMOps/工具",
+      "summary": "定位为 AI 的通用适配器：通过统一网关处理不同模型、协议和应用之间的连接问题。项目提供发布版本与 CI，采用 MIT 或 Apache-2.0 双许可；适合需要把多个模型服务、Agent 或客户端接入同一层治理与路由的团队研究。",
+      "usageMode": "可本地部署",
+      "hardware": "普通服务端即可；吞吐主要取决于下游模型服务",
+      "license": "MIT OR Apache-2.0",
+      "licenseNote": "网关层应做好 API 密钥隔离、访问控制、限流和审计。",
+      "url": "https://github.com/respanai/respan-gateway"
+    }
+  ],
+  "sources": [
+    "https://github.com/Tencent/WeMM-Embedding",
+    "https://github.com/beipo-ai/NorthCUA",
+    "https://github.com/vercel-labs/eve-software-factory-template",
+    "https://github.com/thesysdev/open-intelligent-ui",
+    "https://github.com/datalab-to/indra",
+    "https://github.com/jsdhwfmax/EvalForge",
+    "https://github.com/memoket/memoket-kite",
+    "https://github.com/uclanlp/OpenVLHarness",
+    "https://github.com/NxcoreAI/EverRoom",
+    "https://github.com/respanai/respan-gateway"
+  ],
+  "selectionNote": "基于项目 README、部署方式、许可说明和实际适用性人工筛选；已排除前两日的重复项目。"
+}
