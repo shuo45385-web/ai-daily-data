@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-08",
+  "title": "每日开源AI精选 · 2026-11-08",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "@shadcn/lint",
+      "category": "Agent/工具",
+      "summary": "面向 Tailwind 设计系统的 agent-first linter。团队把组件、变体和主题中“允许什么、不允许什么”写成规则后，AI 编码 Agent 违反规则会获得带修复建议的诊断；兼容 ESLint/Oxlint 及 React、Svelte、Vue，无需重写现有设计系统。对用 AI 改前端又担心 UI 逐渐跑偏的项目特别实用。",
+      "usageMode": "可本地部署（npm / 项目开发依赖）",
+      "hardware": "普通前端开发环境即可",
+      "license": "",
+      "licenseNote": "应先把团队已有组件规范和设计令牌固化为规则，再交给 Agent 自动修复。",
+      "url": "https://github.com/shadcn-ui/lint"
+    },
+    {
+      "rank": 2,
+      "name": "StartLux-Decision",
+      "category": "大模型",
+      "summary": "专为决策任务设计的开源模型与工具集，配套技术报告、Hugging Face 模型和 API 文档。它的定位不是通用长文本生成，而是给 Agent 路由、选项比较、风险判断等步骤提供决策能力，适合把复杂 Agent 流程中高频的小判断从昂贵的大模型调用中拆出来。",
+      "usageMode": "可本地部署 / 可接入在线服务",
+      "hardware": "按所选模型权重和推理后端配置",
+      "license": "Apache-2.0",
+      "licenseNote": "建议先用真实业务决策样本校验校准度与误判成本。",
+      "url": "https://github.com/StartLuxLabs/StartLux-Decision"
+    },
+    {
+      "rank": 3,
+      "name": "Semantix",
+      "category": "Agent/工具",
+      "summary": "为 AI 编码 Agent 做跨会话记忆与成本优化：包含语义缓存、自适应调度、推测性预取和跨会话学习。项目的目标是在保留上下文连续性的同时降低重复调用模型的账单，对长期维护代码库、反复运行 Agent 的场景很有现实价值。",
+      "usageMode": "可本地部署",
+      "hardware": "普通开发环境；模型调用成本取决于所接入的服务",
+      "license": "MIT",
+      "licenseNote": "缓存命中前应注意分支、依赖版本和敏感代码上下文的隔离。",
+      "url": "https://github.com/Gnosil/semantix"
+    },
+    {
+      "rank": 4,
+      "name": "Strands Box",
+      "category": "Agent/基础设施",
+      "summary": "Strands 开源的 AI Agent 沙箱引擎。它为 Agent 提供受控的执行空间，是把模型从“会说”变成“能运行工具、操作文件和完成任务”时的重要底座；适合需要将 Agent 工具调用与宿主环境隔离的团队研究或集成。",
+      "usageMode": "可本地部署",
+      "hardware": "服务器资源取决于同时运行的沙箱数量和任务负载",
+      "license": "",
+      "licenseNote": "沙箱不是权限控制的替代品，仍应按最小权限配置网络、密钥和挂载目录。",
+      "url": "https://github.com/strands-agents/box"
+    },
+    {
+      "rank": 5,
+      "name": "durable-harness（Vercel Labs）",
+      "category": "Agent/基础设施",
+      "summary": "把 Pi、OpenCode、Claude Code、Codex 等编码 Agent 的一次会话作为可持久化工作流运行。它保存对话、正在执行的回合与模型/工具调用状态，使长时间编码任务可以更可靠地恢复、观测和编排；适合将编码 Agent 从一次性 CLI 使用提升到服务化运行。",
+      "usageMode": "可本地部署 / 基于 Workflow SDK 集成",
+      "hardware": "普通服务端；资源与并发 Agent 数量、模型后端相关",
+      "license": "",
+      "licenseNote": "恢复持久任务前应设计好幂等性，避免工具调用在重试中重复执行。",
+      "url": "https://github.com/vercel-labs/durable-harness"
+    },
+    {
+      "rank": 6,
+      "name": "Scenario Agent Skills",
+      "category": "Agent/工具",
+      "summary": "Scenario 团队维护的 Agent Skills 集合，提供可安装、可发布的技能包，用于把图像与游戏资产创作等专业工作流交给 Agent 执行。项目带有发布版本和 CI，适合参考如何把领域知识、工具调用和操作步骤封装为可复用的 Agent 技能。",
+      "usageMode": "可本地安装到兼容 Skills 的 Agent",
+      "hardware": "由技能所调用的模型与创作工具决定",
+      "license": "",
+      "licenseNote": "安装第三方技能前应审查其脚本、外部调用和所需权限。",
+      "url": "https://github.com/scenario-labs/skills"
+    },
+    {
+      "rank": 7,
+      "name": "Scenario for Blender",
+      "category": "图像/3D",
+      "summary": "Scenario 面向 Blender 5.0+ 的开源插件，把 AI 资产创作能力接入 3D 制作工具。它适合关注游戏美术、3D 场景和生成式资产工作流的人参考；通过 Blender 插件形态，也展示了如何将模型能力嵌入成熟 DCC 工具。",
+      "usageMode": "本地安装为 Blender 插件",
+      "hardware": "Blender 5.0+；生成任务的计算需求取决于所接入的模型服务",
+      "license": "GPL-3.0-or-later",
+      "licenseNote": "GPL-3.0-or-later 对再分发和衍生代码有相应开源要求。",
+      "url": "https://github.com/scenario-labs/blender-plugin"
+    },
+    {
+      "rank": 8,
+      "name": "4DAnyone（Ant Research）",
+      "category": "视频/3D",
+      "summary": "从一段普通单目视频生成多视角一致视频的研究项目，可为后续 4D Gaussian Splatting 重建提供输入。项目强调不需要输入相机参数或静态相机，并支持灵活摆放输出视角；对人物数字化、自由视角视频和动态 3D 重建方向很有参考价值。",
+      "usageMode": "可本地部署研究代码",
+      "hardware": "视频生成与 4D 重建通常需要高显存 NVIDIA GPU",
+      "license": "",
+      "licenseNote": "涉及人物视频时，应确保拥有素材使用权和肖像授权。",
+      "url": "https://github.com/ant-research/4DAnyone"
+    },
+    {
+      "rank": 9,
+      "name": "Inkloom",
+      "category": "图像/设计",
+      "summary": "专为 Logo 设计构建的 AI 模型项目。它不是只生成“像 Logo 的图片”，而是强调标记在极小尺寸、不同载体、字距、留白和组合形式上的可用性，试图把商标设计的结构规则纳入生成过程；适合关注垂直领域图像模型与可编辑品牌资产的人。",
+      "usageMode": "可本地部署与二次开发",
+      "hardware": "模型训练或高质量生成通常需要 GPU",
+      "license": "",
+      "licenseNote": "商标与品牌资产可能涉及近似、侵权和注册风险，商业使用前应做人工审查。",
+      "url": "https://github.com/Inkloom-art/inkloom"
+    },
+    {
+      "rank": 10,
+      "name": "HelixWorld（Noiz AI）",
+      "category": "世界模型",
+      "summary": "实时交互式视听世界模型：输入一张图和提示词后，用户向前移动或转向时，画面与空间音频会一起更新，而不是事后叠加配乐。项目公开论文和预览模型，对关注可交互视频生成、具身体验与多模态世界模型的人很值得跟进。",
+      "usageMode": "可本地部署研究代码 / 获取预览模型",
+      "hardware": "实时视听生成通常需要高性能 GPU",
+      "license": "",
+      "licenseNote": "预览模型与代码的使用范围应分别以仓库和模型页的许可为准。",
+      "url": "https://github.com/NoizAI/HelixWorld"
+    }
+  ],
+  "sources": [
+    "https://github.com/shadcn-ui/lint",
+    "https://github.com/StartLuxLabs/StartLux-Decision",
+    "https://github.com/Gnosil/semantix",
+    "https://github.com/strands-agents/box",
+    "https://github.com/vercel-labs/durable-harness",
+    "https://github.com/scenario-labs/skills",
+    "https://github.com/scenario-labs/blender-plugin",
+    "https://github.com/ant-research/4DAnyone",
+    "https://github.com/Inkloom-art/inkloom",
+    "https://github.com/NoizAI/HelixWorld"
+  ],
+  "selectionNote": "基于项目 README、工程完整度、部署条件和实际适用性人工筛选；已排除最近三日重复项目。"
+}
