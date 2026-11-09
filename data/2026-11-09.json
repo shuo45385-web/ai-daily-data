@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-09",
+  "title": "每日开源AI精选 · 2026-11-09",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "DeepSeek Harness",
+      "category": "Agent/基础设施",
+      "summary": "DeepSeek AI 开源的 Agent Harness，采用“万物皆插件”的架构，并基于 Cordis 的时空可组合设计理念。它处于快速迭代的开发者预览阶段，适合希望研究模块化 Agent 运行时、插件生态和可组合工作流的开发者；仓库同时明确要求运行前先阅读安全说明。",
+      "usageMode": "可本地部署（Node.js / npm）",
+      "hardware": "普通开发环境；模型与工具运行资源取决于安装的插件",
+      "license": "",
+      "licenseNote": "开发者预览版可能有破坏性兼容变更；应先阅读仓库 SAFETY.md 并在隔离环境测试。",
+      "url": "https://github.com/deepseek-ai/deepseek-harness"
+    },
+    {
+      "rank": 2,
+      "name": "ARTEMIS（Google）",
+      "category": "Computer Use",
+      "summary": "Google 开源的真实手机操作框架，让 AI 助手和测试套件像人一样使用手机。项目提供中文文档、MCP 接入、工作流示例和基准说明，适合移动端 UI 自动化、手机 Agent 评测、IDE 内调用真实设备等场景。",
+      "usageMode": "可本地部署",
+      "hardware": "Python 3.12+；需 Android 真机或对应的设备/测试环境",
+      "license": "",
+      "licenseNote": "仅应在自有或明确授权的设备、账号和应用中执行自动化操作。",
+      "url": "https://github.com/google/artemis"
+    },
+    {
+      "rank": 3,
+      "name": "AuK（腾讯混元）",
+      "category": "语音",
+      "summary": "腾讯混元发布的开源语音生成与编辑基础模型。项目同时给出论文、项目主页、Hugging Face 演示和 ModelScope 演示入口，覆盖从语音生成到可编辑音频的能力，适合关注 TTS、语音创作和声音编辑工作流的人跟进。",
+      "usageMode": "可本地部署模型 / 可在线体验",
+      "hardware": "高质量语音生成通常建议使用 GPU；具体要求以模型说明为准",
+      "license": "",
+      "licenseNote": "涉及声音克隆或人物语音时，须获得对应主体的明确授权。",
+      "url": "https://github.com/Tencent-Hunyuan/AuK"
+    },
+    {
+      "rank": 4,
+      "name": "OPAL",
+      "category": "机器学习",
+      "summary": "一个让编码 Agent 在训练过程中动态修改优化器的 PyTorch 包装器。传统训练通常在开始前固定优化器，OPAL 则把优化器变成“Agent 在环”的可调整对象；项目配套论文、指南和示例，适合探索自动机器学习与训练策略自适应。",
+      "usageMode": "可本地部署（PyTorch）",
+      "hardware": "训练任务通常需要 GPU；优化器调参本身还会带来额外 Agent 调用成本",
+      "license": "",
+      "licenseNote": "应在可复现实验、固定验证集和资源上限下运行，避免 Agent 产生不可控的训练开销。",
+      "url": "https://github.com/xingjian-bai/opal"
+    },
+    {
+      "rank": 5,
+      "name": "NextTransformer",
+      "category": "机器学习",
+      "summary": "面向下一代 Transformer 的开源框架、基准与自动研究平台。项目提供文档和可探索的观测界面，目标是把模型结构研究、实验比较和自动化研究工具放到统一环境中；对做 Transformer 架构实验、复现论文或构建研究平台的人很有价值。",
+      "usageMode": "可本地部署",
+      "hardware": "从小型实验到大模型训练均可；规模化训练需要多 GPU 资源",
+      "license": "",
+      "licenseNote": "自动研究结果应经过独立复现实验验证，不能只依据单次训练曲线判断。",
+      "url": "https://github.com/Interactive-Active-AI/NextTransformer"
+    },
+    {
+      "rank": 6,
+      "name": "Moli",
+      "category": "Agent/浏览器",
+      "summary": "为 AI Agent 设计的开源浏览器，主张“结构优先、按需获取像素”。它提供多语言文档，目标是让 Agent 先通过结构化页面信息完成理解与操作，再在需要视觉判断时读取像素，从而降低浏览器自动化的上下文和视觉成本。",
+      "usageMode": "可本地部署",
+      "hardware": "普通开发电脑即可；视觉模型能力由所接入的 Agent 决定",
+      "license": "",
+      "licenseNote": "浏览器 Agent 应限制可访问域名、下载行为和登录态，避免泄露会话数据。",
+      "url": "https://github.com/lexmount/moli"
+    },
+    {
+      "rank": 7,
+      "name": "Reef",
+      "category": "Agent/基础设施",
+      "summary": "持续自我改进 Agent 的基础设施项目，提供 Python 包和 CI。它定位于支撑 Agent 在长期运行中积累、评估和迭代能力，而不是单次问答；适合研究如何为自改进 Agent 建立可观察、可复现的运行底座。",
+      "usageMode": "可本地部署（Python 3.12+）",
+      "hardware": "普通服务端；运行成本取决于外部模型和评估任务",
+      "license": "Apache-2.0",
+      "licenseNote": "持续改进机制应配合基准、回归测试与人工审查，防止能力或行为漂移。",
+      "url": "https://github.com/Human-Agent-Society/reef"
+    },
+    {
+      "rank": 8,
+      "name": "LayerFS",
+      "category": "Agent/基础设施",
+      "summary": "为 Agent 提供“临时工作空间、持久共享历史”的文件系统底座。每个 Agent 可挂载完整可写的 workspace，在共享提交历史之上完成工作、提交变更后退出；这个模型很适合并发 Agent 协作、代码修改隔离和可追溯的工作产物管理。",
+      "usageMode": "可本地部署",
+      "hardware": "服务器资源与并发工作区、数据规模和底层存储有关",
+      "license": "",
+      "licenseNote": "共享历史和临时工作区仍需配置访问边界，避免不同任务间的数据越权读取。",
+      "url": "https://github.com/Ephemeral-AI-Lab/layerfs"
+    },
+    {
+      "rank": 9,
+      "name": "Helix Foundry",
+      "category": "数据/知识图谱",
+      "summary": "把公司数据库、工具和文档连接到统一本体中的开源平台。Agent 可以先草拟本体，再加载进 HelixDB 图数据库；用户能追溯每个值来自哪一行数据或哪段原文，再在统一图谱上查询。对企业知识图谱、可追溯 RAG 和数据治理很有参考价值。",
+      "usageMode": "可在本地电脑运行",
+      "hardware": "需按连接数据源与图数据库规模配置内存、磁盘和服务端资源",
+      "license": "Apache-2.0",
+      "licenseNote": "连接企业数据源前应做好凭据最小化、字段脱敏和来源级权限控制。",
+      "url": "https://github.com/HelixDB/helix-foundry"
+    },
+    {
+      "rank": 10,
+      "name": "VisionHOPE",
+      "category": "计算机视觉",
+      "summary": "把视觉骨干网络视作可自修改学习系统的研究项目，提供论文、PyTorch 安装说明和 Hugging Face 模型入口。项目关注视觉模型如何在任务过程中持续调整学习机制，对自适应视觉表征、持续学习和视觉基础模型研究有参考价值。",
+      "usageMode": "可本地部署研究代码",
+      "hardware": "PyTorch 2.1+；训练或大规模视觉实验建议使用 GPU",
+      "license": "",
+      "licenseNote": "研究结果需结合公开基准和自身任务复现，不宜直接外推到生产场景。",
+      "url": "https://github.com/PSRben/VisionHOPE"
+    }
+  ],
+  "sources": [
+    "https://github.com/deepseek-ai/deepseek-harness",
+    "https://github.com/google/artemis",
+    "https://github.com/Tencent-Hunyuan/AuK",
+    "https://github.com/xingjian-bai/opal",
+    "https://github.com/Interactive-Active-AI/NextTransformer",
+    "https://github.com/lexmount/moli",
+    "https://github.com/Human-Agent-Society/reef",
+    "https://github.com/Ephemeral-AI-Lab/layerfs",
+    "https://github.com/HelixDB/helix-foundry",
+    "https://github.com/PSRben/VisionHOPE"
+  ],
+  "selectionNote": "基于项目 README、适用性、部署条件与工程完整度人工筛选；已排除最近四日重复项目。"
+}
