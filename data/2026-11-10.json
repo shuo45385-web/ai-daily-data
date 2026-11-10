@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-10",
+  "title": "每日开源AI精选 · 2026-11-10",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "OpenHands Agent Canvas",
+      "category": "AI 编程智能体控制台",
+      "summary": "面向自托管开发团队的智能体控制中心，可在本机、Docker、虚拟机或云端后端运行 OpenHands、Claude Code、Codex、Gemini、Pi、OpenCode 等兼容 ACP 的智能体，并把对话与定时/事件自动化集中管理。",
+      "usageMode": "安装 @openhands/agent-canvas 后本地启动；生产环境可按文档以 Docker 或服务器方式部署，并连接所选模型/智能体后端。",
+      "hardware": "本地运行需 Node.js 24+ 与 uv；Docker 沙箱模式需 Docker。实际资源取决于所接入的模型和执行后端。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；无沙箱方式运行时，README 明确提示智能体将拥有所在机器的文件系统访问权限。",
+      "url": "https://github.com/OpenHands/OpenHands"
+    },
+    {
+      "rank": 2,
+      "name": "Sim",
+      "category": "AI 工作流与智能体平台",
+      "summary": "可自托管的 AI 智能体与工作流工作台，README 提供可视化、对话式和代码式构建方式，并可接入 LLM、知识库、文件、数据库及大量第三方服务，包含运行记录、调度与监控能力。",
+      "usageMode": "可使用 npx sim-setup 自托管，也可按 Docker Compose 部署；支持配置 Ollama 的 CPU 或 GPU 配置文件。",
+      "hardware": "自托管 Docker 栈建议至少 12GB 内存；接入本地模型时，CPU/GPU 资源随 Ollama 模型而变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0。",
+      "url": "https://github.com/simstudioai/sim"
+    },
+    {
+      "rank": 3,
+      "name": "InvokeAI",
+      "category": "生成式图像创作",
+      "summary": "本地部署的视觉生成创作环境，提供 Web UI、统一画布、局部重绘/扩图、节点式工作流、图库和模型管理；README 列出 SD、FLUX、Qwen Image 等多类图像模型支持。",
+      "usageMode": "从官方 Launcher 安装，在兼容硬件上运行本地 Web 服务与 React 界面；可在界面中管理模型和工作流。",
+      "hardware": "需要兼容的本地硬件；图像模型推理通常建议使用 GPU，具体显存要求随所加载模型而变。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；模型本身可能各自带有不同许可，使用前应单独核对。",
+      "url": "https://github.com/invoke-ai/InvokeAI"
+    },
+    {
+      "rank": 4,
+      "name": "Semantic Kernel",
+      "category": "智能体编排 SDK",
+      "summary": "微软的模型无关智能体 SDK，面向 Python、.NET 与 Java 开发；README 覆盖工具/插件、记忆、多智能体协作、MCP、向量库、多模态和本地模型连接，可用于构建从助手到业务流程的智能体系统。",
+      "usageMode": "Python 通过 pip 安装，.NET 通过 NuGet 引用；配置云端模型 API，或连接 Ollama、LM Studio、ONNX 等本地运行时。",
+      "hardware": "SDK 本身无特殊硬件要求；云端模型主要依赖 API，本地模型硬件取决于所选模型。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；README 同时提示 Microsoft Agent Framework 是其面向生产的后续方向，并提供迁移资料。",
+      "url": "https://github.com/microsoft/semantic-kernel"
+    },
+    {
+      "rank": 5,
+      "name": "Repomix",
+      "category": "AI 编程上下文工具",
+      "summary": "将整个代码仓库打包为适合大模型阅读的单文件，并提供文件与总 Token 统计、忽略规则、凭据模式检测，以及基于 Tree-sitter 的代码压缩，以便进行代码审查、重构和问答。",
+      "usageMode": "在项目目录执行 npx repomix@latest，或全局安装后运行 repomix；可生成 XML、Markdown 或纯文本输出。",
+      "hardware": "普通开发机即可，主要消耗本地 CPU 与内存；大型仓库的处理时间和内存占用会随代码量增加。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；内置凭据文件排除能力并不替代人工复核，上传给外部模型前仍应检查输出。",
+      "url": "https://github.com/yamadashy/repomix"
+    },
+    {
+      "rank": 6,
+      "name": "Supervision",
+      "category": "计算机视觉工程工具箱",
+      "summary": "面向 Python 的可复用视觉工具库，可衔接分类、检测和分割模型，并提供检测结果标注、区域计数、图像/视频处理以及 COCO、YOLO、Pascal VOC 等数据集加载、切分和合并工具。",
+      "usageMode": "在 Python 3.9+ 环境中 pip install supervision；可与 Ultralytics、Transformers、MMDetection 等模型连接器配合使用。",
+      "hardware": "工具库本身可在 CPU 运行；实时视频分析和深度学习模型推理通常建议使用 GPU。",
+      "license": "MIT",
+      "licenseNote": "README 链接至仓库 LICENSE.md；模型、数据集和云推理服务可能分别适用其自身条款。",
+      "url": "https://github.com/roboflow/supervision"
+    },
+    {
+      "rank": 7,
+      "name": "open-instinct",
+      "category": "个人 AI 智能体",
+      "summary": "一个可自托管的个人智能体实现：通过短信、iMessage、邮件或 Webhook 接收请求，在独立桌面环境中执行任务，并以策略引擎、分级授权、审批、审计和一次性支付卡等机制限制工具与支付权限。",
+      "usageMode": "需要 Node.js 22.19+ 和 pnpm；可在笔记本本地开发，也可按文档部署到独立微型虚拟机，并按需配置消息、工具和支付服务密钥。",
+      "hardware": "本地开发为普通 Node.js 环境；隔离桌面和持续运行部署需要 Linux 容器或虚拟机资源。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；项目需要多个第三方账号/密钥，涉及外部操作或付款时应先完成权限与审批配置。",
+      "url": "https://github.com/mariagorskikh/open-instinct"
+    },
+    {
+      "rank": 8,
+      "name": "tensai",
+      "category": "Go 机器学习框架",
+      "summary": "纯 Go 的轻量机器学习框架，README 说明其提供张量与自动微分、常见层和优化器、SIMD 加速、量化及可选 WebGPU 后端；还给出图像生成、音频理解和文本嵌入的端到端示例。",
+      "usageMode": "作为 Go 包用于学习和实验；可选以 wgpu 构建标签启用 GPU 后端，命令行示例可运行其支持的模型能力。",
+      "hardware": "默认可用 CPU；AMD64 AVX2 或 ARM64 NEON 可获 SIMD 加速。可选 WebGPU 后端可使用 Vulkan、Metal 或 D3D12 支持的 GPU。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；运行图像、音频等大模型时仍需下载相应模型权重并满足其资源和许可要求。",
+      "url": "https://github.com/mattn/tensai"
+    },
+    {
+      "rank": 9,
+      "name": "ModelScope Cookbook",
+      "category": "开源模型实践指南",
+      "summary": "面向开发者的中文开源模型应用实战资料，把模型选型、推理部署、数据准备、微调评测与应用开发串成学习路径，并提供 RAG、Agent、AIGC、端侧应用和业务场景案例。",
+      "usageMode": "可直接在线阅读，也可克隆仓库后使用 Python 3 的 http.server 在本地浏览；各章节模型示例依照章节说明配置。",
+      "hardware": "阅读站点只需 Python 3 和现代浏览器；模型案例的 CPU、GPU、显存和依赖要求以对应章节为准。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；文中引用的模型和工具需要按各自模型卡或许可证使用。",
+      "url": "https://github.com/modelscope/ms-cookbook"
+    },
+    {
+      "rank": 10,
+      "name": "Strix",
+      "category": "AI 应用安全测试",
+      "summary": "开源的 AI 渗透测试工具，README 将其定位为可动态运行目标程序、发现问题并用实际 PoC 验证的智能体式安全测试方案，提供 CLI、修复建议、报告与 CI/CD 集成方式。",
+      "usageMode": "安装命令行工具后配置受支持 LLM 的 API Key，再以 strix --target 指向本地应用目录；首次运行会拉取 Docker 沙箱镜像。",
+      "hardware": "需要 Docker 和一个受支持 LLM 的 API Key；本地扫描资源取决于目标应用、容器和所用模型。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 README 与 LICENSE 标注 Apache 2.0。仅可针对本人拥有或已获明确授权测试的系统和代码运行。",
+      "url": "https://github.com/usestrix/strix"
+    }
+  ],
+  "sources": [
+    "https://github.com/OpenHands/OpenHands",
+    "https://github.com/simstudioai/sim",
+    "https://github.com/invoke-ai/InvokeAI",
+    "https://github.com/microsoft/semantic-kernel",
+    "https://github.com/yamadashy/repomix",
+    "https://github.com/roboflow/supervision",
+    "https://github.com/mariagorskikh/open-instinct",
+    "https://github.com/mattn/tensai",
+    "https://github.com/modelscope/ms-cookbook",
+    "https://github.com/usestrix/strix"
+  ],
+  "selectionNote": "基于项目 README、适用性、部署条件与工程完整度人工筛选；已排除最近数据中的重复项目。"
+}
