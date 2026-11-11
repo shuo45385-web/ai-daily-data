@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-11",
+  "title": "每日开源AI精选 · 2026-11-11",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Index-Translate",
+      "category": "多模态机器翻译",
+      "summary": "哔哩哔哩开源的多语言、多模态翻译模型家族。README 提供 2B、9B 与 35BA3B 的 Omni 检查点，覆盖文本、图像翻译、中英语音识别及中英双向语音到文本翻译，并链接原生推理指引和模型卡。",
+      "usageMode": "从 Hugging Face 或 ModelScope 获取对应检查点，按 README 链接的 Native Inference Guide 和模型卡进行本地推理。",
+      "hardware": "资源需求与 2B、9B、35BA3B 模型规格、上下文长度和量化方式相关；实际部署应以各模型卡说明为准。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码仓库 LICENSE 为 Apache License 2.0；模型权重和数据使用条件应以各个模型卡为准。",
+      "url": "https://github.com/bilibili/Index-Translate"
+    },
+    {
+      "rank": 2,
+      "name": "TextFold",
+      "category": "AI 阅读与知识整理",
+      "summary": "将网页、论文与常用办公文件折叠为五级阅读粒度：原文、关键原句、要点、段落结论和主题卡片。README 说明它支持 PDF、Word、PPT、Excel、EPUB、图片和 Markdown，并可连接浏览器、Zotero、Obsidian、Claude Code 与 Pi。",
+      "usageMode": "可下载桌面应用，也可在 Python 环境安装 textfold；浏览器扩展把当前页面发送到本地阅读器。",
+      "hardware": "普通桌面电脑即可；文档解析与 AI 摘要的资源需求取决于所配置的模型和文件体积。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；处理受版权或敏感文档时，应确认本地模型与外部服务的数据边界。",
+      "url": "https://github.com/chenxiachan/textfold"
+    },
+    {
+      "rank": 3,
+      "name": "PolyStrata",
+      "category": "本地大模型推理",
+      "summary": "面向个人电脑的本地大模型运行环境，README 列出 Qwen、GLM、DeepSeek、LFM、Gemma、MiniCPM-V 等模型，并说明可让模型进行对话、编程和与本地工具协作，数据无需离开电脑。",
+      "usageMode": "按文档下载支持的模型并使用相应引擎启动；可结合 Linger 等本地个人智能体使用。",
+      "hardware": "README 说明 Qwen3.8-Flash-Next 建议 NVIDIA 或 AMD 12GB+ 显存；部分较小模型可在 8GB 显存笔记本运行，大模型还会占用大量系统内存。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；部分上游模型包含商业使用或再分发限制，应单独核验模型许可证。",
+      "url": "https://github.com/simplexai-labs/PolyStrata"
+    },
+    {
+      "rank": 4,
+      "name": "nanoMuse",
+      "category": "跨设备个人 AI 智能体",
+      "summary": "一个覆盖手机、桌面、Web 控制台和中继服务的开源个人智能体。README 强调可选择模型、后台持续工作、保存记忆，并在不可逆操作前请求确认；中继也可部署到自己的服务器。",
+      "usageMode": "使用项目提供的手机客户端、桌面端和 Web 控制台；可使用社区中继额度，或配置自己的模型密钥并自托管中继。",
+      "hardware": "终端侧需要相应的手机或桌面设备；自托管中继需要服务器资源，模型算力取决于选择的云端或本地模型。",
+      "license": "GPL-3.0-or-later",
+      "licenseNote": "仓库采用 GPL-3.0-or-later；在分发修改版本或将其整合到产品前，应评估 GPL 的源码公开义务。",
+      "url": "https://github.com/nano-muse/nanoMuse"
+    },
+    {
+      "rank": 5,
+      "name": "AnyJev",
+      "category": "低成本模型决策推理",
+      "summary": "诺基亚应用研究团队的 Python 工具与模型项目，目标是让模型以一次前向推理完成部分决策，并在低置信度场景回退到自身推理流程。README 提供 Tacit 系列模型、Transformers、进程内 vLLM 和 vLLM 服务的使用入口。",
+      "usageMode": "通过 pip 安装 anyjev 的相应扩展，加载 README 指向的 Tacit 检查点；也可根据文档接入 vLLM。",
+      "hardware": "小型检查点可按 Transformers 或 vLLM 的常规环境部署；31B 等较大模型建议使用具备足够显存的 GPU 服务器。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码仓库 LICENSE 为 Apache License 2.0；预训练与微调模型权重需同时遵守各自模型卡条款。",
+      "url": "https://github.com/nokia-applied-research/AnyJev"
+    },
+    {
+      "rank": 6,
+      "name": "sand3d",
+      "category": "LLM 友好型 3D 建模",
+      "summary": "在 Blender bpy 之上用 Python 描述 3D 物体的建模库。README 将几何体、部件、关节和装配写成短程序，突出命名部件、确定性生成和更短的上下文，并支持导出 GLB、URDF、USD、IFC、OBJ、STL 等格式。",
+      "usageMode": "在装有 Blender Python API 的环境中按项目文档使用 sand3d 编写模型程序，再导出到 Web、机器人仿真、BIM 或 DCC 工作流。",
+      "hardware": "需要能够运行 Blender/Python 的开发机；建模和导出主要依赖 CPU，复杂 Blender 场景的渲染和查看可受益于 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；导出到第三方软件或数据集时仍需遵守其对应许可证。",
+      "url": "https://github.com/Sandflow-ai/sand3d"
+    },
+    {
+      "rank": 7,
+      "name": "BoardUI",
+      "category": "AI 产品前端设计系统",
+      "summary": "面向智能体产品的 React 设计系统，将聊天、思考状态、智能体日志、输入区等 AI 界面与仪表盘组件统一为一套视觉语言。README 提供 69 个免费源代码组件、无运行时 CSS 的 Tailwind v4 实现，以及 MCP、技能和 AGENTS.md 集成。",
+      "usageMode": "通过 npx boardui add 将组件源文件复制进 React 项目；示例应用可配置模型提供商 API Key 后部署。",
+      "hardware": "前端开发和构建使用普通 Node.js 开发机即可；模型推理由所接入 API 或本地推理服务承担。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；示例聊天应用需要自行提供模型服务 API Key，密钥应仅保留在服务端环境变量中。",
+      "url": "https://github.com/BoardUI/boardui"
+    },
+    {
+      "rank": 8,
+      "name": "Scout",
+      "category": "浏览器任务智能体",
+      "summary": "开源的浏览器执行智能体：用户用自然语言描述任务，智能体读取页面、点击、输入和滚动，完成后返回结果；README 同时给出云端真实浏览器与本地 Playwright 浏览器两种运行模式，并支持回放记录。",
+      "usageMode": "Node.js 22+ 环境执行 npm i @outcrawl/scout；配置浏览器与兼容 Chat Completions API 的模型后，在 TypeScript 中调用 Scout.run。",
+      "hardware": "云端浏览器模式不需要本地浏览器；本地模式需安装 Playwright Chromium，CPU、内存开销取决于并发浏览器任务和模型。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；自动化浏览网页时应遵守目标站点条款、账户权限和数据保护要求。",
+      "url": "https://github.com/outcrawlai/scout"
+    },
+    {
+      "rank": 9,
+      "name": "OpenFill",
+      "category": "本地图像编辑生成",
+      "summary": "为 PhotoCraft 与 GIMP 3 提供本地生成式填充、扩图和对象移除的插件。README 说明其基于 ComfyUI 运行，结果始终写入新图层并保留撤销能力，同时支持 NVIDIA、AMD、Apple Silicon 等多种图形平台。",
+      "usageMode": "按项目安装文档安装 PhotoCraft 或 GIMP 插件及所需模型；在编辑器中选区后直接执行填充、移除、扩图或生成。",
+      "hardware": "README 已在 Windows 8GB NVIDIA 笔记本 GPU、Linux AMD RX 7800 XT 和 Apple Silicon 环境给出测试信息；不同模型的显存与内存需求不同。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；所下载的 ComfyUI 节点与模型权重可能有独立许可。",
+      "url": "https://github.com/beckettharriman/openfill"
+    },
+    {
+      "rank": 10,
+      "name": "Second Brain OS",
+      "category": "AI 工程学习与技能包",
+      "summary": "面向 AI 工程师的开源学习体系，README 包含从单提示词到生产智能体的七模块课程、知识图谱/门控/评测等手册、可实践的 Markdown 第二大脑项目，以及 Claude Code 插件、技能、命令和子智能体工具包。",
+      "usageMode": "直接阅读仓库文档或在线站点；需要实践时克隆 starter vault、技能与命令，并按课程配置相应的智能体开发环境。",
+      "hardware": "阅读资料无需特殊硬件；实践项目仅需常规开发机和所选模型服务或本地模型运行环境。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；课程中引用的第三方工具、模型和资料应遵从各自许可与服务条款。",
+      "url": "https://github.com/undefined-ui/second-brain-os"
+    }
+  ],
+  "sources": [
+    "https://github.com/bilibili/Index-Translate",
+    "https://github.com/chenxiachan/textfold",
+    "https://github.com/simplexai-labs/PolyStrata",
+    "https://github.com/nano-muse/nanoMuse",
+    "https://github.com/nokia-applied-research/AnyJev",
+    "https://github.com/Sandflow-ai/sand3d",
+    "https://github.com/BoardUI/boardui",
+    "https://github.com/outcrawlai/scout",
+    "https://github.com/beckettharriman/openfill",
+    "https://github.com/undefined-ui/second-brain-os"
+  ],
+  "selectionNote": "基于项目 README、适用性、部署条件与工程完整度人工筛选；已排除最近数据中的重复项目。"
+}
