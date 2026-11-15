@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-13",
+  "title": "每日开源AI精选 · 2026-11-13",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Plannotator",
+      "category": "AI 编程人工评审",
+      "summary": "为编程助手提供本地浏览器审阅窗口，可在执行前批注计划，也可针对代码差异逐行留言，再将反馈送回助手。适合希望先确认改动范围、再查看交付结果的人。",
+      "usageMode": "按文档安装客户端集成，在本地从兼容的编程助手或命令行打开审查页面。",
+      "hardware": "普通开发机与浏览器即可；模型计算由接入的编程助手承担。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；分享链接可使持有者读取其中的内容，共享前可检查代码是否包含内部信息。",
+      "url": "https://github.com/backnotprop/plannotator"
+    },
+    {
+      "rank": 2,
+      "name": "Open Code Review（阿里巴巴）",
+      "category": "AI 代码评审",
+      "summary": "将基于规则的预处理和语言模型评审结合，把建议定位到 Git diff 的具体行。可用于生成评审意见，也提供宿主编程助手调用的方式，适合团队把自动评审接入已有开发流程。",
+      "usageMode": "使用 npm 安装 CLI，配置受支持的模型提供方；也可通过兼容的宿主助手运行其评审技能。",
+      "hardware": "普通开发机或 CI 执行器即可；本地模型另需匹配的算力。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；通过外部模型评审时，代码片段按模型提供方与团队规则处理。",
+      "url": "https://github.com/alibaba/open-code-review"
+    },
+    {
+      "rank": 3,
+      "name": "Chrome DevTools MCP",
+      "category": "浏览器调试工具桥接",
+      "summary": "让编程助手通过 MCP 使用 Chrome DevTools，读取控制台与网络信息、复现界面问题并采集性能追踪。适合定位 Vue 或其他 Web 项目的渲染、交互与请求问题。",
+      "usageMode": "在支持 MCP 的客户端中配置项目提供的 npm 包，连接受控的 Chrome 浏览器环境。",
+      "hardware": "普通开发机、Node.js LTS 和受支持的 Chrome；持续跟踪大页面会额外消耗内存。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；连接浏览器会让工具接触该会话中的页面数据，适合使用开发或测试配置。",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp"
+    },
+    {
+      "rank": 4,
+      "name": "DeepSeek Chat Demo",
+      "category": "静态 AI 聊天应用",
+      "summary": "DeepSeek 的静态网页聊天样例，展示流式回复、Markdown、附件以及浏览器端历史记录。适合参考如何在轻量前端中实现模型对话、导入导出和本地存储。",
+      "usageMode": "直接使用发布的静态产物，或用 Node.js 22.12+ 和 pnpm 构建后部署到静态站点，填写兼容的 API 配置。",
+      "hardware": "普通电脑和现代浏览器即可；模型推理由所配置的 API 承担。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT；密钥保存在浏览器本地，发送对话、附件和语音请求会把相关数据发给配置的服务。",
+      "url": "https://github.com/deepseek-ai/chat-demo"
+    },
+    {
+      "rank": 5,
+      "name": "OpenFilm",
+      "category": "AI 视频制作与编辑",
+      "summary": "用编程助手编写可按时间渲染的 Web 镜头，随后在本地 Studio 查看和编辑时间线。镜头可使用浏览器支持的 Canvas、WebGL 和常见前端动画工具，适合生成可继续调整的影片源工程。",
+      "usageMode": "可通过 npm 启动 CLI/Studio，或使用 macOS、Windows 桌面包。命令行环境需要 Node.js 22.2+ 和 FFmpeg。",
+      "hardware": "普通开发机可预览简单项目；复杂镜头与高分辨率成片需要更多 GPU、内存和磁盘资源。",
+      "license": "MIT",
+      "licenseNote": "项目代码采用 MIT；素材及外部生成服务分别适用各自的授权和收费条件。",
+      "url": "https://github.com/openfilm/openfilm"
+    },
+    {
+      "rank": 6,
+      "name": "Astryx",
+      "category": "面向智能体的前端设计系统",
+      "summary": "Meta 的 React 组件与设计系统，使用 StyleX 组织样式，提供基础组件、主题和常用界面模式。适合给 AI 辅助开发的 React 界面提供一致的组件与样式约束。",
+      "usageMode": "在 React 19+ 项目里安装组件、主题和 StyleX 依赖，按文档接入打包器。",
+      "hardware": "普通前端开发机即可。",
+      "license": "MIT",
+      "licenseNote": "仓库使用 MIT；集成时按项目文档核对 React、StyleX 与构建工具的兼容性。",
+      "url": "https://github.com/meta/astryx"
+    },
+    {
+      "rank": 7,
+      "name": "InferSSD",
+      "category": "SSD 分层大模型推理",
+      "summary": "基于 llama.cpp 按需从 SSD 读取 MoE 专家权重，把其余常用状态留在内存。文档提供终端对话和 OpenAI 兼容服务，适合研究容量、磁盘访问和解码速度之间的取舍。",
+      "usageMode": "按对应平台文档安装，加载受支持的 GGUF 模型。Windows 平台以当期发行包说明为准。",
+      "hardware": "需要能容纳权重的 SSD；内存还须容纳常驻权重和缓存，部分平台可以使用 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0，模型条款另计。项目文档注明内置 API 无身份验证，适合在本机或受控环境试用。",
+      "url": "https://github.com/wici-ai/inferssd"
+    },
+    {
+      "rank": 8,
+      "name": "Buzz（Block）",
+      "category": "团队沟通与可自托管中继",
+      "summary": "把团队聊天、智能体事件和人工评审放进同一事件流，以签名的 Nostr 事件记录人与程序的动作。提供桌面客户端和自托管中继，适合试验可追溯的协作流程。",
+      "usageMode": "下载桌面客户端；自托管中继时，按文档在服务端配置 Docker 和构建工具。",
+      "hardware": "普通开发机可运行客户端；中继资源随参与者数量、事件存储与任务并发变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；智能体或外部连接器可能需要独立凭据和授权。",
+      "url": "https://github.com/block/buzz"
+    },
+    {
+      "rank": 9,
+      "name": "Claude Squad",
+      "category": "终端编程助手会话管理",
+      "summary": "以终端菜单集中管理 Claude Code、Codex 和 OpenCode 等多个会话，用 tmux 保留运行状态，并借助 Git worktree 隔离不同任务的改动。适合并行试验修复方案或分开审查每个任务。",
+      "usageMode": "按文档通过 Homebrew 或手动安装 CLI，准备 tmux、Git 和要运行的编程助手。",
+      "hardware": "普通开发机即可；每个助手的推理资源和访问条件由对应模型或账号决定。",
+      "license": "AGPL-3.0",
+      "licenseNote": "仓库 LICENSE.md 标注 AGPL-3.0；再分发、修改和提供网络服务时以完整许可条款为准。",
+      "url": "https://github.com/smtg-ai/claude-squad"
+    },
+    {
+      "rank": 10,
+      "name": "Hugging Face Transformers",
+      "category": "多模态模型加载与训练",
+      "summary": "提供常见语言、视觉、语音及多模态模型的定义与加载接口，将分词器、预处理器、训练和推理流程放在统一的 Python 工具链中。适合复现实验、评估新架构和搭建原型。",
+      "usageMode": "在 Python 虚拟环境安装 Transformers 与匹配的 PyTorch，再选择模型检查点和任务接口。",
+      "hardware": "小模型可在 CPU 试用；较大模型推理、训练和微调所需资源随任务而变。",
+      "license": "Apache-2.0",
+      "licenseNote": "框架采用 Apache-2.0；模型权重、数据与衍生使用条件以各自模型卡为准。",
+      "url": "https://github.com/huggingface/transformers"
+    }
+  ],
+  "sources": [
+    "https://github.com/backnotprop/plannotator",
+    "https://github.com/alibaba/open-code-review",
+    "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "https://github.com/deepseek-ai/chat-demo",
+    "https://github.com/openfilm/openfilm",
+    "https://github.com/meta/astryx",
+    "https://github.com/wici-ai/inferssd",
+    "https://github.com/block/buzz",
+    "https://github.com/smtg-ai/claude-squad",
+    "https://github.com/huggingface/transformers"
+  ],
+  "selectionNote": "补录精选。参考截至当期的趋势与更新记录，结合项目 README、实用性、部署条件和开源许可筛选。日期为精选归档日。已排除现有历史期刊及本次补录中的重复仓库。"
+}

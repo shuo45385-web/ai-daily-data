@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-12",
+  "title": "每日开源AI精选 · 2026-11-12",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Qwen Code",
+      "category": "终端 AI 编程助手",
+      "summary": "在终端中阅读代码、修改文件和运行开发命令的编程助手，支持会话记忆、技能、子智能体和 MCP。可切换不同模型提供方，也能连接 Ollama 或 vLLM 上的本地模型。",
+      "usageMode": "在项目目录运行；用 npm 安装时需要 Node.js 22+，按所选提供方配置模型或本地服务。",
+      "hardware": "普通开发机即可运行客户端；本地推理的内存与显存取决于模型后端。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码仓库使用 Apache-2.0；模型、账号与 API 使用条件由所选提供方决定。",
+      "url": "https://github.com/QwenLM/qwen-code"
+    },
+    {
+      "rank": 2,
+      "name": "TensorFold",
+      "category": "本地大模型推理",
+      "summary": "用 Zig 构建的推理引擎，直接处理模型检查点、分词和计算内核。文档提供 Apple Silicon 的 Metal 路径和 NVIDIA 的 CUDA 路径，适合尝试用独立二进制在工作站上提供模型服务。",
+      "usageMode": "按对应平台的快速入门获取二进制和受支持的模型检查点，可在本机启动推理服务。",
+      "hardware": "需要兼容的 Apple Silicon 或 NVIDIA 环境；模型权重和上下文都占用内存或显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "推理引擎与模型检查点分别授权；支持的格式和精度以所用版本的文档为准。",
+      "url": "https://github.com/ashhart/TensorFold"
+    },
+    {
+      "rank": 3,
+      "name": "Modern Web Guidance",
+      "category": "Web 开发知识与 AI 技能",
+      "summary": "Chrome 团队维护的现代 Web 开发指南，面向编程助手提供可搜索的无障碍、CSS、HTML 和性能资料。项目还提供扫描旧式写法的工具，适合在维护 Web 项目时查找原生平台能力。",
+      "usageMode": "通过项目提供的 npx 命令查找指南、扫描项目或安装技能。",
+      "hardware": "普通开发机和 Node.js/npm 环境即可。",
+      "license": "Apache-2.0",
+      "licenseNote": "源仓库采用 Apache-2.0；使用指南中的浏览器特性前应核对目标浏览器的兼容性。",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src"
+    },
+    {
+      "rank": 4,
+      "name": "Agent Skills（Addy Osmani）",
+      "category": "AI 编程工程实践",
+      "summary": "把需求澄清、任务规划、测试驱动开发和代码评审等常见环节整理为可单独加载的编程技能。项目提供适配不同客户端的安装入口，便于团队把重复的开发流程整理成共享规范。",
+      "usageMode": "可使用 npx skills add 选择技能，也可按文档在兼容客户端里加载。",
+      "hardware": "普通开发机即可；执行测试和构建时依赖目标项目的运行环境。",
+      "license": "MIT",
+      "licenseNote": "技能仓库采用 MIT；技能会指导助手使用现有工具，工具权限由所用客户端管理。",
+      "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "rank": 5,
+      "name": "Paperclip",
+      "category": "AI 智能体团队编排",
+      "summary": "将智能体、目标、任务、运行记录和预算集中到一个自托管控制台。可以接入已有的编程助手，为不同职责配置执行环境，并跟踪任务进度和调用成本。",
+      "usageMode": "按快速入门用 Node.js 启动服务，通过 Web 界面配置智能体和运行适配器。",
+      "hardware": "普通开发机可试用；长期运行的资源取决于任务并发、存储与模型后端。",
+      "license": "MIT",
+      "licenseNote": "控制台采用 MIT；接入第三方智能体与模型会涉及各自的授权和费用。",
+      "url": "https://github.com/paperclipai/paperclip"
+    },
+    {
+      "rank": 6,
+      "name": "Colibri",
+      "category": "本地 MoE 模型推理",
+      "summary": "针对混合专家模型的分层推理引擎，将活跃专家放在较快的存储层，不常用的专家按需从磁盘读取。文档覆盖 CPU、Vulkan 和 CUDA 路径，可用于比较内存受限下不同配置的速度。",
+      "usageMode": "使用项目安装器或按文档编译，下载兼容的模型文件后在本机运行。",
+      "hardware": "CPU 可运行；建议按模型体积准备 SSD 空间，磁盘吞吐、内存和显存都会影响速度。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；模型权重需核对各自许可，硬件表现以实际测试为准。",
+      "url": "https://github.com/JustVugg/colibri"
+    },
+    {
+      "rank": 7,
+      "name": "OpenMausBot",
+      "category": "本地 AI 助手工作台",
+      "summary": "聊天式桌面工作台，允许为不同助手配置模型、工具和各自的运行环境。文档介绍了本机服务、可选的独立桌面以及需要人确认的操作，适合试验多个助手分别处理日常任务。",
+      "usageMode": "下载对应桌面安装包，按场景连接终端助手、模型提供方或隔离桌面环境。",
+      "hardware": "支持文档所列 macOS、Windows 和 Ubuntu 平台；运行虚拟桌面时需额外资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "核心仓库采用 Apache-2.0；模型、连接器和托管桌面服务各自适用其条款。",
+      "url": "https://github.com/milind-soni/OpenMausBot"
+    },
+    {
+      "rank": 8,
+      "name": "Hugging Face Diffusers",
+      "category": "图像、视频与音频生成",
+      "summary": "Python 扩散模型工具库，把去噪调度器、模型组件和生成管线组合起来，支持图像、视频和音频生成。适合在可复用的框架里对比模型、加载权重或自建生成流程。",
+      "usageMode": "在 Python 环境安装 Diffusers 和适合硬件的 PyTorch，再按模型说明加载管线。",
+      "hardware": "简单实验可依模型使用 CPU；大型图像或视频任务通常受益于 GPU 和充足的显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "框架代码采用 Apache-2.0；单个模型的权重和生成使用条件以模型卡为准。",
+      "url": "https://github.com/huggingface/diffusers"
+    },
+    {
+      "rank": 9,
+      "name": "OpenDataLoader PDF",
+      "category": "PDF 结构化解析与 RAG",
+      "summary": "把 PDF 中的段落、表格和阅读顺序导出为 Markdown、带坐标的 JSON 或 HTML。坐标信息可用于在检索问答中定位原文；复杂扫描件可以选用带 OCR 的混合模式。",
+      "usageMode": "可用 Python、Node.js 或 Java 接入。本地解析需要 Java 11+；Python 路径还要求 Python 3.11+。",
+      "hardware": "普通 CPU 可运行本地解析；混合模式的资源需求随 PDF 类型、OCR 和模型变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "核心仓库采用 Apache-2.0；混合模式使用的依赖与模型可能有单独的许可。",
+      "url": "https://github.com/opendataloader-project/opendataloader-pdf"
+    },
+    {
+      "rank": 10,
+      "name": "whisper.cpp",
+      "category": "离线语音识别",
+      "summary": "将 Whisper 语音识别模型移植到 C/C++，支持 CPU、量化模型以及多种平台的加速后端。可用作本地转录命令行，也可嵌入需要离线字幕或音频识别的程序。",
+      "usageMode": "按文档通过 CMake 编译或使用对应发行包，再下载受支持的模型文件。",
+      "hardware": "普通 CPU 可运行；速度取决于模型大小和音频长度，也可选用硬件加速。",
+      "license": "MIT",
+      "licenseNote": "代码仓库采用 MIT；预训练模型以及录音音频各自适用相应使用条件。",
+      "url": "https://github.com/ggml-org/whisper.cpp"
+    }
+  ],
+  "sources": [
+    "https://github.com/QwenLM/qwen-code",
+    "https://github.com/ashhart/TensorFold",
+    "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "https://github.com/addyosmani/agent-skills",
+    "https://github.com/paperclipai/paperclip",
+    "https://github.com/JustVugg/colibri",
+    "https://github.com/milind-soni/OpenMausBot",
+    "https://github.com/huggingface/diffusers",
+    "https://github.com/opendataloader-project/opendataloader-pdf",
+    "https://github.com/ggml-org/whisper.cpp"
+  ],
+  "selectionNote": "补录精选。参考截至当期的趋势与更新记录，结合项目 README、实用性、部署条件和开源许可筛选。日期为精选归档日。已排除现有历史期刊及本次补录中的重复仓库。"
+}

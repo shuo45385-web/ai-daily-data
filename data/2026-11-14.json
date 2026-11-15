@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-14",
+  "title": "每日开源AI精选 · 2026-11-14",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "LoopForge（腾讯）",
+      "category": "自托管 AI 软件交付",
+      "summary": "把编程助手、任务脚本和人工审批编排成可重复执行的交付流程。团队可在 Docker 沙箱中处理任务，追踪执行记录，并在关键节点批准或退回结果。",
+      "usageMode": "按项目文档用 Docker Compose 部署平台和 MySQL，再配置相应 Git 仓库与编程助手。",
+      "hardware": "需要可运行 Docker 的主机；并行沙箱数量、项目构建和选用模型决定内存与 CPU 需求。",
+      "license": "MIT",
+      "licenseNote": "LoopForge 主体采用 MIT；项目 LICENSE 列出的第三方组件保留各自条款。",
+      "url": "https://github.com/Tencent/LoopForge"
+    },
+    {
+      "rank": 2,
+      "name": "AG-UI",
+      "category": "智能体与前端交互协议",
+      "summary": "为前端与智能体之间的消息、状态变化和工具调用定义事件协议，使聊天界面、进度与中间状态能够同步。适合将现有智能体服务接入自有应用。",
+      "usageMode": "从官方示例开始，在客户端和后端接入对应 SDK 或框架适配器。",
+      "hardware": "普通前后端环境即可；协议本身无需 GPU，模型算力由后端承担。",
+      "license": "MIT",
+      "licenseNote": "协议仓库采用 MIT；选用的模型服务与框架连接器分别适用其条款。",
+      "url": "https://github.com/ag-ui-protocol/ag-ui"
+    },
+    {
+      "rank": 3,
+      "name": "Docling",
+      "category": "文档解析与 RAG 数据准备",
+      "summary": "把 PDF 和常用办公文件转换为结构化文档，保留版面、表格和阅读顺序，并可导出 Markdown 或 JSON。支持本地处理，适合为检索问答、文档归档和数据抽取制作输入。",
+      "usageMode": "在 Python 3.10+ 环境通过 pip 安装，并从 CLI 或 Python 调用。",
+      "hardware": "普通 CPU 可处理常规文档；OCR、批处理和视觉解析的资源需求取决于配置。",
+      "license": "MIT",
+      "licenseNote": "仓库采用 MIT；OCR 组件、模型权重与待处理文件可能另有各自条款。",
+      "url": "https://github.com/docling-project/docling"
+    },
+    {
+      "rank": 4,
+      "name": "goose",
+      "category": "可扩展本地编程智能体",
+      "summary": "Rust 编写的桌面与终端工具，可借助所选模型完成代码编辑、命令执行和测试，并通过扩展连接其他工具。可用完整桌面应用，也可从命令行使用。",
+      "usageMode": "按文档下载 macOS、Windows 或 Linux 桌面版本，或安装 CLI 后选择模型和扩展。",
+      "hardware": "普通开发机可运行客户端；工具与本地推理的资源需求由实际任务决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；使用外部模型或扩展时适用相应服务条款与项目权限。",
+      "url": "https://github.com/aaif-goose/goose"
+    },
+    {
+      "rank": 5,
+      "name": "LangGraph",
+      "category": "有状态智能体工作流",
+      "summary": "将模型、工具和人工确认步骤组织成可显式控制的工作流，支持运行状态、持久执行和中断恢复。适合需要回溯、暂停和继续运行的多步骤业务流程。",
+      "usageMode": "在 Python 环境安装 LangGraph，用图节点编排任务，并按需求配置检查点存储。",
+      "hardware": "普通开发机可开发和测试；长任务、并发与历史状态会消耗后端计算和存储资源。",
+      "license": "MIT",
+      "licenseNote": "核心库采用 MIT；云端管理服务及第三方模型适用各自条款。",
+      "url": "https://github.com/langchain-ai/langgraph"
+    },
+    {
+      "rank": 6,
+      "name": "Ragas",
+      "category": "RAG 与语言模型应用评测",
+      "summary": "用于构建评测数据和衡量模型应用表现的 Python 工具，可在知识库问答等场景定义评测指标并比较不同实现。适合围绕检索质量与输出质量建立可重复的测试集。",
+      "usageMode": "通过 pip 安装，按示例接入评测数据和选定的评审模型或规则。",
+      "hardware": "普通 Python 环境可运行；批量使用模型评分时需要额外 API 配额或本地推理资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "项目采用 Apache-2.0；把业务数据发送给外部评审模型时应符合相应的数据使用条件。",
+      "url": "https://github.com/vibrantlabsai/ragas"
+    },
+    {
+      "rank": 7,
+      "name": "Gentle AI",
+      "category": "编程助手配置管理",
+      "summary": "为 Codex、Claude Code、Cursor 等编程助手集中配置记忆、技能和工程流程。交互式选择所需组件，适合希望在多个客户端之间保持项目约定一致的开发者。",
+      "usageMode": "使用项目的发行包或按文档安装命令行工具，再选择目标客户端和配置项。",
+      "hardware": "普通开发机即可；模型调用和实际任务仍由配置的客户端处理。",
+      "license": "MIT",
+      "licenseNote": "项目代码采用 MIT；应用配置前可检查项目会写入哪些客户端设置，以及随附组件的许可。",
+      "url": "https://github.com/Gentleman-Programming/gentle-ai"
+    },
+    {
+      "rank": 8,
+      "name": "MCP Go SDK",
+      "category": "MCP 服务端和客户端开发",
+      "summary": "官方 Go SDK，提供实现 MCP 客户端和服务端的类型与会话接口。可用 Go 定义工具、调用工具并管理连接，适合为已有 Go 应用添加 MCP 集成。",
+      "usageMode": "按文档引入 Go 模块，通过示例选择合适的客户端、服务端和传输方式。",
+      "hardware": "标准 Go 开发机或服务器即可；工具运行所消耗的资源由接入的业务决定。",
+      "license": "Apache-2.0 / MIT",
+      "licenseNote": "项目处于许可迁移期。新代码与规范贡献使用 Apache-2.0，部分历史代码保留 MIT，文档贡献另有 CC BY 4.0 条款，详见 LICENSE。",
+      "url": "https://github.com/modelcontextprotocol/go-sdk"
+    },
+    {
+      "rank": 9,
+      "name": "Univer",
+      "category": "可嵌入的办公 SDK",
+      "summary": "提供表格与文档编辑能力以及可由人或程序调用的接口。开放的核心包括数据模型、公式和渲染引擎，可为业务系统里的数据编辑、报表和 AI 办公集成提供基础。",
+      "usageMode": "在前端项目安装相应的 @univerjs 包，通过预设加载所需编辑器能力。",
+      "hardware": "普通开发机和现代浏览器即可；大型表格的计算与渲染依赖数据规模。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库的 Web SDK 核心采用 Apache-2.0；Server SDK 和部分商业插件及 AI 扩展单独授权。",
+      "url": "https://github.com/dream-num/univer"
+    },
+    {
+      "rank": 10,
+      "name": "GitHub Agentic Workflows",
+      "category": "GitHub 工作流配置",
+      "summary": "将用 Markdown 描述的智能体任务编译成 GitHub Actions 工作流，可用于项目报告、问题分流和协作维护。项目文档介绍了如何约束工作流的权限和可写输出。",
+      "usageMode": "在目标仓库按文档配置 GitHub CLI 扩展和 GitHub Actions，再选择支持的执行模型。",
+      "hardware": "需要可用的 Actions 执行器和模型访问；消耗随触发频率、上下文和任务变化。",
+      "license": "MIT",
+      "licenseNote": "仓库采用 MIT；执行由 GitHub Actions 和所选模型服务提供，遵守各自的配额与条款。",
+      "url": "https://github.com/github/gh-aw"
+    }
+  ],
+  "sources": [
+    "https://github.com/Tencent/LoopForge",
+    "https://github.com/ag-ui-protocol/ag-ui",
+    "https://github.com/docling-project/docling",
+    "https://github.com/aaif-goose/goose",
+    "https://github.com/langchain-ai/langgraph",
+    "https://github.com/vibrantlabsai/ragas",
+    "https://github.com/Gentleman-Programming/gentle-ai",
+    "https://github.com/modelcontextprotocol/go-sdk",
+    "https://github.com/dream-num/univer",
+    "https://github.com/github/gh-aw"
+  ],
+  "selectionNote": "补录精选。参考截至当期的趋势与更新记录，结合项目 README、实用性、部署条件和开源许可筛选。日期为精选归档日。已排除现有历史期刊及本次补录中的重复仓库。"
+}

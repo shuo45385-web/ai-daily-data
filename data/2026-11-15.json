@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-15",
+  "title": "每日开源AI精选 · 2026-11-15",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Yogurt",
+      "category": "本地会议转录和摘要",
+      "summary": "在电脑上录制会议、生成实时转录并整理会议摘要，提供搜索和 Markdown 导出。语音转录和总结可在本机完成，适合需要保留会议原文与跟进事项的个人工作流。",
+      "usageMode": "下载对应系统的桌面安装包，按提示获取本地模型并授予所需的录音权限。",
+      "hardware": "README 列出 8 GB 内存，以及 Apple Silicon macOS 14.4+、64 位 Windows 10 2004+ 或相应 Linux 环境。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT；录音、保存和共享会议内容时按参与者授权及组织要求处理。",
+      "url": "https://github.com/FrigadeHQ/yogurt"
+    },
+    {
+      "rank": 2,
+      "name": "VieNeu-TTS",
+      "category": "本地双语语音合成",
+      "summary": "面向越南语和英语的本地语音合成工具。项目文档提供支持 48 kHz 输出的 v3 Turbo 预览、预设音色和播客式对话，可用于旁白与双语音频制作。",
+      "usageMode": "使用 Python SDK 或项目 Web UI，CPU 路径可用 ONNX Runtime，CUDA 路径使用 PyTorch。",
+      "hardware": "CPU 可运行；批量合成可选兼容 NVIDIA GPU，性能随模型模式和硬件变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码仓库采用 Apache-2.0；模型权重查对应模型卡，使用个人声音样本前应取得授权。",
+      "url": "https://github.com/pnnbao97/VieNeu-TTS"
+    },
+    {
+      "rank": 3,
+      "name": "Vercel UI SDK",
+      "category": "跨框架前端交互组件",
+      "summary": "将组件的键盘交互、状态管理和无障碍行为与显示样式分离，并提供 React、Vue、Svelte、Solid、Web Components 适配。适合为 AI 辅助开发提供可定制的组件基础。",
+      "usageMode": "选用 core 和对应框架适配器，通过 npm 安装后按组件示例集成。",
+      "hardware": "普通前端开发机和现代浏览器即可。",
+      "license": "Apache-2.0",
+      "licenseNote": "源仓库 LICENSE 为 Apache-2.0；README 另列 Vercel Beta 条款，API 和行为仍可能变化。",
+      "url": "https://github.com/vercel-labs/ui"
+    },
+    {
+      "rank": 4,
+      "name": "Vercel agent-desktop",
+      "category": "桌面应用自动化测试",
+      "summary": "通过操作系统无障碍树读取桌面应用的窗口、控件和状态，并提供常见交互命令。适合在受控桌面环境测试可访问性以及按钮、输入框等交互。",
+      "usageMode": "在受支持系统上按文档用 npm 安装本地 CLI，并为需要测试的桌面环境配置权限。",
+      "hardware": "支持 macOS、Windows 和 Linux，具体交互能力取决于系统后端与应用支持。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库采用 Apache-2.0；桌面操作依赖本机授权，控件可见性由应用提供的无障碍信息决定。",
+      "url": "https://github.com/vercel-labs/agent-desktop"
+    },
+    {
+      "rank": 5,
+      "name": "LiveKit Agents",
+      "category": "实时语音智能体框架",
+      "summary": "让语音智能体以可编程参与者的方式加入 LiveKit 房间，可组合语音识别、语言模型、语音合成或实时模型，适用于交互式语音助手和音视频应用。",
+      "usageMode": "按文档安装 SDK 与选用的模型插件，连接自托管或云端 LiveKit 服务。",
+      "hardware": "应用开发可在普通电脑完成；本地模型、实时音视频并发和网络条件会影响延迟。",
+      "license": "Apache-2.0",
+      "licenseNote": "框架代码采用 Apache-2.0；托管服务和第三方语音、模型 API 可能分别计费。",
+      "url": "https://github.com/livekit/agents"
+    },
+    {
+      "rank": 6,
+      "name": "Qdrant",
+      "category": "向量检索数据库",
+      "summary": "用于管理向量索引与元数据，支持稠密和稀疏向量、过滤及混合检索。可作为 RAG、相似图片搜索和推荐应用的检索后端。",
+      "usageMode": "通过官方 Docker 镜像自托管，使用 Python 等客户端或 REST、gRPC 接入。",
+      "hardware": "小规模开发可用普通 CPU 主机；规模、维度和并发决定内存与磁盘需求。",
+      "license": "Apache-2.0",
+      "licenseNote": "数据库仓库采用 Apache-2.0；云服务与上游向量模型适用各自条款。",
+      "url": "https://github.com/qdrant/qdrant"
+    },
+    {
+      "rank": 7,
+      "name": "Microsoft Agent Framework",
+      "category": "多语言智能体开发框架",
+      "summary": "为 Python 和 .NET 应用提供智能体、工具和多智能体工作流接口。用于把模型调用、任务流转与运行状态纳入应用代码，适合已有微软技术栈或 Python 服务逐步集成。",
+      "usageMode": "通过 Python 包或 NuGet 接入，按文档选择模型提供方并运行对应示例。",
+      "hardware": "SDK 可在普通开发机运行；实际算力取决于模型、工具和工作流并发。",
+      "license": "MIT",
+      "licenseNote": "仓库代码采用 MIT；Foundry 或其他外部模型服务按各自条件单独配置。",
+      "url": "https://github.com/microsoft/agent-framework"
+    },
+    {
+      "rank": 8,
+      "name": "sherpa-onnx",
+      "category": "跨平台离线语音处理",
+      "summary": "用 ONNX Runtime 在本地运行语音识别、语音合成与语音活动检测等任务，支持桌面、手机和多种嵌入式平台，提供多个语言绑定。",
+      "usageMode": "从发布页获取目标平台的软件包和受支持模型，或按文档通过相应语言的 SDK 接入。",
+      "hardware": "根据平台可用 CPU、GPU 或部分专用加速器；内存与实时性取决于具体模型。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0；预训练语音模型的授权和语言覆盖按各自模型说明核对。",
+      "url": "https://github.com/k2-fsa/sherpa-onnx"
+    },
+    {
+      "rank": 9,
+      "name": "LlamaIndex Framework",
+      "category": "检索增强生成与数据接入",
+      "summary": "用 Python 把文档载入、分块、嵌入、索引和问答串成流程。可以为同一个应用选择不同的模型和向量存储，适合构建私有知识库或比较不同检索策略。",
+      "usageMode": "安装核心包和所需集成，连接本地或云端嵌入模型、语言模型和索引存储。",
+      "hardware": "普通开发机可处理小数据集；大索引与批量嵌入主要消耗存储、内存和模型额度。",
+      "license": "MIT",
+      "licenseNote": "开源框架采用 MIT；LlamaParse 等产品服务以及所接入模型可能另有条款。",
+      "url": "https://github.com/run-llama/llama_index"
+    },
+    {
+      "rank": 10,
+      "name": "Agno",
+      "category": "自托管智能体服务",
+      "summary": "将 Python 智能体、团队和工作流作为服务运行，提供持久化会话和可选的运行管理界面。可用项目模板把试验性智能体部署成团队可访问的应用。",
+      "usageMode": "按官方 Python 或 Docker 模板运行，按需连接 PostgreSQL 与选定的模型提供方。",
+      "hardware": "本地可用普通开发机试验；多用户运行需按并发、数据库与模型需求规划资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "Agno 核心采用 Apache-2.0；托管平台、模型和第三方服务的条件另行适用。",
+      "url": "https://github.com/agno-agi/agno"
+    }
+  ],
+  "sources": [
+    "https://github.com/FrigadeHQ/yogurt",
+    "https://github.com/pnnbao97/VieNeu-TTS",
+    "https://github.com/vercel-labs/ui",
+    "https://github.com/vercel-labs/agent-desktop",
+    "https://github.com/livekit/agents",
+    "https://github.com/qdrant/qdrant",
+    "https://github.com/microsoft/agent-framework",
+    "https://github.com/k2-fsa/sherpa-onnx",
+    "https://github.com/run-llama/llama_index",
+    "https://github.com/agno-agi/agno"
+  ],
+  "selectionNote": "补录精选。参考截至当期的趋势与更新记录，结合项目 README、实用性、部署条件和开源许可筛选。日期为精选归档日。已排除现有历史期刊及本次补录中的重复仓库。"
+}
