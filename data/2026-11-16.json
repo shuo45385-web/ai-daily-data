@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-16",
+  "title": "每日开源AI精选 · 2026-11-16",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "DeepTutor",
+      "category": "个性化 AI 学习",
+      "summary": "面向长期个性化学习的开源平台。README 记录了桌面端、阅读与书籍编辑、检索、学习记录、视频课程、Anki 与日历导出等能力，并提供面向智能体的 CLI 和插件生态。",
+      "usageMode": "可从项目 Releases 获取桌面版本，或按仓库文档部署服务与接入模型提供商。",
+      "hardware": "桌面阅读与学习管理可在普通电脑运行；本地嵌入、语音或模型推理的资源需求随配置的模型和索引规模变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；模型、语音服务及学习内容可能有独立条款。",
+      "url": "https://github.com/HKUDS/DeepTutor"
+    },
+    {
+      "rank": 2,
+      "name": "nanobot",
+      "category": "自托管个人智能体",
+      "summary": "轻量 Python 个人智能体框架，可在浏览器、终端或聊天应用中工作，支持文件读取、长期偏好记忆、定时任务、MCP、Web 工具、图像生成和多智能体委派，并可作为长期运行的本地或服务端网关部署。",
+      "usageMode": "按 README 安装并配置模型提供商或本地模型服务器；可接入 Telegram、Discord、Slack、微信、邮件等渠道。",
+      "hardware": "框架本身可在普通 Python 环境运行；本地模型、文件解析和多并发任务的资源由所选模型和部署规模决定。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；接入消息渠道、MCP 和自动化前应最小化配置密钥与工具权限。",
+      "url": "https://github.com/HKUDS/nanobot"
+    },
+    {
+      "rank": 3,
+      "name": "DeerFlow",
+      "category": "智能体编排框架",
+      "summary": "字节跳动开源的超级智能体框架，README 将其定位为通过子智能体、记忆、沙箱和可扩展技能协同完成复杂任务的运行底座；2.0 为重写版本，旧版深度研究框架保留在 1.x 分支。",
+      "usageMode": "克隆仓库后按其本地开发和技能配置文档启动，并选择兼容的模型服务；可结合沙箱和子智能体编排任务。",
+      "hardware": "控制层需要常规开发机或服务器；沙箱数量、模型调用方式和并行子任务决定 CPU、内存与 GPU/云端成本。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；README 推荐特定模型仅为运行建议，实际使用应自行配置和管理模型密钥。",
+      "url": "https://github.com/bytedance/deer-flow"
+    },
+    {
+      "rank": 4,
+      "name": "Headroom",
+      "category": "LLM 上下文压缩",
+      "summary": "在内容进入大模型前压缩工具输出、日志、RAG 片段、文件与会话历史的本地组件。README 提供 Python/TypeScript 库、代理、编码智能体包装器和 MCP Server，并支持离线运行，不会将待压缩内容外发。",
+      "usageMode": "Python 可 pip install headroom-ai 后调用 compress；也可通过 headroom wrap 包装 Claude Code、Codex、Cursor 等智能体，或启动本地代理。",
+      "hardware": "压缩在本机进程内完成，普通开发机即可；节省的是后续模型调用的输入 Token，模型推理资源由原有模型服务承担。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；应在真实任务上评估压缩后上下文是否保留必要细节。",
+      "url": "https://github.com/headroomlabs-ai/headroom"
+    },
+    {
+      "rank": 5,
+      "name": "PixelRAG",
+      "category": "视觉文档检索",
+      "summary": "把网页、PDF 和图片渲染为截图后直接建立视觉索引的 RAG 项目，保留表格、图表、版式和信息图等纯文本解析容易丢失的结构。README 提供页面渲染 CLI、视觉检索 API、演示 Notebook 和 Claude Code 插件入口。",
+      "usageMode": "通过 pip install pixelrag 安装；可用 pixelshot 生成截图切片，使用项目 API 或部署自己的视觉检索流程。",
+      "hardware": "页面渲染可在普通 CPU 环境运行；大规模视觉索引与多模态问答通常需要更多存储、内存及 GPU/托管推理资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；对受版权保护或含敏感信息的文档建立索引前应确认数据合规。",
+      "url": "https://github.com/StarTrail-org/PixelRAG"
+    },
+    {
+      "rank": 6,
+      "name": "OpenMotion",
+      "category": "智能体视频生成",
+      "summary": "全栈智能体视频生成器，可上传参考视频或社交视频链接，将镜头和转场拆解为 HTML 驱动的项目，再用自带 Studio 调整节奏并渲染 MP4。项目定义了用于共享镜头顺序、时长和转场的 Motion.md。",
+      "usageMode": "按 install.md 配置本地智能体与模型密钥，或克隆仓库后用 Node.js 启动 Studio；支持从模板创建与重制视频。",
+      "hardware": "本地 Studio 需要 Node.js；图像、视频、音乐和配音生成大多依赖所接入的外部模型 API 或相应本地算力。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；使用参考视频、第三方素材和生成服务时需遵守版权及各服务条款。",
+      "url": "https://github.com/nexu-io/openmotion"
+    },
+    {
+      "rank": 7,
+      "name": "vLLM-Omni",
+      "category": "全模态模型服务",
+      "summary": "面向文本、音频、图像、视频和动作生成的统一高性能服务运行时。README 记录了全双工会话、跨阶段 KV 与多模态载荷传输、Ray 多节点推理，以及多个实时语音、图像和音乐模型配方。",
+      "usageMode": "按项目文档选择支持的模型配方、安装运行时并启动服务；可根据规模启用单机或 Ray 多节点部署。",
+      "hardware": "主要面向 GPU/NPU 推理基础设施；实时全双工与大规模多模态模型通常需要高显存加速卡和相应驱动环境。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；每个模型配方与权重仍需分别遵守其上游许可。",
+      "url": "https://github.com/vllm-project/vllm-omni"
+    },
+    {
+      "rank": 8,
+      "name": "UltraRAG",
+      "category": "RAG 与深度研究框架",
+      "summary": "由高校与开源团队维护的轻量 RAG 开发框架，README 介绍其基于 MCP 的架构方向、可见的推理逻辑、知识摄取与多模态能力，并提供本地 DeepResearch 流程和 AgentCPM-Report 模型相关资料。",
+      "usageMode": "从仓库文档选择对应版本与工作流，按安装教程搭建本地 RAG 或深度研究管线，并连接所需模型与知识库。",
+      "hardware": "框架控制层可在普通开发机运行；向量检索、文档解析和本地大模型推理的资源随知识库规模与模型参数量而变化。",
+      "license": "未在 README 中明确标注",
+      "licenseNote": "仓库根目录存在 LICENSE 文件，但当前文件内容未提供可识别的许可证文本；在商业或再分发前应以仓库最新 LICENSE 为准。",
+      "url": "https://github.com/OpenBMB/UltraRAG"
+    },
+    {
+      "rank": 9,
+      "name": "NeMo Data Designer",
+      "category": "合成数据工程",
+      "summary": "NVIDIA 的合成数据生成框架，可从零或以种子数据生成文本、结构化数据和图像，支持多模态上下文、MCP 工具调用轨迹、字段依赖关系、Python/SQL/LLM 校验，以及可恢复和可监控的生成流程。",
+      "usageMode": "使用 pip install data-designer 安装，配置模型 API Key 后按项目工作流构造采样、生成、校验与评分步骤。",
+      "hardware": "框架本身可在常规 Python 环境运行；图像、多模态和大批量生成的资源与费用由所选模型、并发和数据规模决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0；README 提醒会安装其他第三方项目，使用前应复核这些依赖和模型的许可。",
+      "url": "https://github.com/NVIDIA-NeMo/DataDesigner"
+    },
+    {
+      "rank": 10,
+      "name": "Open Media Gateway",
+      "category": "多媒体模型网关",
+      "summary": "将图像、视频、语音和音乐生成服务统一为一个 API 的自托管网关。README 提供 OpenAI、阿里云百炼、火山引擎、可灵、MiniMax 等供应商连接，包含任务跟踪、成本预估、S3 兼容存储、团队访问和浏览器 Playground。",
+      "usageMode": "在自有基础设施部署网关，连接已有的模型服务商账户，创建 API Key 后按其统一接口提交生成任务。",
+      "hardware": "网关服务可在普通服务器运行；媒体生成算力主要由接入的云端供应商或自建推理集群承担。",
+      "license": "Apache-2.0",
+      "licenseNote": "README 与 LICENSE 标注 Apache License 2.0；模型供应商的账户、计费、配额和使用条款独立适用。",
+      "url": "https://github.com/Sociaro-Research/open-media-gateway"
+    }
+  ],
+  "sources": [
+    "https://github.com/HKUDS/DeepTutor",
+    "https://github.com/HKUDS/nanobot",
+    "https://github.com/bytedance/deer-flow",
+    "https://github.com/headroomlabs-ai/headroom",
+    "https://github.com/StarTrail-org/PixelRAG",
+    "https://github.com/nexu-io/openmotion",
+    "https://github.com/vllm-project/vllm-omni",
+    "https://github.com/OpenBMB/UltraRAG",
+    "https://github.com/NVIDIA-NeMo/DataDesigner",
+    "https://github.com/Sociaro-Research/open-media-gateway"
+  ],
+  "selectionNote": "基于项目 README、适用性、部署条件与工程完整度人工筛选；已排除最近数据中的重复项目。"
+}
