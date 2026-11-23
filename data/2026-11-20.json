@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-20",
+  "title": "每日开源AI精选 · 2026-11-20",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Whisper",
+      "category": "语音识别",
+      "summary": "支持多语言语音转录和时间戳。",
+      "usageMode": "安装 Python 包和 FFmpeg 后选用模型。",
+      "hardware": "CPU 可运行小模型，GPU 可缩短长音频转录时间。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/openai/whisper"
+    },
+    {
+      "rank": 2,
+      "name": "faster-whisper",
+      "category": "加速语音识别",
+      "summary": "使用 CTranslate2 运行 Whisper 并支持量化。",
+      "usageMode": "安装 faster-whisper 后按设备选取计算精度。",
+      "hardware": "支持 CPU INT8，GPU 路径需匹配 CUDA 依赖。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/SYSTRAN/faster-whisper"
+    },
+    {
+      "rank": 3,
+      "name": "whisper.cpp",
+      "category": "本地语音转录",
+      "summary": "用 C/C++ 在本地运行 Whisper。",
+      "usageMode": "下载模型并构建 CLI 或使用发行包。",
+      "hardware": "支持在 CPU 上运行，速度取决于模型和设备。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/ggml-org/whisper.cpp"
+    },
+    {
+      "rank": 4,
+      "name": "Vosk",
+      "category": "离线语音识别",
+      "summary": "面向离线场景提供流式识别接口。",
+      "usageMode": "安装语言绑定并下载对应语言模型。",
+      "hardware": "小模型可离线运行于低功耗设备。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/alphacep/vosk-api"
+    },
+    {
+      "rank": 5,
+      "name": "WhisperX",
+      "category": "转录对齐",
+      "summary": "为 Whisper 转录添加词级对齐并可配置说话人区分。",
+      "usageMode": "安装 whisperx 后选择语言、模型及运行设备。",
+      "hardware": "可用 CPU，批量转录和对齐建议按工作量配置 GPU。",
+      "license": "BSD-2-Clause",
+      "licenseNote": "代码采用 BSD-2-Clause。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/m-bain/whisperX"
+    },
+    {
+      "rank": 6,
+      "name": "Silero VAD",
+      "category": "语音活动检测",
+      "summary": "检测录音何时有人说话，可用于转录前分段。",
+      "usageMode": "使用 Python 接口加载 PyTorch 或 ONNX 模型。",
+      "hardware": "普通 CPU 可运行音频分段。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/snakers4/silero-vad"
+    },
+    {
+      "rank": 7,
+      "name": "PaddleOCR",
+      "category": "OCR",
+      "summary": "提供文字检测识别和文档解析工具。",
+      "usageMode": "安装 PaddleOCR 并根据任务选择模型。",
+      "hardware": "支持 CPU 推理，复杂版面可使用 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/PaddlePaddle/PaddleOCR"
+    },
+    {
+      "rank": 8,
+      "name": "EasyOCR",
+      "category": "图片文字识别",
+      "summary": "为多语言图像文字提供直接读取接口。",
+      "usageMode": "安装 easyocr 后选择语言并调用 Reader。",
+      "hardware": "支持 CPU，批量处理可使用 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/JaidedAI/EasyOCR"
+    },
+    {
+      "rank": 9,
+      "name": "SAM 2",
+      "category": "图像视频分割",
+      "summary": "根据提示在图像或视频中定位并跟踪分割对象。",
+      "usageMode": "配置 PyTorch 并下载对应检查点。",
+      "hardware": "推荐兼容 GPU，视频长度和分辨率影响显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/facebookresearch/sam2"
+    },
+    {
+      "rank": 10,
+      "name": "Diffusers",
+      "category": "生成式图像管线",
+      "summary": "用通用管线加载扩散模型并执行图像生成等任务。",
+      "usageMode": "安装 diffusers 并按模型文档加载权重。",
+      "hardware": "模型、分辨率和批量共同决定显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/diffusers"
+    }
+  ],
+  "sources": [
+    "https://github.com/openai/whisper",
+    "https://github.com/SYSTRAN/faster-whisper",
+    "https://github.com/ggml-org/whisper.cpp",
+    "https://github.com/alphacep/vosk-api",
+    "https://github.com/m-bain/whisperX",
+    "https://github.com/snakers4/silero-vad",
+    "https://github.com/PaddlePaddle/PaddleOCR",
+    "https://github.com/JaidedAI/EasyOCR",
+    "https://github.com/facebookresearch/sam2",
+    "https://github.com/huggingface/diffusers"
+  ],
+  "selectionNote": "补刊主题为语音与视觉。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-23",
+  "title": "每日开源AI精选 · 2026-11-23",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "DSPy",
+      "category": "模型程序优化",
+      "summary": "用结构化签名和模块构建程序，并用示例自动优化。",
+      "usageMode": "安装 dspy 后配置模型、评估指标和优化器。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/stanfordnlp/dspy"
+    },
+    {
+      "rank": 2,
+      "name": "smolagents",
+      "category": "轻量工具智能体",
+      "summary": "用 Python 构建调用外部工具与模型的智能体。",
+      "usageMode": "安装 smolagents 后配置模型适配器和工具。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/smolagents"
+    },
+    {
+      "rank": 3,
+      "name": "Pydantic AI",
+      "category": "类型化智能体",
+      "summary": "用 Python 类型定义模型工具、依赖注入与输出结构。",
+      "usageMode": "安装 pydantic-ai 并配置模型提供商。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/pydantic/pydantic-ai"
+    },
+    {
+      "rank": 4,
+      "name": "MCP Python SDK",
+      "category": "工具协议 SDK",
+      "summary": "用 Python 编写 MCP 客户端与服务器。",
+      "usageMode": "安装 mcp 后按文档定义工具和传输方式。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/modelcontextprotocol/python-sdk"
+    },
+    {
+      "rank": 5,
+      "name": "OpenAI Agents SDK",
+      "category": "Python 智能体 SDK",
+      "summary": "提供工具、交接和执行追踪等智能体构建能力。",
+      "usageMode": "安装 openai-agents 后配置模型和工具。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/openai/openai-agents-python"
+    },
+    {
+      "rank": 6,
+      "name": "Semantic Kernel",
+      "category": "应用集成",
+      "summary": "通过插件与模型连接组件将 AI 能力接入应用。",
+      "usageMode": "按 Python、.NET 或 Java 文档使用对应包。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/microsoft/semantic-kernel"
+    },
+    {
+      "rank": 7,
+      "name": "CrewAI",
+      "category": "角色式工作流",
+      "summary": "按角色和任务定义多个智能体的协作流程。",
+      "usageMode": "安装 CrewAI CLI 并配置模型及任务定义。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "rank": 8,
+      "name": "Google ADK",
+      "category": "智能体开发套件",
+      "summary": "实现工具和多智能体协作并提供开发调试界面。",
+      "usageMode": "安装 google-adk 后配置模型并启动开发服务。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/google/adk-python"
+    },
+    {
+      "rank": 9,
+      "name": "AutoGen",
+      "category": "多智能体框架",
+      "summary": "通过对话与消息传递协调多个应用智能体。",
+      "usageMode": "安装 AutoGen 对应组件并接入模型。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT，仓库文档采用 CC BY 4.0。",
+      "url": "https://github.com/microsoft/autogen"
+    },
+    {
+      "rank": 10,
+      "name": "Hugging Face Hub",
+      "category": "模型仓库客户端",
+      "summary": "通过 Python 接口和命令行管理模型与数据集文件。",
+      "usageMode": "安装 huggingface_hub 后使用 API 或 hf 命令。",
+      "hardware": "普通开发机可运行编排，模型推理和工具运行需要各自的资源。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/huggingface_hub"
+    }
+  ],
+  "sources": [
+    "https://github.com/stanfordnlp/dspy",
+    "https://github.com/huggingface/smolagents",
+    "https://github.com/pydantic/pydantic-ai",
+    "https://github.com/modelcontextprotocol/python-sdk",
+    "https://github.com/openai/openai-agents-python",
+    "https://github.com/microsoft/semantic-kernel",
+    "https://github.com/crewAIInc/crewAI",
+    "https://github.com/google/adk-python",
+    "https://github.com/microsoft/autogen",
+    "https://github.com/huggingface/huggingface_hub"
+  ],
+  "selectionNote": "补刊主题为智能体开发。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

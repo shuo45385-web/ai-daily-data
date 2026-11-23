@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-17",
+  "title": "每日开源AI精选 · 2026-11-17",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "llama.cpp",
+      "category": "C/C++ 推理",
+      "summary": "运行 GGUF 模型并提供 HTTP 服务。",
+      "usageMode": "下载 Releases 二进制或编译后使用 llama-cli / llama-server。",
+      "hardware": "支持 CPU，模型权重和上下文决定内存需求。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/ggml-org/llama.cpp"
+    },
+    {
+      "rank": 2,
+      "name": "Ollama",
+      "category": "模型管理",
+      "summary": "下载并管理本地模型，提供命令行和服务接口。",
+      "usageMode": "安装 Ollama 后用 ollama run 选取模型。",
+      "hardware": "支持 CPU 和兼容 GPU，按模型大小预留内存。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/ollama/ollama"
+    },
+    {
+      "rank": 3,
+      "name": "vLLM",
+      "category": "批量推理",
+      "summary": "提供连续批处理和面向高吞吐的模型服务。",
+      "usageMode": "在支持的加速环境安装 vLLM，使用 vllm serve。",
+      "hardware": "通常使用 GPU，显存需覆盖模型和并发所需的 KV 缓存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/vllm-project/vllm"
+    },
+    {
+      "rank": 4,
+      "name": "SGLang",
+      "category": "推理服务",
+      "summary": "为语言和多模态模型提供服务，支持前缀缓存。",
+      "usageMode": "按硬件安装运行时并启动服务进程。",
+      "hardware": "按文档选择兼容加速器，显存随模型和上下文增加。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/sgl-project/sglang"
+    },
+    {
+      "rank": 5,
+      "name": "Text Embeddings Inference",
+      "category": "嵌入服务",
+      "summary": "为嵌入和重排序模型提供批处理 HTTP 服务。",
+      "usageMode": "选择 CPU 或 GPU Docker 镜像并指定模型。",
+      "hardware": "小模型可用 CPU，批量嵌入可用 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/text-embeddings-inference"
+    },
+    {
+      "rank": 6,
+      "name": "ONNX Runtime",
+      "category": "跨平台推理",
+      "summary": "用统一运行时在不同硬件上执行 ONNX 模型。",
+      "usageMode": "安装目标平台的 ONNX Runtime 包，选择执行提供程序。",
+      "hardware": "支持 CPU，硬件加速取决于所选执行提供程序。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/microsoft/onnxruntime"
+    },
+    {
+      "rank": 7,
+      "name": "Apache TVM",
+      "category": "模型编译",
+      "summary": "把模型计算优化并编译到指定硬件。",
+      "usageMode": "按文档安装 TVM 并指定目标架构。",
+      "hardware": "构建资源和运行设备随模型及编译目标变化。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/apache/tvm"
+    },
+    {
+      "rank": 8,
+      "name": "MLC LLM",
+      "category": "跨设备模型运行",
+      "summary": "把模型编译到移动端与桌面等目标环境。",
+      "usageMode": "按目标平台准备运行时并下载或编译模型。",
+      "hardware": "按目标设备检查 GPU 后端与模型内存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/mlc-ai/mlc-llm"
+    },
+    {
+      "rank": 9,
+      "name": "LocalAI",
+      "category": "本地兼容 API",
+      "summary": "将本地推理后端接入兼容 OpenAI 风格的接口。",
+      "usageMode": "使用 Docker 或发行包安装后配置模型。",
+      "hardware": "设备要求取决于使用的推理后端和模型。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/mudler/LocalAI"
+    },
+    {
+      "rank": 10,
+      "name": "Xinference",
+      "category": "模型服务管理",
+      "summary": "通过统一服务管理语言、嵌入与重排序模型。",
+      "usageMode": "安装 Xinference 后启动服务并选择模型。",
+      "hardware": "按部署的模型和并发配置内存及显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/xorbitsai/inference"
+    }
+  ],
+  "sources": [
+    "https://github.com/ggml-org/llama.cpp",
+    "https://github.com/ollama/ollama",
+    "https://github.com/vllm-project/vllm",
+    "https://github.com/sgl-project/sglang",
+    "https://github.com/huggingface/text-embeddings-inference",
+    "https://github.com/microsoft/onnxruntime",
+    "https://github.com/apache/tvm",
+    "https://github.com/mlc-ai/mlc-llm",
+    "https://github.com/mudler/LocalAI",
+    "https://github.com/xorbitsai/inference"
+  ],
+  "selectionNote": "补刊主题为本地模型部署。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

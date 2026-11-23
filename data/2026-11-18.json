@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-18",
+  "title": "每日开源AI精选 · 2026-11-18",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Unstructured",
+      "category": "文档预处理",
+      "summary": "将 PDF、HTML 和办公文档转换成可索引元素。",
+      "usageMode": "安装 unstructured 及格式所需的系统依赖。",
+      "hardware": "普通 CPU 可运行文本解析，OCR 根据处理量配置。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/Unstructured-IO/unstructured"
+    },
+    {
+      "rank": 2,
+      "name": "pypdf",
+      "category": "PDF 文本提取",
+      "summary": "提取可搜索 PDF 的文本与元数据，也能拆分和合并页面。",
+      "usageMode": "安装 pypdf 后通过 PdfReader 读取文档。",
+      "hardware": "普通 CPU 即可，大文件需关注内存。",
+      "license": "BSD-3-Clause",
+      "licenseNote": "代码采用 BSD-3-Clause。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/py-pdf/pypdf"
+    },
+    {
+      "rank": 3,
+      "name": "Sentence Transformers",
+      "category": "语义嵌入",
+      "summary": "把文本转为向量并支持对候选文档重排序。",
+      "usageMode": "安装 sentence-transformers 后加载嵌入或重排序模型。",
+      "hardware": "小模型可用 CPU，大批量嵌入可使用 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/sentence-transformers"
+    },
+    {
+      "rank": 4,
+      "name": "LightRAG",
+      "category": "图谱检索",
+      "summary": "结合图结构和文本索引组织文档问答。",
+      "usageMode": "安装 LightRAG 并配置嵌入和生成模型。",
+      "hardware": "远程模型模式可用普通服务器，索引需磁盘。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/HKUDS/LightRAG"
+    },
+    {
+      "rank": 5,
+      "name": "Haystack",
+      "category": "检索流水线",
+      "summary": "组合文档存储、检索器和生成器。",
+      "usageMode": "安装 haystack-ai 后构建 Pipeline。",
+      "hardware": "框架可用 CPU，资源主要取决于文档索引和推理端。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/deepset-ai/haystack"
+    },
+    {
+      "rank": 6,
+      "name": "RAGFlow",
+      "category": "文档问答",
+      "summary": "提供面向私有文档的解析、检索与问答界面。",
+      "usageMode": "按部署文档启动 Docker Compose 再配置模型。",
+      "hardware": "需要为容器、索引和解析服务预留内存及磁盘。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "rank": 7,
+      "name": "pgvector",
+      "category": "数据库向量扩展",
+      "summary": "在 PostgreSQL 中存储向量并执行最近邻查询。",
+      "usageMode": "安装扩展后在数据库中启用 vector。",
+      "hardware": "使用 PostgreSQL 主机，索引规模决定内存和磁盘开销。",
+      "license": "PostgreSQL",
+      "licenseNote": "代码采用 PostgreSQL。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/pgvector/pgvector"
+    },
+    {
+      "rank": 8,
+      "name": "Milvus",
+      "category": "向量数据库",
+      "summary": "为大规模向量集合提供索引和查询。",
+      "usageMode": "按需求选择 Lite、单机或集群部署。",
+      "hardware": "可单机验证，大规模部署按向量量级和并发配置。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/milvus-io/milvus"
+    },
+    {
+      "rank": 9,
+      "name": "Chroma",
+      "category": "向量索引",
+      "summary": "为应用提供文档、向量和元数据的检索接口。",
+      "usageMode": "用 Python 客户端嵌入使用或启动服务。",
+      "hardware": "小规模可本地运行，向量及元数据占用磁盘。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/chroma-core/chroma"
+    },
+    {
+      "rank": 10,
+      "name": "LanceDB",
+      "category": "嵌入式向量检索",
+      "summary": "面向嵌入式应用存储和查询向量及结构化数据。",
+      "usageMode": "安装 Python 或 JavaScript 客户端并创建表。",
+      "hardware": "普通开发机可运行本地索引，容量随向量表增长。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/lancedb/lancedb"
+    }
+  ],
+  "sources": [
+    "https://github.com/Unstructured-IO/unstructured",
+    "https://github.com/py-pdf/pypdf",
+    "https://github.com/huggingface/sentence-transformers",
+    "https://github.com/HKUDS/LightRAG",
+    "https://github.com/deepset-ai/haystack",
+    "https://github.com/infiniflow/ragflow",
+    "https://github.com/pgvector/pgvector",
+    "https://github.com/milvus-io/milvus",
+    "https://github.com/chroma-core/chroma",
+    "https://github.com/lancedb/lancedb"
+  ],
+  "selectionNote": "补刊主题为文档与检索。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

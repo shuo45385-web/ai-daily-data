@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-21",
+  "title": "每日开源AI精选 · 2026-11-21",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "LM Evaluation Harness",
+      "category": "语言模型评测",
+      "summary": "用统一任务定义运行模型基准并记录结果。",
+      "usageMode": "安装评测工具后选择模型适配器和任务。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/EleutherAI/lm-evaluation-harness"
+    },
+    {
+      "rank": 2,
+      "name": "Lighteval",
+      "category": "模型评测",
+      "summary": "运行不同后端上的语言模型评测并保留指标。",
+      "usageMode": "安装 lighteval 后按文档选择任务和推理后端。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/lighteval"
+    },
+    {
+      "rank": 3,
+      "name": "Promptfoo",
+      "category": "提示词回归测试",
+      "summary": "用同一组输入对比不同提示词和模型的输出并运行断言。",
+      "usageMode": "按文档运行 promptfoo CLI 并配置模型与测试用例。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "核心代码采用 MIT，企业目录适用单独条款。",
+      "url": "https://github.com/promptfoo/promptfoo"
+    },
+    {
+      "rank": 4,
+      "name": "DeepEval",
+      "category": "LLM 回归测试",
+      "summary": "把模型输出指标和测试用例放进开发测试流程。",
+      "usageMode": "安装 deepeval 后配置评测模型。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/confident-ai/deepeval"
+    },
+    {
+      "rank": 5,
+      "name": "HELM",
+      "category": "语言模型基准",
+      "summary": "统一整理模型在多类场景下的评测结果。",
+      "usageMode": "安装 HELM 并选择场景和模型配置。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/stanford-crfm/helm"
+    },
+    {
+      "rank": 6,
+      "name": "OpenAI Evals",
+      "category": "模型评测框架",
+      "summary": "用数据集和评分逻辑组织模型评测任务。",
+      "usageMode": "按 README 安装 Python 依赖并配置模型接口。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/openai/evals"
+    },
+    {
+      "rank": 7,
+      "name": "Opik",
+      "category": "模型应用可观测性",
+      "summary": "记录模型链路并管理评测数据集与实验。",
+      "usageMode": "用 Python SDK 上报追踪并按需部署服务。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/comet-ml/opik"
+    },
+    {
+      "rank": 8,
+      "name": "Langfuse",
+      "category": "模型链路追踪",
+      "summary": "组织调用追踪、提示词和评测数据。",
+      "usageMode": "使用自托管部署指南并接入应用 SDK。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "核心代码采用 MIT，企业功能及根许可证列出的其他部分适用各自条款。",
+      "url": "https://github.com/langfuse/langfuse"
+    },
+    {
+      "rank": 9,
+      "name": "TruLens",
+      "category": "应用评测",
+      "summary": "记录 LLM 应用执行并为每一步配置反馈函数。",
+      "usageMode": "安装 TruLens 并添加相应提供商集成。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/truera/trulens"
+    },
+    {
+      "rank": 10,
+      "name": "Evaluate",
+      "category": "指标计算",
+      "summary": "统一加载和调用准确率等评测指标。",
+      "usageMode": "安装 evaluate 后选择所需指标模块。",
+      "hardware": "评测驱动可用 CPU，资源及费用由被测模型、评分模型和测试规模决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/evaluate"
+    }
+  ],
+  "sources": [
+    "https://github.com/EleutherAI/lm-evaluation-harness",
+    "https://github.com/huggingface/lighteval",
+    "https://github.com/promptfoo/promptfoo",
+    "https://github.com/confident-ai/deepeval",
+    "https://github.com/stanford-crfm/helm",
+    "https://github.com/openai/evals",
+    "https://github.com/comet-ml/opik",
+    "https://github.com/langfuse/langfuse",
+    "https://github.com/truera/trulens",
+    "https://github.com/huggingface/evaluate"
+  ],
+  "selectionNote": "补刊主题为评测与调试。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

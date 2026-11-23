@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-22",
+  "title": "每日开源AI精选 · 2026-11-22",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Transformers",
+      "category": "模型工具库",
+      "summary": "提供预训练模型加载、训练和推理接口。",
+      "usageMode": "安装 transformers 并按模型要求选择后端。",
+      "hardware": "按模型大小及后端选择 CPU 或 GPU，全量训练通常需要加速卡。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/transformers"
+    },
+    {
+      "rank": 2,
+      "name": "PEFT",
+      "category": "参数高效微调",
+      "summary": "给现有模型添加可训练适配器以减少需更新的参数。",
+      "usageMode": "安装 peft 并配置 LoRA 等适配方式。",
+      "hardware": "适配器减少可训练参数，基础模型仍需占用显存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/peft"
+    },
+    {
+      "rank": 3,
+      "name": "TRL",
+      "category": "后训练",
+      "summary": "提供监督微调和偏好优化等常见训练流程。",
+      "usageMode": "安装 trl 后配置数据集和适用的训练器。",
+      "hardware": "一般使用 GPU，显存与训练方式、模型和序列长度有关。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/trl"
+    },
+    {
+      "rank": 4,
+      "name": "Accelerate",
+      "category": "分布式训练",
+      "summary": "提供设备与分布式启动配置来复用训练脚本。",
+      "usageMode": "运行 accelerate config 并用其启动训练脚本。",
+      "hardware": "按训练后端配置单设备或多设备。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/accelerate"
+    },
+    {
+      "rank": 5,
+      "name": "Datasets",
+      "category": "训练数据处理",
+      "summary": "加载、转换和流式读取训练与评测数据。",
+      "usageMode": "安装 datasets 后选择数据集或导入本地文件。",
+      "hardware": "普通 CPU 可处理数据，需为缓存预留磁盘。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/datasets"
+    },
+    {
+      "rank": 6,
+      "name": "Tokenizers",
+      "category": "分词器",
+      "summary": "训练和执行面向机器学习的高性能分词。",
+      "usageMode": "按语言选择绑定并配置分词流程。",
+      "hardware": "分词可用 CPU，语料规模决定词表训练时间。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/huggingface/tokenizers"
+    },
+    {
+      "rank": 7,
+      "name": "LlamaFactory",
+      "category": "模型微调",
+      "summary": "统一配置多种模型的全量及参数高效微调。",
+      "usageMode": "安装依赖后用 CLI 或 Web 界面配置训练。",
+      "hardware": "微调通常使用 GPU，资源取决于模型及量化方案。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/hiyouga/LlamaFactory"
+    },
+    {
+      "rank": 8,
+      "name": "Axolotl",
+      "category": "配置驱动微调",
+      "summary": "用训练配置组织模型、数据和适配器参数。",
+      "usageMode": "按安装指南准备 CUDA 环境并运行训练配置。",
+      "hardware": "根据训练配置选择单卡或多卡。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/axolotl-ai-cloud/axolotl"
+    },
+    {
+      "rank": 9,
+      "name": "torchao",
+      "category": "模型量化",
+      "summary": "为 PyTorch 模型提供量化与稀疏化工具。",
+      "usageMode": "安装 torchao 并选择与硬件匹配的量化配置。",
+      "hardware": "核对量化算子对应设备支持。",
+      "license": "BSD-3-Clause",
+      "licenseNote": "代码采用 BSD-3-Clause。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/pytorch/ao"
+    },
+    {
+      "rank": 10,
+      "name": "LitGPT",
+      "category": "语言模型训练",
+      "summary": "提供模型预训练、微调和推理的 CLI 入口。",
+      "usageMode": "安装 litgpt 后选择受支持的模型和子命令。",
+      "hardware": "训练通常使用 GPU，推理和微调按模型配方配置设备。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/Lightning-AI/litgpt"
+    }
+  ],
+  "sources": [
+    "https://github.com/huggingface/transformers",
+    "https://github.com/huggingface/peft",
+    "https://github.com/huggingface/trl",
+    "https://github.com/huggingface/accelerate",
+    "https://github.com/huggingface/datasets",
+    "https://github.com/huggingface/tokenizers",
+    "https://github.com/hiyouga/LlamaFactory",
+    "https://github.com/axolotl-ai-cloud/axolotl",
+    "https://github.com/pytorch/ao",
+    "https://github.com/Lightning-AI/litgpt"
+  ],
+  "selectionNote": "补刊主题为训练与数据工程。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}

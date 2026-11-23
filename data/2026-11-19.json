@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-19",
+  "title": "每日开源AI精选 · 2026-11-19",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Chainlit",
+      "category": "Python 对话界面",
+      "summary": "为 Python 模型应用提供对话、消息和步骤展示。",
+      "usageMode": "安装 chainlit 后启动应用脚本。",
+      "hardware": "普通 Python 开发机可运行，模型资源由后端承担。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/Chainlit/chainlit"
+    },
+    {
+      "rank": 2,
+      "name": "Vercel AI SDK",
+      "category": "AI 应用 SDK",
+      "summary": "统一模型调用、结构化输出和流式 UI 集成。",
+      "usageMode": "安装 ai 及对应的模型提供商包。",
+      "hardware": "普通 Node.js 环境即可，远程模型无需本机 GPU。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/vercel/ai"
+    },
+    {
+      "rank": 3,
+      "name": "CopilotKit",
+      "category": "应用内助手",
+      "summary": "为 Web 应用提供助手界面与前端状态交互。",
+      "usageMode": "安装 React 组件包并连接运行时。",
+      "hardware": "浏览器和应用后端可用普通开发机运行。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/CopilotKit/CopilotKit"
+    },
+    {
+      "rank": 4,
+      "name": "assistant-ui",
+      "category": "对话组件",
+      "summary": "提供可组合的 React 聊天组件和流式渲染。",
+      "usageMode": "安装 React 组件并连接现有消息后端。",
+      "hardware": "浏览器渲染所需资源较少，推理由现有后端承担。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/assistant-ui/assistant-ui"
+    },
+    {
+      "rank": 5,
+      "name": "Gradio",
+      "category": "模型演示",
+      "summary": "把 Python 推理函数包装成交互式 Web 界面。",
+      "usageMode": "安装 gradio 后用 Blocks 或 Interface 构建。",
+      "hardware": "界面可用 CPU，推理资源由演示模型决定。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/gradio-app/gradio"
+    },
+    {
+      "rank": 6,
+      "name": "Streamlit",
+      "category": "数据应用",
+      "summary": "用 Python 脚本搭建模型演示和数据界面。",
+      "usageMode": "安装 streamlit 后运行应用脚本。",
+      "hardware": "普通 CPU 可运行页面，数据规模决定应用内存。",
+      "license": "Apache-2.0",
+      "licenseNote": "代码采用 Apache-2.0。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/streamlit/streamlit"
+    },
+    {
+      "rank": 7,
+      "name": "Langflow",
+      "category": "可视化工作流",
+      "summary": "以组件画布构建模型和检索流程并通过 API 调用。",
+      "usageMode": "按文档用 Python 或 Docker 启动。",
+      "hardware": "普通服务器可运行编排，本地模型需另配算力。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/langflow-ai/langflow"
+    },
+    {
+      "rank": 8,
+      "name": "Flowise",
+      "category": "可视化 AI 编排",
+      "summary": "通过节点组合模型、检索和工具调用。",
+      "usageMode": "用 Node.js 或 Docker 启动并配置连接。",
+      "hardware": "编排服务可用 CPU，嵌入和数据库资源单独计算。",
+      "license": "Apache-2.0",
+      "licenseNote": "开源主体采用 Apache-2.0，企业模块使用单独的商业许可。",
+      "url": "https://github.com/FlowiseAI/Flowise"
+    },
+    {
+      "rank": 9,
+      "name": "LibreChat",
+      "category": "自托管对话",
+      "summary": "在同一聊天界面配置多个模型端点。",
+      "usageMode": "按 Docker Compose 文档设置环境变量并启动。",
+      "hardware": "为应用和附属服务预留内存，模型可使用远程端点。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/LibreChat-AI/LibreChat"
+    },
+    {
+      "rank": 10,
+      "name": "AnythingLLM",
+      "category": "工作区问答",
+      "summary": "按工作区组织资料、对话和模型接入。",
+      "usageMode": "用桌面安装包或 Docker 接入向量库与模型。",
+      "hardware": "远程模型模式可在普通电脑运行，本地模型需额外内存。",
+      "license": "MIT",
+      "licenseNote": "代码采用 MIT。模型权重、数据及第三方依赖以各自许可为准。",
+      "url": "https://github.com/Mintplex-Labs/anything-llm"
+    }
+  ],
+  "sources": [
+    "https://github.com/Chainlit/chainlit",
+    "https://github.com/vercel/ai",
+    "https://github.com/CopilotKit/CopilotKit",
+    "https://github.com/assistant-ui/assistant-ui",
+    "https://github.com/gradio-app/gradio",
+    "https://github.com/streamlit/streamlit",
+    "https://github.com/langflow-ai/langflow",
+    "https://github.com/FlowiseAI/Flowise",
+    "https://github.com/LibreChat-AI/LibreChat",
+    "https://github.com/Mintplex-Labs/anything-llm"
+  ],
+  "selectionNote": "补刊主题为前端与 AI 应用。按项目用途、部署方式和文档筛选，采用补刊时可查阅的资料。"
+}
