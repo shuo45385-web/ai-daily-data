@@ -1,0 +1,129 @@
+{
+  "date": "2026-11-24",
+  "title": "每日开源AI精选 · 2026-11-24",
+  "projects": [
+    {
+      "rank": 1,
+      "name": "Dyad",
+      "category": "本地 AI 应用开发",
+      "summary": "本地运行的 AI 应用构建器，定位类似 Lovable、v0 或 Bolt，但代码与模型密钥由用户自己掌控。README 提供跨平台下载和自带 API Key 的使用方式，适合在本机快速生成、迭代 Web 应用。",
+      "usageMode": "下载 macOS 或 Windows 桌面版后配置自有模型 API Key；无需注册即可开始创建应用。",
+      "hardware": "客户端可在普通开发电脑运行；模型推理主要由所接入 API 服务承担。",
+      "license": "Apache-2.0 + FSL-1.1-Apache-2.0",
+      "licenseNote": "README 说明 src/pro 外代码为 Apache-2.0，src/pro 使用 Functional Source License 1.1；商用或修改专业功能前应核对对应目录许可证。",
+      "url": "https://github.com/dyad-sh/dyad"
+    },
+    {
+      "rank": 2,
+      "name": "marimo",
+      "category": "科研与数据笔记本",
+      "summary": "可复现、Git 友好的响应式 Python Notebook。运行单元或交互控件时会更新依赖单元，文件以纯 Python 保存，支持 SQL、数据框、脚本执行及部署为交互式应用，并可与 AI 编程助手配合。",
+      "usageMode": "在 Python 环境执行 pip install marimo 后运行 marimo edit；也可通过 VS Code、PyCharm 插件或部署文档使用。",
+      "hardware": "Notebook 本身对硬件要求低；数据处理和本地模型任务按数据规模及所用库决定 CPU、内存和 GPU 需求。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库 LICENSE 为 Apache License 2.0。",
+      "url": "https://github.com/marimo-team/marimo"
+    },
+    {
+      "rank": 3,
+      "name": "OWL",
+      "category": "多智能体任务自动化",
+      "summary": "基于 CAMEL-AI 的多智能体协作框架，用动态分工完成真实任务自动化。README 提供 Python、uv、conda 与 Docker 安装方式、模型配置和工具集说明，并链接 GAIA 评测与论文资料。",
+      "usageMode": "按 README 创建 Python 环境并安装，配置支持的模型服务和所需工具后运行示例任务；也可用 Docker 部署。",
+      "hardware": "框架可在常规 Python 环境运行；浏览器、工具调用和本地模型的资源需求取决于任务并发与模型选择。",
+      "license": "Apache-2.0",
+      "licenseNote": "仓库提供 LICENSE 文件；模型服务、外部工具和数据各自可能有独立许可及费用。",
+      "url": "https://github.com/camel-ai/owl"
+    },
+    {
+      "rank": 4,
+      "name": "last30days-skill",
+      "category": "热点研究与信息检索",
+      "summary": "面向 AI 编程助手的检索技能，README 描述其并行整合 GitHub、Hacker News、Reddit、X、YouTube、arXiv 等来源，并按互动信号与实际关注度辅助生成近期动态简报，适合做人物、公司和技术热点研究。",
+      "usageMode": "Claude Code 可通过 marketplace 安装；Codex、Cursor、Copilot 等可使用 npx skills add 全局或按项目安装。",
+      "hardware": "仅需可运行所选 AI 助手的开发机；外部来源访问、模型调用和可选账号授权决定实际可用范围。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；第三方平台的数据访问、登录态和 API 使用需遵守对应服务条款。",
+      "url": "https://github.com/mvanhorn/last30days-skill"
+    },
+    {
+      "rank": 5,
+      "name": "Graphify",
+      "category": "代码与资料知识图谱",
+      "summary": "Claude Code 技能，可将代码、PDF、Markdown、截图、图表和白板照片抽取为持久知识图谱，输出可交互图、Obsidian Vault、Wiki、关系报告和增量缓存，方便在后续会话中查询结构与关联。",
+      "usageMode": "需要 Claude Code 和 Python 3.10+；使用 pip 或 pipx 安装后，在目标目录执行 /graphify 或 graphify 命令。",
+      "hardware": "图谱文件和缓存保存在本地；多模态抽取依赖 Claude 视觉能力，处理大型资料集会增加 API 调用与本地存储消耗。",
+      "license": "以仓库 LICENSE 为准",
+      "licenseNote": "仓库包含 LICENSE 文件，但当前文本未能识别为标准 SPDX 许可证；商用或再分发前应先核对最新许可条款。",
+      "url": "https://github.com/Graphify-Labs/graphify"
+    },
+    {
+      "rank": 6,
+      "name": "codebase-memory-mcp",
+      "category": "AI 编程上下文与代码导航",
+      "summary": "本地 MCP 代码智能服务，将源码、文档、配置和基础设施建立为持久知识图谱，支持跨服务调用追踪、变更影响分析、CLI 查询和可视化 Lens。README 说明索引和查询无需托管服务或 API Key。",
+      "usageMode": "按 Releases 或 README 安装，接入支持 MCP 的编程助手；项目安装器可配置多种客户端集成。",
+      "hardware": "本地 C 后端负责解析和图谱存储，普通开发机可用；大型仓库的索引时间、磁盘和内存需求会相应增长。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；安装器会改写所选择客户端的配置，建议先审阅并备份本地配置。",
+      "url": "https://github.com/DeusData/codebase-memory-mcp"
+    },
+    {
+      "rank": 7,
+      "name": "Composio",
+      "category": "智能体工具与账户连接",
+      "summary": "为智能体提供大量已认证工具、按用户隔离会话、触发器和沙箱的 SDK 集合，含 TypeScript/Python SDK、CLI，以及 OpenAI Agents、Claude Agent SDK、Vercel AI SDK、LangChain 等适配器。",
+      "usageMode": "安装 SDK 后创建用户会话并将会话工具交给智能体；需要在控制台创建 COMPOSIO_API_KEY 并按需连接第三方账户。",
+      "hardware": "SDK 本身资源要求低；外部工具执行和模型推理通过所连接的平台与模型服务完成。",
+      "license": "MIT",
+      "licenseNote": "仓库 LICENSE 为 MIT；每个用户会话和外部账号都应采用最小授权原则，第三方服务条款独立适用。",
+      "url": "https://github.com/ComposioHQ/composio"
+    },
+    {
+      "rank": 8,
+      "name": "Remotion",
+      "category": "代码化视频生成与剪辑",
+      "summary": "使用 React 与 Web 技术制作视频的框架，README 覆盖由 AI 助手生成视频、交互式编辑、程序化动画、批量渲染、字幕、转场、音效、色彩校正及在自有基础设施上的渲染方案。",
+      "usageMode": "Node.js 环境执行 npx create-video@latest 创建项目，再使用 React 组合时间轴并选择本地、服务端、Lambda 或 Vercel 等渲染方式。",
+      "hardware": "开发与短片渲染可在普通电脑进行；高分辨率、批量或复杂视频需要更多 CPU、内存及可选云端渲染资源。",
+      "license": "仓库许可与商业条款并存",
+      "licenseNote": "README 指向独立的 License 与商业说明；开源代码、企业功能和商业使用场景应以官网及仓库最新许可为准。",
+      "url": "https://github.com/remotion-dev/remotion"
+    },
+    {
+      "rank": 9,
+      "name": "FilmCraft",
+      "category": "专业视频剪辑",
+      "summary": "纯 Rust 编写的开源非线性视频编辑器，可在 macOS、Windows、Linux 和 WebAssembly 中运行。README 展示剪辑、调色、特效、音频、字幕、交换格式和导出能力，并将所有操作设计为可被 AI 智能体精确驱动的命令。",
+      "usageMode": "根据仓库下载与文档在桌面或浏览器环境使用；可将智能体连接到项目暴露的命令式编辑能力。",
+      "hardware": "桌面剪辑需要常规视频编辑硬件；高分辨率、多轨、特效和 GPU 合成会显著提高 GPU、内存与存储需求。",
+      "license": "以仓库 LICENSE 为准",
+      "licenseNote": "仓库提供 LICENSE 文件但当前文本未能识别为标准 SPDX 许可证；发布成品前还应核验素材、字体、音频和编解码相关授权。",
+      "url": "https://github.com/storytold/filmcraft"
+    },
+    {
+      "rank": 10,
+      "name": "WanGP",
+      "category": "本地生成式媒体工作站",
+      "summary": "将开源视频、图像、音乐、语音、3D 和交互世界模型整合到一个本地创作界面。README 列出 Wan、LTX、Hunyuan Video、Flux、Qwen Image、TTS、语音克隆和 3D 模型，并提供面向低显存设备的工作流与本地创作助手。",
+      "usageMode": "按仓库安装说明在本机部署，通过浏览器界面选择已支持模型和工作流；可用 Media Flow 组合批处理、字幕、修复和长视频处理。",
+      "hardware": "README 指出交互世界最低可从 8GB 显存开始；不同视频、图像、语音和 3D 模型的显存、内存与生成时间差异很大。",
+      "license": "以仓库 LICENSE 为准",
+      "licenseNote": "仓库包含 LICENSE 文件但当前文本未能识别为标准 SPDX 许可证；各上游模型及授权素材必须分别核验，尤其是人脸、声音和视频素材。",
+      "url": "https://github.com/deepbeepmeep/WanGP"
+    }
+  ],
+  "sources": [
+    "https://github.com/dyad-sh/dyad",
+    "https://github.com/marimo-team/marimo",
+    "https://github.com/camel-ai/owl",
+    "https://github.com/mvanhorn/last30days-skill",
+    "https://github.com/Graphify-Labs/graphify",
+    "https://github.com/DeusData/codebase-memory-mcp",
+    "https://github.com/ComposioHQ/composio",
+    "https://github.com/remotion-dev/remotion",
+    "https://github.com/storytold/filmcraft",
+    "https://github.com/deepbeepmeep/WanGP"
+  ],
+  "selectionNote": "根据近期仓库活跃度、项目 README、部署可行性和许可证说明人工筛选；已排除最近 7 日入库项目。"
+}
